@@ -23,7 +23,8 @@
 .main-content{
 	margin-top:60px;
 	position:relative;
-	white-space:nowrap;
+	white-space:normal;
+	width:100%;
 
 }
 
