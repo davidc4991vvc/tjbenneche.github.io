@@ -1,7 +1,7 @@
 #topbar { 
 	height:45px;
 	background-color: #1A1A1A;
-	position: fixed;
+	position: absolute;
 	z-index: 99;
 	width:100%;
 	margin-top:0px;
@@ -19,6 +19,7 @@
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	font-weight: normal;
+	position:absolute;
 
 }
 
