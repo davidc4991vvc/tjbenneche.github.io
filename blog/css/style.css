@@ -4,13 +4,13 @@ body{
 	background-color:#fff;
 }
 
-.topnav{
+.topnav ul{
 	list-style:none;
 	font-weight:bold;
 	font-size:12px;
 }
 
-.sidenav{
+.sidenav ul{
 	list-style:none;
 	font-weight:bold;
 	font-size:12px;
