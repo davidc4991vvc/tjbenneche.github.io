@@ -3,7 +3,7 @@ body{
 }
 
 .top-menu{
-	background-image: url("./img/coffee.png");
+	background-image: url("../img/coffee.png");
 }
 
 .pagetitle{
@@ -23,6 +23,7 @@ body{
 	font-size: 16px;
 	background-color: #230b03;
 	color: #e5d3ae;
+	list-style:none;
 }
 
 h2 {
