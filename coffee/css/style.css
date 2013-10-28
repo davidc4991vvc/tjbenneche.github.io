@@ -4,7 +4,8 @@ body{
 
 .pagetitle{
 	font-family: Solido Compressed;
-	font-size:20px;
+	font-size:34px;
+	color:#fff;
 
 }
 
@@ -15,7 +16,7 @@ body{
 .nav{
 	font-family: Gothic;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: #230b03;
 	color: #e5d3ae;
 }
@@ -23,20 +24,20 @@ body{
 h2 {
 	font-family: Gothic;
 	font-weight: bold;
-	font-size:16px;
+	font-size:18px;
 	color: #230b03;
 }
 
 .recipe p{
 	font-family:Gothic;
 	font-weight: normal;
-	font-size:12px;
+	font-size:14px;
 	color:#230b03;
 }
 
 .footer{
 	font-family:Gothic;
-	font-size:12px;
+	font-size:14px;
 	background-color:#230b03;
 	color:#e5d3ae;
 }
