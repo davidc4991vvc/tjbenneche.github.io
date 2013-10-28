@@ -4,3 +4,10 @@ body{
 	background-color:#fff;
 }
 
+.topnav{
+	list-style:none;
+}
+
+.sidenav{
+	list-style:none;
+}
