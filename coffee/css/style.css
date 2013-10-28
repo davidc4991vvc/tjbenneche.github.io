@@ -1,48 +1,102 @@
 body{
 	background-color:#fff;
+	width:800px;
+	text-align:center;
 }
 
 .top-menu{
 	background-image: url("../img/coffee.png");
+	height:250px;
 }
 
 .pagetitle{
-	font-family: Solido Compressed;
+	font-family: 'Ruda', sans-serif;
 	font-size:34px;
+	font-weight:600;
 	color:#fff;
+	margin-left:auto;
+	margin-right:auto;
 
 }
 
 .pagetitle em{
-
+	font-family: 'Clicker Script', cursive;
+	color:#e5d3ae;
+	
 }
 
-.nav{
+.pagetitle hr{
+	border: 2px dashed #e5d3ae;
+	height:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	color:transparent;
+	width:12%;
+}
+
+.top-menu .nav{
 	font-family: Gothic;
 	font-weight: normal;
 	font-size: 16px;
 	background-color: #230b03;
 	color: #e5d3ae;
 	list-style:none;
+	height:30px;
+	
+}
+.top-menu .nav li{
+	display:inline;
+	
+	margin:5px 10px;
+}
+
+.main-content{
+	font-family: 'Nunito', sans-serif;
 }
 
 h2 {
-	font-family: Gothic;
-	font-weight: bold;
+
 	font-size:18px;
 	color: #230b03;
 }
 
+.recipe{
+	float:left;
+	width:38%;
+	margin-left:6%;
+	margin-right:6%;
+}
+
 .recipe p{
-	font-family:Gothic;
-	font-weight: normal;
+	
 	font-size:14px;
 	color:#230b03;
 }
 
 .footer{
-	font-family:Gothic;
+
 	font-size:14px;
 	background-color:#230b03;
 	color:#e5d3ae;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
 }
