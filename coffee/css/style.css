@@ -2,6 +2,10 @@ body{
 	background-color:#fff;
 }
 
+.top-menu{
+	background-image: url("./img/coffee.png");
+}
+
 .pagetitle{
 	font-family: Solido Compressed;
 	font-size:34px;
