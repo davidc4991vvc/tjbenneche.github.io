@@ -1,0 +1,69 @@
+.top-nav .navbar .nav li{
+	font-family: 'Raleway', sans-serif;
+}
+
+.top-nav .navbar .nav li .hidden {
+
+}
+.top-nav .navbar .nav .active a{
+	background-color:transparent;
+}
+
+.top-nav hr{
+	position:relative;
+}
+
+.top-nav .navbar{
+	z-index:1;
+	position:relative;
+	background-image:none;
+	background-color:transparent;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border-radius:0px;
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+
+.top-nav img{
+	max-width:8%;
+	float:none;
+	z-index:99;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) { 
+	.top-nav img{
+	max-width:8%;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) { 
+
+.top-nav img{
+	max-width:8%;
+}
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) { 
+
+
+ }
