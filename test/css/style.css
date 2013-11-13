@@ -1,16 +1,49 @@
-.top-nav .navbar .nav li{
+.top-nav{
+	margin-top:15%;
+}
+
+
+.top-nav .navbar .nav li a{
+	font-size:1.6em;
 	font-family: 'Raleway', sans-serif;
+	font-weight:lighter;
+	background-color:transparent;
+	border:none;
+	background-image:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
 }
 
-.top-nav .navbar .nav li .hidden {
 
+.top-nav .navbar .nav li .to-hide {
+	color:transparent;
 }
+
+
 .top-nav .navbar .nav .active a{
 	background-color:transparent;
 }
 
+.top-nav .navbar .nav .active a:hover{
+	background-color:transparent;
+
+}
+
+
+.top-nav .logo-line{
+
+	padding:0px;
+}
 .top-nav hr{
 	position:relative;
+	border-top:1px dashed #819AD5;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.top-nav .logo-line .horiz-line hr{
+	vertical-align:middle;
+	margin: 100px 0px 0px 0px;
 }
 
 .top-nav .navbar{
@@ -25,23 +58,158 @@
 	margin-left:auto;
 	margin-right:auto;
 	float:none;
+	margin-top:-65px;
 }
 
-.top-nav img{
-	max-width:8%;
+.top-nav .img-circle{
+	padding:0px;
 	float:none;
 	z-index:99;
 	position:relative;
+	display:block;
+	max-width:100%;
+}
+
+
+
+.tumblr_posts{
+	font-family:"Helvetica Neue", sans-serif;
+	font-size:1.2em;
+	max-width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	list-style: none;
+	padding:0px;
+}
+
+.tumblr_title{
+	text-transform: uppercase;
+	text-align:center;
+	font-size:1.4em;
+	margin-top:100px;
+	margin-bottom:20px;
+}
+
+.tumblr_body p{
+	line-height:1.6em;
+	margin-bottom:20px;
+}
+
+.tumblr_body p img{
 	margin-left:auto;
 	margin-right:auto;
 }
 
 
+.footer hr{
+	border-top:1px dashed #819AD5;
+}
+
+.footer a img{
+	max-width:20px;
+	vertical-align:center;
+}
+
+.social-links{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-top:10px;
+}
+
+.social-links a{
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.footer p{
+	float:right;
+	color: #B5BAC7
+}
 
 
 
+.resume .modal .modal-dialog .modal-content .modal-header{
+	width:auto;
+	border-bottom:none;
+}
+
+.modal-footer{
+	display:none;
+}
+
+.resume .modal .modal-dialog{
+	width:auto;
+}
+
+.resume .modal .modal-dialog .modal-content .modal-body{
+	padding:0px;
+}
+
+.resume .modal .modal-dialog .modal-content .modal-body img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 
+/*projects*/
+
+.project-section {
+	margin-top:100px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:60%;
+}
+
+.project-section .proj-logo img{
+	max-width:20%;
+	margin-bottom:15px;
+
+}
+
+.project-section .proj-description p{
+	width:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15px;
+	font-family:"Helvetica Neue", sans-serif;
+	font-size:1.2em;
+	line-height:1.6em;
+	padding-left:25px;
+}
+
+.project-section .proj-description img{
+	max-width:70%;
+	margin-bottom:15px;
+	padding-left:25px;
+
+}
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
 
 
 /* Extra small devices (phones, up to 480px) */

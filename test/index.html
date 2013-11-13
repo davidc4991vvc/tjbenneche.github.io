@@ -12,31 +12,91 @@
 	</head>
 
 	<body>
-		<div class="row top-nav">
-			<img src="./img/logo.png" alt="logo" class="img-circle">
-			<hr>
-			<nav class="navbar navbar-default col-md-6" role="navigation">
+		<div class="top-nav">
+			<div class="container logo-line">
+				<div class="row">
+					<div class="col-lg-5 horiz-line">
+						<hr>
+					</div>
+					<div class="col-lg-2">
+						<img src="./img/logo.png" alt="logo" class="img-circle">
+					</div>
+					<div class="col-lg-5 horiz-line">
+						<hr>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-				    <ul class="nav navbar-nav">
-				      <li class="active"><a href="#">about</a></li>
-				      <li><a href="#">resume</a></li>
-				      <li><a class="to-hide">spacer</a></li>
-				      <li><a class="to-hide">spacer</a></li>
-				      <li class="dropdown">
-				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">portfolio <b class="caret"></b></a>
-				        <ul class="dropdown-menu">
-				          <li><a href="#">TEDxUConn</a></li>
-				          <li><a href="#">photography</a></li>
-				        </ul>
-				      </li>
-				      <li><a href="#">blog</a></li>
-				    </ul>
-			  </div><!-- /.navbar-collapse -->
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3">
+						    <ul class="nav navbar-nav">
+						      <li class="active"><a href="#">blog</a></li>
+						      <li><a href="./about/index.html">about</a></li>
+						      <li><a class="to-hide">spacer</a></li>
+						      <li><a class="to-hide">spacer</a></li>
+						      <li><a href="./projects/index.html">projects</a></li>
+						      <li><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">resume</a></li>
+						    </ul>
+					    </div>
+				    </div>
+			  	</div><!-- /.navbar-collapse -->
 			</nav>
+		</div>
+
+
+	
 
 
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+		<section class="blog">
+			<script src="http://tjbenneche.tumblr.com/js"></script>
+		</section>
+
+
+
+		<div class="resume">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        
+			      </div>
+			      <div class="modal-body">
+			        <img src="./img/resume.png">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container footer-line">
+				<div class="row">
+					<div class="col-lg-5 horiz-line">
+						<hr>
+					</div>
+					<div class="social-links col-lg-2">
+						<a href="http://twitter.com/tjbenneche"><img src="./img/icons/twitter.png"></a>
+						<a href="http://facebook.com/tjbenneche"><img src="./img/icons/fbook.png"></a>
+						<a href="http://linkedin.com/in/tjbenneche"><img src="./img/icons/linkedin.png"></a>
+						<a href="http://www.last.fm/user/runwithmetom"><img src="./img/icons/lastfm.png"></a>
+					</div>
+					<div class="col-lg-5 horiz-line">
+						<hr>
+					</div>
+				</div>
+				<p>__✎ tom benneche</p>
+			</div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="./js/nav.js"></script>
 		<script src="./js/bootstrap.js"></script>
 	</body>
 </html>
