@@ -30,10 +30,6 @@
 }
 
 
-.top-nav .logo-line{
-
-	padding:0px;
-}
 .top-nav hr{
 	position:relative;
 	border-top:1px dashed #819AD5;
@@ -292,6 +288,12 @@ border-radius: 4px;
 	margin-top:5px;
 }
 
+.top-nav .navbar-collapse{
+	border:none;
+}
+
+
+
 .top-nav .logo-line .logo-img{
 	padding-right:0px;
 }
@@ -334,6 +336,10 @@ border-radius: 4px;
 
 
 .project-section .proj-description img{
+	max-width:100%;
+}
+
+.resume .modal .modal-dialog .modal-content .modal-body img{
 	max-width:100%;
 }
 
