@@ -323,6 +323,21 @@ border-radius: 4px;
 
 
 
+.project-section {
+	max-width:90%;
+}
+
+.project-section .proj-logo img{
+	max-width:40%;
+}
+
+
+
+.project-section .proj-description img{
+	max-width:100%;
+}
+
+
 }
  
 /* Landscape phones and down */
