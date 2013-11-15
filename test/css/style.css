@@ -263,6 +263,7 @@ border-radius: 4px;
 
 .button{
 	display:inline-block;
+	margin-top:10px;
 }
 
 .top-nav .logo-line .img-circle{
@@ -281,6 +282,7 @@ border-radius: 4px;
 
 .top-nav .navbar-header .navbar-toggle{
 	float:right;
+	margin-top:15px;
 }
 .top-nav .logo-line #top-right-line{
 	margin-top:0px;
@@ -311,12 +313,15 @@ border-radius: 4px;
 
 .footer .social-links{
 	padding-right:0px;
+	margin-bottom:20px;
 }
 
 .footer .footer-line{
 	padding-left:0px;
 	padding-right:0px;
 }
+
+
 
 }
  
