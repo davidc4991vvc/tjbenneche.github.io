@@ -1,0 +1,159 @@
+body{
+font-size:14px;
+}
+.top-bar{
+	position:fixed;
+	width:100%;
+	z-index:1000;
+	background-color: #391713;
+	top:0;
+	opacity:1;
+	height:65px;
+}
+
+
+.top-bar .title-area li{
+	display:inline;
+	float:left;
+}
+
+.top-bar .top-bar-section .left{
+	background:transparent;
+	padding-left:15px;
+}
+
+.top-bar .top-bar-section .left li a{
+	font-size:18px;
+	background: inherit;
+}
+
+.top-bar .top-bar-section .right{
+	background:transparent;
+	padding-right:15px;
+}
+
+.top-bar .top-bar-section .right li{
+	float:none;
+}
+
+.top-bar .top-bar-section .right li a{
+	font-size:20px;
+	font-family: 'Clicker Script', cursive;
+	background: inherit;
+	padding-right:0px;
+	margin-right:0px;
+	line-height: inherit;
+	float:right;
+	width:auto;
+	display:inline-block;
+}
+.top-bar .top-bar-section .right li a img{
+	vertical-align:baseline;
+	margin-top:5px;
+}
+
+.top-bar .top-bar-section .right .line2{
+	display:inline;
+}
+
+#slider{
+	top:0;
+	width:100%;
+	position:fixed;
+}
+
+#slider img{
+	width:100%;
+}
+
+
+.body-content{
+	display:block;
+	padding-top:5%;
+	margin-top:20%;
+	z-index:900;
+	background-color:#EBF7E8;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	position:relative;
+	visibility: hidden;
+	background: rgba(255, 255, 255, .8);
+}
+
+
+
+.row div #reservation-hover, #delivery-hover, #giftcard-hover{
+	width:70%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	fill: #00DD0C;
+	/*background-color:#12141C;*/
+	background-color:#fff;
+	border: 2px dashed #00DD0C;
+	background: rgba(255, 255, 255, 1);
+	/*border-radius: 10px 10px;*/
+}
+
+ .footer{
+	background: rgba(57, 23, 19, 1);
+	color:#00DD0C;
+	font-family: lato, sans-serif;
+}
+ .footer img{
+	max-width:75px;
+}
+
+.row div svg{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	margin-top:20%;
+}
+
+
+.row div h3{
+	position:relative;
+	display:block;
+	float:center;
+	text-align:center;
+	visibility:hidden;
+}
+
+h2{
+	font-family: 'Lustria', serif;
+	color: #fff;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-left:10px;
+}
+
+.body-content .about{
+	padding-top:35px;
+	padding-bottom:8%;
+	opacity:1.0;
+}
+
+
+.orbit-timer, .orbit-slide-number, .orbit-prev, .orbit-next{
+	display:none;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
