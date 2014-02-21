@@ -5,7 +5,8 @@ body{
 	padding:0px;
 	margin:0px;
 	font-family: 'Open Sans', sans-serif;
-	background-image: url('../img/concert.jpg');
+	background-image: url('../img/bg-md.jpeg');
+	background-size: cover;
 }
 
 video{
@@ -64,6 +65,7 @@ video{
 				.main-content #subcontent .info-pane p:nth-child(1){
 					font-size:1.5em;
 					font-style:italic;
+					font-weight:lighter;
 					color:#fff;
 					margin-top:5%;
 				}
@@ -71,6 +73,7 @@ video{
 					margin-top:2%;
 					font-size:1.5em;
 					font-style:italic;
+					font-weight:lighter;
 					color:#fff;
 				}
 
@@ -146,14 +149,91 @@ video{
 		}
 
 
+@media (min-width:480px){
 
-@media (min-width: 768px){
-	video{
-		display:block;
-	}
+		.main-content #header{
+			margin-left:8%;
+			margin-top:15%;
+		}
+			.main-content #header h1{
+				margin:0;
+				font-size:5.5em;
+			}
+			.main-content #header h1:nth-child(1){
+				width:90%;
+			}
+			.main-content #header h1:nth-child(2){
+				width:85%;
+			}
+			.main-content #header h1:nth-child(3){
+				width:70%;
+			}
+			.main-content #subcontent > div{
+				padding:0;
+			}
+				.main-content #subcontent .info-pane p:nth-child(1){
+					font-size:2em;
+					margin-top:15%;
+					margin-left:8%;
+				}
+				.main-content #subcontent .info-pane p:nth-child(2){
+					margin-top:4%;
+					font-size:2em;
+					margin-left:8%;
+				}
+					.main-content #subcontent .info-pane h2{
+						margin-top:25%;
+					}
+					.main-content #subcontent .info-pane #arrow-svg{
+						width:3em;
+						height:3em;
+					}
+}
+
+@media (min-width: 640px){
+
+
+		.main-content #header{
+			margin-left:8%;
+			margin-top:15%;
+		}
+			.main-content #header h1{
+				margin:0;
+				font-size:6.5em;
+			}
+			.main-content #header h1:nth-child(1){
+				width:90%;
+			}
+			.main-content #header h1:nth-child(2){
+				width:85%;
+			}
+			.main-content #header h1:nth-child(3){
+				width:70%;
+			}
+			.main-content #subcontent > div{
+				padding:0;
+			}
+				.main-content #subcontent .info-pane p:nth-child(1){
+					font-size:2.8em;
+					margin-top:15%;
+					margin-left:8%;
+				}
+				.main-content #subcontent .info-pane p:nth-child(2){
+					margin-top:4%;
+					font-size:2.8em;
+					margin-left:8%;
+				}
+					.main-content #subcontent .info-pane h2{
+						margin-top:20%;
+						font-size:3em;
+					}
+}
+
 
 }
 @media (min-width: 992px){
+	video{display:block;
+	}
 	
 		.main-content #header{
 			color:#fff;
