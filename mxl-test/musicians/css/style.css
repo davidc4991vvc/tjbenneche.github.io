@@ -1,18 +1,20 @@
-jdd/*css doc for musicians splash page*/
+/*css doc for musicians splash page*/
 
 
 body{
 	padding:0px;
 	margin:0px;
 	font-family: 'Open Sans', sans-serif;
+	background-image: url('../img/concert.jpg');
 }
 
 video{
 	position: fixed; right: 0; bottom: 0;
 	min-width: 100%; min-height: 100%;
 	width: auto; height: auto; z-index: -100;
-	background: url('../img/concert.jpg') no-repeat;
+	
 	background-size: cover;
+	display:none;
 }
 	.main-content{
 		width:100%;
@@ -152,6 +154,9 @@ video{
 
 
 @media (min-width: 768px){
+	video{
+		display:block;
+	}
 
 }
 @media (min-width: 992px){
