@@ -61,7 +61,7 @@ video{
 				width:75%;
 			}
 				.main-content #subcontent .info-pane p:nth-child(1){
-					font-size:1.8em;
+					font-size:1.5em;
 					font-style:italic;
 					color:#fff;
 					width:90%;
@@ -69,17 +69,12 @@ video{
 				}
 				.main-content #subcontent .info-pane p:nth-child(2){
 					margin-top:.2em;
-					font-size:1.8em;
+					font-size:1.5em;
 					font-style:italic;
 					color:#fff;
 					width:90%;
 				}
-				.main-content #subcontent .info-pane p:nth-child(1){
-					
-				}
-				.main-content #subcontent .info-pane p:nth-child(2){
-				
-				}
+
 	
 					.main-content #subcontent .info-pane h2{
 						font-weight:lighter;
