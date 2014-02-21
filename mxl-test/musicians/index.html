@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/animations.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery.js"></script> 
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<video src='./vid/concert.mp4'></video>
+		<div class="main-content">
+		<div class="container-fluid">
+				<div class="row" id="logo">
+					<div class="col-lg-2 col-lg-offset-10">
+						<img id="mxl-logo" src="./img/mxl-logo-icon.svg" alt="MXL">
+					</div>
+				</div>
+			</div>
+			<div id="header">
+				<h1>Mobilize</h1>
+				<h1>Your</h1>
+				<h1>Fanbase</h1>
+			</div>
+			<div class="container-fluid">	
+				<div class="row" id="subcontent">
+					<div class="col-lg-3 col-lg-offset-3" >
+						<div class="info-pane">
+							<p>Build your own mobile app</p>
+							<p>Never write a line of code</p>
+							<div class="input-field">
+								<h2>explore</h2>
+							</div>
+							<a  id="arrow" href="#"><svg version="1.1" id="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 fill="#fff" width="2em" height="2em" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+							<g>
+								<path d="M36,67.75C18.493,67.75,4.25,53.507,4.25,36S18.493,4.25,36,4.25S67.75,18.493,67.75,36S53.507,67.75,36,67.75z M36,7.25
+									C20.147,7.25,7.25,20.147,7.25,36c0,15.853,12.897,28.75,28.75,28.75S64.75,51.853,64.75,36C64.75,20.147,51.853,7.25,36,7.25z"/>
+							</g>
+							<g>
+								<polygon points="35.998,49.153 17.117,31.087 19.191,28.919 35.998,45.001 52.809,28.919 54.883,31.087 	"/>
+							</g>
+							</svg></a>
+
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="mockup">
+							<img src="./img/iphone-gold.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page-two">
+			<div class="artist-info">
+				<div id="artist-name">
+					<h3>Brandon</h3>
+					<h3>Holmes</h3>
+				</div>
+				<div id="artist-title">
+					<p>Actor/Singer</p>
+				</div>
+			</div>
+			<div class="container-fluid" id="social-icons">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6">
+						<div id="youtube">
+							<img src="./img/app-icons/youtube.png">
+							<p>YouTube</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6">
+						<div id="twitter">
+							<img src="./img/app-icons/twitter.png">
+							<p>Twitter</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-6">
+						<div id="bands">
+							<img src="./img/app-icons/bands.png">
+							<p>BandsInTown</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6">
+						<div id="sound">
+							<img src="./img/app-icons/sound.png">
+							<p>SoundCloud</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var v = document.getElementsByTagName("video")[0];
+			v.play();
+			v.playbackRate= .4;
+		</script>
+		<script src="./js/splash.js"></script>
+	</body>
+</html>

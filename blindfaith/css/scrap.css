@@ -1,0 +1,36 @@
+.chalk-menu{
+	z-index:1000;
+	float:left;
+	position:fixed;
+	top:70px;
+	left:10px;
+	height:300px;
+	width:200px;
+	/*background-image: url('../img/chalkboard.png');*/
+	background-color:#12141C;
+	-webkit-box-shadow: 6px 6px 13px 0px rgba(50, 50, 50, 0.81);
+-moz-box-shadow:    6px 6px 13px 0px rgba(50, 50, 50, 0.81);
+box-shadow:         6px 6px 13px 0px rgba(50, 50, 50, 0.81);
+
+}
+
+.chalk-menu .vert-nav{
+	list-style:none;
+	margin-left:30px;
+	margin-top:25px;
+}
+
+.chalk-menu .vert-nav li{
+	font-family: 'Clicker Script', cursive;
+	color:#67d93b;
+	font-size:26px;
+	line-height:40px;
+
+}
+
+.chalk-menu .logo img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+}

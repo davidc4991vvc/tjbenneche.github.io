@@ -1,0 +1,217 @@
+/*css doc for musicians splash page*/
+
+
+body{
+	padding:0px;
+	margin:0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+video{
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url('../img/concert.jpg') no-repeat;
+	background-size: cover;
+}
+	.main-content{
+		width:100%;
+		height:100%;
+		background: rgba(56, 0, 115, .4);
+		margin:0px;
+		z-index:1000;
+		position:fixed;
+	}
+		.main-content #logo{
+			background-color:#fff;
+		}
+		.main-content #logo img{
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				width:2.5em;
+				margin-top:.5em;
+				margin-bottom:.5em;
+		}
+
+		.main-content #header{
+			color:#fff;
+			padding:0em;
+			margin-left:1em;
+			margin-top:5em;
+			position:relative;
+		}
+			.main-content #header h1{
+				margin:0em;
+				font-size:4.5em;
+			}
+			.main-content #header h1:nth-child(1){
+				background: rgba(0, 176, 209, .4);
+				width:95%;
+			}
+			.main-content #header h1:nth-child(2){
+				background-color:transparent;
+				width:85%;
+			}
+			.main-content #header h1:nth-child(3){
+				background-color: rgba(255, 255, 255, .4);
+				color: rgba(0, 176, 209, 1);
+				width:75%;
+			}
+				.main-content #subcontent .info-pane p{
+					font-size:1.8em;
+					text-align: justify;
+					font-style:italic;
+					color:#fff;
+					width:90%;
+					margin-top:1em;
+					margin-left:auto;
+					margin-right:auto;
+				}
+				.main-content #subcontent .info-pane p:nth-child(1){
+					
+				}
+				.main-content #subcontent .info-pane p:nth-child(2){
+				
+				}
+				.main-content #subcontent .info-pane .input-field{
+					color:#fff;
+					margin-top:3em;
+					text-align:center;
+				}
+					.main-content #subcontent .info-pane .input-field h2{
+						font-weight:lighter;
+					}
+					.main-content #subcontent .info-pane #arrow-svg{
+						display:block;
+						margin-left:auto;
+						margin-right:auto;
+						margin-top:3em;
+					}
+
+
+.mockup{
+	display:none;
+}
+	
+#page-two{
+	width:100%;
+	height:100%;
+	/*background: rgba(255, 255, 255, 1);*/
+	background-image: url('../img/prof-pic.png');
+	margin:0px;
+	z-index:2000;
+	position:fixed;
+	visibility:hidden;
+}
+	#page-two #social-icons #youtube, #sound, #twitter, #bands{
+		background: rgba(0,0,0, .4);
+		margin: .5em;
+		height:10em;
+		padding-top:2em;
+	}
+
+	#page-two .artist-info{
+		color:#fff;
+		font-weight:lighter;
+		margin-left:1.5em;
+	}
+	#page-two .artist-info #artist-name{
+		font-size:2em;
+		visibility: hidden;
+	}
+		#page-two .artist-info #artist-name h3:nth-child(2){
+			margin-top:.5em;
+		}
+	#page-two .artist-info #artist-title{
+		font-size: 1em;
+		visibility: hidden;
+	}
+
+	#page-two #social-icons{
+		margin-top:8em;
+		visibility:hidden;
+	}
+		#page-two #social-icons img{
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			height:4em;
+		}
+		#page-two #social-icons p{
+			text-align:center;
+			color:#fff;
+			font-weight:lighter;
+			font-size:1.5em;
+			margin-top:.5em
+		}
+
+
+
+@media (min-width: 768px){
+
+}
+@media (min-width: 992px){
+	
+		.main-content #header{
+			color:#fff;
+			padding:0em;
+			margin-left:15em;
+			margin-top:15em;
+			position:relative;
+		}
+			.main-content #header h1{
+				margin:0em;
+				font-size:6em;
+			}
+			.main-content #header h1:nth-child(1){
+				background-color: orange;
+				width:80%;
+			}
+			.main-content #header h1:nth-child(2){
+				background-color:transparent;
+				width:65%;
+			}
+			.main-content #header h1:nth-child(3){
+				background-color:white;
+				color:orange;
+				width:50%;
+			}
+		.main-content #subcontent{
+			margin-top:4em;
+		}
+			.main-content #subcontent .info-pane{
+				color:white;
+			}
+				.main-content #subcontent .info-pane p{
+					
+					font-size:1.5em;
+					text-align: justify;
+					font-style:italic;
+				}
+				.main-content #subcontent .info-pane .input-field{
+					color:#262261;
+					margin:25px 0px;
+					width:250px;
+					background: rgba(255, 255, 255, 1);
+				}
+					.main-content #subcontent .info-pane .input-field h2{
+						font-weight:lighter;
+						margin-left:10px;
+						font-size:1.4em;
+					}
+				.main-content #subcontent .info-pane a{
+					color:#fff;
+					background-color:#262261;
+					font-weight:lighter;
+					padding:10px 10px;
+					font-size:1.8em;
+				}
+				.main-content #subcontent .mockup img{
+					width:75%;
+				}
+	
+}
+@media (min-width: 1200px){
+	
+}
