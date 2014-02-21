@@ -1,4 +1,4 @@
-/*css doc for musicians splash page*/
+jdd/*css doc for musicians splash page*/
 
 
 body{
@@ -38,12 +38,12 @@ video{
 			color:#fff;
 			padding:0em;
 			margin-left:1em;
-			margin-top:5em;
+			margin-top:3em;
 			position:relative;
 		}
 			.main-content #header h1{
 				margin:0em;
-				font-size:4.5em;
+				font-size:4em;
 			}
 			.main-content #header h1:nth-child(1){
 				background: rgba(0, 176, 209, .4);
@@ -58,15 +58,19 @@ video{
 				color: rgba(0, 176, 209, 1);
 				width:75%;
 			}
-				.main-content #subcontent .info-pane p{
+				.main-content #subcontent .info-pane p:nth-child(1){
 					font-size:1.8em;
-					text-align: justify;
 					font-style:italic;
 					color:#fff;
 					width:90%;
 					margin-top:1em;
-					margin-left:auto;
-					margin-right:auto;
+				}
+				.main-content #subcontent .info-pane p:nth-child(2){
+					margin-top:.2em;
+					font-size:1.8em;
+					font-style:italic;
+					color:#fff;
+					width:90%;
 				}
 				.main-content #subcontent .info-pane p:nth-child(1){
 					
@@ -74,19 +78,18 @@ video{
 				.main-content #subcontent .info-pane p:nth-child(2){
 				
 				}
-				.main-content #subcontent .info-pane .input-field{
-					color:#fff;
-					margin-top:3em;
-					text-align:center;
-				}
-					.main-content #subcontent .info-pane .input-field h2{
+	
+					.main-content #subcontent .info-pane h2{
 						font-weight:lighter;
+						color:#fff;
+						margin-top:1em;
+						text-align:center;
 					}
 					.main-content #subcontent .info-pane #arrow-svg{
 						display:block;
 						margin-left:auto;
 						margin-right:auto;
-						margin-top:3em;
+						margin-top:1em;
 					}
 
 
