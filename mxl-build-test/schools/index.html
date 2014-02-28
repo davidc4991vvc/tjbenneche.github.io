@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery.js"></script> 
+	</head>
+	<body>
+	<video src='./vid/school.mp4' loop></video>
+		<div class="main-content">
+			
+			<div class="info-pane">
+				<h1>Connect With Your Fans</h1>
+				<p>Mobile X Labs gives musicians the ability to build their own mobile app without writing a single line of code. With a mobile app, you will have a new platform to grow your fan base, engage with current followers, and monetize your following!</p>
+				<!-- <div class="container-fluid">
+					<div class="row" id="pricing-cards">
+						<div class="card col-lg-4 col-md-4" id="free">
+							<a href="#"><div class="card-top" >
+								<h4>Free</h4>
+								<p>Ideal for smaller audiences</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-md-4" id="basic">
+							<a href="#"><div class="card-top" >
+								<h4>Plus</h4>
+								<p>Unlimited modules for incredible functionality</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-md-4" id="pro">
+							<a href="#"><div class="card-top" >
+								<h4>Pro</h4>
+								<p>Access to VIP customer service</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="input-field">
+					<h2>Your Name</h2>
+				</div>
+				<div class="input-field">
+					<h2>Email Address</h2>
+				</div>
+				<a href="#">Get Started</a>
+			</div>
+			<div class="container-fluid">
+				<div class="row" id="logo">
+					<div class="col-lg-2 col-lg-offset-8">
+						<img id="mxl-logo" src="./img/mxl_logo_vert.svg" alt="MXL">
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<script>
+		$('#free > a').on('click', function(){
+	event.preventDefault();
+	$('#free > .plan-info').toggle('slow');
+});
+
+$('#basic > a').on('click', function(){
+	event.preventDefault();
+	$('#basic > .plan-info').toggle('slow');
+});
+$('#pro > a').on('click', function(){
+	event.preventDefault();
+	$('#pro > .plan-info').toggle('slow');
+});
+</script>
+<script>
+var v = document.getElementsByTagName("video")[0];
+v.play();
+</script
+
+	</body>
+</html>

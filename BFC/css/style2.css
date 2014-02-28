@@ -1,0 +1,245 @@
+/*Stylesheet for Blind Faith Cafe site*/
+
+/*css doc to sit on top of bootstrap*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*Body*/
+
+a:hover{
+	text-decoration: none;
+
+}
+
+.carousel-indicators{
+	display:none;
+}
+
+.carousel-control{
+	display:none;
+}
+
+
+/*Navbar*/
+
+.navbar{
+	background-color:#fff;
+	height:40px;
+}
+	.navbar .container-fluid{
+		background-color: #fff;
+		height:inherit;
+	}
+		.navbar .container-fluid #bfc-logo{
+			display:none;
+		}
+		.navbar .container-fluid .navbar-brand{
+			padding: 8px 15px;
+		}
+				.navbar .container-fluid .navbar-collapse .nav .active > a{
+					background-color:transparent;
+				}
+				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
+					background-color:transparent;
+				}
+				.navbar .navbar-header .navbar-brand #bfc-icon{
+					display:block;
+					width:30%;
+				}
+			.navbar .container-fluid .navbar-collapse .nav .spacer{
+				display:none;
+			}
+			.navbar .container-fluid .navbar-collapse .nav li a{
+				color:#18692D;
+			}
+			.navbar .container-fluid .navbar-collapse {
+				background-color: #fff;
+			}
+/*Navbar end*/
+
+
+.carousel .item img{
+	width:100%;
+}
+
+/*Main Content*/
+
+.main-content{
+	padding: 50px 50px;
+	background-color:#72CF7C;
+}
+
+
+ #picture-slider .carousel .item .carousel-caption{
+	top:45%;
+	text-align:left;
+	left:10%;
+}
+#picture-slider .carousel .item .carousel-caption h3{
+	font-size:2em;
+}
+#picture-slider .carousel .item .carousel-caption p{
+	font-size:1em;
+	font-weight:lighter;
+}
+
+#picture-slider .carousel .item .color-overlay{
+	position:absolute;
+	top:50%;
+	left:0;
+	height:50%;
+	width:100%;
+	z-index:9;
+	background: rgba(205, 95, 74, .4);
+}
+
+.row div #reservation-hover, #delivery-hover, #giftcard-hover{
+	width:90%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	fill: #18692D;
+	/*background-color:#12141C;*/
+	border: 3px dashed #fff;
+	/*background: rgba(146, 171, 89, 1);*/
+	/*border-radius: 10px 10px;*/
+}
+#action-buttons .container-fluid .sub-section svg{
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+}
+#action-buttons .container-fluid .sub-section h3{
+	text-align: center;
+	color:#18692D;
+}
+
+
+
+/*Footer*/
+
+.footer{
+	background-color:#262261;
+	color:white;
+	height:100px;
+}
+	.footer ul{
+		list-style: none;
+	}
+
+/*Footer End*/
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+/*Navbar*/
+
+.navbar{
+	height:40px;
+}
+	.navbar .container-fluid{
+		height:inherit;
+		width:800px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+			
+		
+/*Navbar ends*/
+
+
+
+#picture-slider .carousel .item .carousel-caption h3{
+	font-size:2.8em;
+}
+#picture-slider .carousel .item .carousel-caption p{
+	font-size:2.8em;
+}
+			
+#picture-slider .carousel .item .color-overlay{
+	position:absolute;
+	top:45%;
+	left:0;
+	height:25%;
+	width:100%;
+	z-index:9;
+}
+
+.row div #reservation-hover, #delivery-hover, #giftcard-hover{
+	width:70%;
+}
+
+#about-us{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+/*Navbar*/
+
+.navbar{
+	height:100px;
+	font-size:20px;
+}
+	.navbar .container-fluid{
+		height:inherit;
+	}
+		.navbar .container-fluid .navbar-brand{
+			width:100%;
+			display:none;
+		}
+		.navbar .container-fluid #big-logo{
+			display:block;
+		}
+
+		.navbar .contiainer-fluid .navbar-header .navbar-brand #bfc-icon{
+			display:none;
+		}
+		.navbar .container-fluid #bfc-logo{
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.navbar .container-fluid .navbar-collapse .nav .spacer{
+				display:block;
+				visibility:hidden;
+			}
+
+/*Navbar ends*/
+
+
+#picture-slider .carousel .item .carousel-caption h3{
+	font-size:3.5em;
+}
+#picture-slider .carousel .item .carousel-caption p{
+	font-size:2.8em;
+
+}
+
+
+}
+
+
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+/*Navbar*/
+
+
+/*Navbar ends*/
+
+
+
+}

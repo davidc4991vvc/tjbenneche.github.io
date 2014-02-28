@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>MXLBuild</title>
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery.js"></script> 
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mxl-topnav">
+						<span class="sr-only">Toggle nav</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img id="mxl-logo-icon" src="./img/mxlbuild-logo-icon.svg" alt="MXL">
+					</a>
+				</div>
+				<img id="mxl-logo-icon-center" src="./img/mxlbuild-logo-icon.svg" alt="MXL">
+				<a class="navbar-brand" id="big-logo" href="#"><img id="mxl-logo" src="./img/mxlbuild-logo.svg" alt="MXL"></a>
+				<div class="collapse navbar-collapse" id="mxl-topnav">
+					<ul class="nav navbar-nav">
+						<!-- <li class="active"><a href="#">Home</a></li> -->
+						<li><a href="#assets">Tools</a></li>
+						<li><a href="#personas">Use Cases</a>
+						<li><a href="#instructions">Demo</a></li>
+						<li><a href="#press">Press</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main-content">
+			<div class="content-pane" id="about">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-7 col-md-7 col-lg-7">
+							<div id="brand-copy">
+								<h1>Build an app without writing code</h1>
+								<p>Use our app builder to create beautiful, custom apps that work across all platforms, all in a matter of minutes.</p>
+								<a href="#">Get Started</a>
+							</div>
+						</div>
+						<div class="col-sm-5 col-md-5 col-lg-5">
+							<div id="phone-mock">
+								<img src="./musicians/img/iphone-gold.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#assets">
+					<svg version="1.1" class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 fill="#fff" width="2em" height="2em" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+					<g>
+						<path d="M36,67.75C18.493,67.75,4.25,53.507,4.25,36S18.493,4.25,36,4.25S67.75,18.493,67.75,36S53.507,67.75,36,67.75z M36,7.25
+							C20.147,7.25,7.25,20.147,7.25,36c0,15.853,12.897,28.75,28.75,28.75S64.75,51.853,64.75,36C64.75,20.147,51.853,7.25,36,7.25z"/>
+					</g>
+					<g>
+						<polygon points="35.998,49.153 17.117,31.087 19.191,28.919 35.998,45.001 52.809,28.919 54.883,31.087 	"/>
+					</g>
+					</svg>
+				</a>
+							
+			</div>
+			<div class="content-pane" id="assets">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-lg-4 col-md-4 asset-box">
+							<h2>Build</h2>
+							<div id="features-box">
+							</div>
+						</div>
+						<div class="col-sm-8 col-lg-8 col-md-8">
+							<div id="features">
+								<h3>This will be a heading</h3>
+								<p>This is where some copy will go to talk about each section</p>
+								<p>This is where some copy will go to talk about each section</p>
+							</div>
+						</div>
+					</div>
+					<canvas id="left-arrow-1">
+					</canvas>
+					<div class="row">
+						<div class="col-sm-8 col-lg-8 col-md-8 asset-box">
+							<div id="mktg">
+								<h3>This will be a heading</h3>
+								<p>This is where some copy will go to talk about each section</p>
+								<p>This is where some copy will go to talk about each section</p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-4 col-md-4 asset-box">
+							<h2>Engage</h2>
+							<div id="mktg-box">
+							</div>
+						</div>
+					</div>
+					<canvas id="right-arrow-1">
+					</canvas>
+					<div class="row">
+						<div class="col-sm-4 col-lg-4 col-md-4 asset-box">
+							<h2>Grow</h2>
+							<div id="analytics-box">
+							</div>
+						</div>
+						<div class="col-sm-8 col-lg-8 col-md-8">
+							<div id="analytics">
+								<h3>This is where a heading will go</h3>
+								<p>This is where some copy will go to talk about each section</p>
+								<p>This is where some copy will go to talk about each section</p>
+							</div>
+						</div>
+					</div>
+					<canvas id="left-arrow-2">
+					</canvas>
+					<div class="row">
+						<div class="col-sm-8 col-lg-8 col-md-8 asset-box">
+							<div id="thirdparty">
+								<h3>This is where a header will go</h3>
+								<p>This is where some copy will go to talk about each section</p>
+								<p>This is where some copy will go to talk about each section</p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4 asset-box">
+							<h2>Monetize</h2>
+							<div id="thirdparty-box">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-pane" id="personas">
+				<div class="app-array container-fluid">
+					<div id="persona-header">
+						<h1>Apps for Everyone</h1>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-lg-4 col-md-4 persona">
+							<div class="user-avatar">
+								<img src="./img/musician.png" alt="bbmg app">
+							</div>
+							<div class="user-name">
+								<h3>Musician</h3>
+							</div>
+							<div class="user-info">
+								<p>Mumblecore cornhole accusamus nostrud PBR ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress. Ennui enim High Life, consequat ethnic assumenda direct trade. Blue Bottle irure assumenda, Odd Future .</p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-4 col-md-4 persona">
+							<div class="user-avatar">
+								<img src="./img/small-biz.png" alt="bbmg app">
+							</div>
+							<div class="user-name">
+								<h3>Small Biz</h3>
+							</div>
+							<div class="user-info">
+								<p>Mumblecore cornhole accusamus nostrud PBR ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress. Ennui enim High Life, consequat ethnic assumenda direct trade. Blue Bottle irure assumenda, Odd Future </p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-4 col-md-4 persona">
+							<div class="user-avatar">
+								<img src="./img/school.png" alt="bbmg app">
+							</div>
+							<div class="user-name">
+								<h3>Student</h3>
+							</div>
+							<div class="user-info">
+								<p>Mumblecore cornhole accusamus nostrud PBR ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress. Ennui enim High Life, consequat ethnic assumenda direct trade. Blue Bottle irure assumenda, Odd Future .</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#instructions">
+					<svg version="1.1" class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 fill="#fff" width="2em" height="2em" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+					<g>
+						<path d="M36,67.75C18.493,67.75,4.25,53.507,4.25,36S18.493,4.25,36,4.25S67.75,18.493,67.75,36S53.507,67.75,36,67.75z M36,7.25
+							C20.147,7.25,7.25,20.147,7.25,36c0,15.853,12.897,28.75,28.75,28.75S64.75,51.853,64.75,36C64.75,20.147,51.853,7.25,36,7.25z"/>
+					</g>
+					<g>
+						<polygon points="35.998,49.153 17.117,31.087 19.191,28.919 35.998,45.001 52.809,28.919 54.883,31.087 	"/>
+					</g>
+					</svg>
+				</a>
+			</div>
+
+			
+			<div class="content-pane" id="instructions">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					    	<div class="container-fluid">
+					    		<div class="row">
+					    			<div class="col-sm-4 col-lg-4 col-md-4">
+								      <h2>Basic Information</h2>
+								      <p>Give your app a name</p>
+								      <p>Choose an icon</p>
+								      <p>Give it a description</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								 
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_1a.png" alt="...">
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_1b.png" alt="...">
+								    </div>
+								</div>
+							</div>
+					      <!-- <div class="carousel-caption">
+					        <h3>The basics</h3>
+					        <p>Give your app a name, icon, and description</p>
+					      </div> -->
+					    </div>
+					    <div class="item">
+					      <div class="container-fluid">
+					    		<div class="row">
+					    			<div class="col-sm-4 col-lg-4 col-md-4">
+								      <h2>Customize it</h2>
+								      <p>Choose from various layouts</p>
+								      <p>Pick a color scheme</p>
+								      <p>Upload a picture</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								 
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_2a.png" alt="...">
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_2b.png" alt="...">
+								    </div>
+								</div>
+							</div>
+					      <!-- <div class="carousel-caption">
+					        <h3>Customize it</h3>
+					        <p>Play around with style and layout</p>
+					      </div> -->
+					    </div>
+					    <div class="item">
+					      <div class="container-fluid">
+					    		<div class="row">
+					    			<div class="col-sm-4 col-lg-4 col-md-4">
+								      <h2>Scan your site</h2>
+								      <p>Easily import social media</p>
+								      <p>Take your followers with you</p>
+								      <p>Connect with fbook and twitter</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								     
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_3a.png" alt="...">
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_3b.png" alt="...">
+								    </div>
+								</div>
+							</div>
+					      <!-- <div class="carousel-caption">
+					        <h3>Scan your site</h3>
+					        <p>Import social media from your current site</p>
+					      </div> -->
+					    </div>
+					    <div class="item">
+					      <div class="container-fluid">
+					    		<div class="row">
+					    			<div class="col-sm-4 col-lg-4 col-md-4">
+								      <h2>More add-ons</h2>
+								      <p>Browse various 3rd party plugins</p>
+								      <p>Choose what you like</p>
+								      <p>Integrate with your app</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								  
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_4a.png" alt="...">
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_4b.png" alt="...">
+								    </div>
+								</div>
+							</div>
+					      <!-- <div class="carousel-caption">
+					        <h3>More content</h3>
+					        <p>Add in tools/features from our various offerings</p>
+					      </div> -->
+					    </div>
+					    <div class="item">
+					      <div class="container-fluid">
+					    		<div class="row">
+					    			<div class="col-sm-4 col-lg-4 col-md-4">
+								      <h2>Test it</h2>
+								      <p>Test your app live on your phone</p>
+								      <p>Show your friends</p>
+								      <p>Make changes if you need</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								      <p>More instructions</p>
+								   
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_5a.png" alt="...">
+								    </div>
+								    <div class="col-sm-4 col-lg-4 col-md-4">
+								      <img src="./img/demo/Build_Step_5b.png" alt="...">
+								    </div>
+								</div>
+							</div>
+					      <!-- <div class="carousel-caption">
+					        <h3>Test it</h3>
+					        <p>See how your app looks, right from your phone!</p>
+					      </div> -->
+					    </div>
+					    
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					</div>
+				
+			</div>
+			<div class="content-pane" id="press">
+				<div class="container-fluid">
+					<div class="row">
+						<div id="press-icon-row">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+								<img src='./img/press/BIC_Logo.png' alt="company">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+								<img src='./img/press/EliteDaily_Logo.jpg' alt="company">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+								<img src='./img/press/MarkCubanCo_Logos.png' alt="company">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+								<img src='./img/press/Mashable_Logo.png' alt="company">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+								<img src='./img/press/Tech_Cocktail_Logo.png' alt="company">
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+								<img src='./img/press/Techweek_Logo.png' alt="company">
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="container-fluid">
+					<div class="row" id="press-quotes">
+						<h4>"This is an example of a snippet quote from a press article about MobileX Labs."</h4>
+						<p class="press-outlet-name">TechCrunch</p>
+						<h4>"This is an example of a snippet quote from a press article about MobileX Labs."</h4>
+						<p class="press-outlet-name">TechCrunch</p>
+						<h4>"This is an example of a snippet quote from a press article about MobileX Labs."</h4>
+						<p class="press-outlet-name">TechCrunch</p>
+					</div>
+				</div>
+			</div>
+			<div class="content-pane" id="pricing">
+				<div class="container-fluid">
+					<h1>Pricing Plans</h1>
+					<div class="row" id="pricing-cards">
+						<div class="card col-sm-4 col-lg-4 col-md-4" id="free">
+							<div class="small-card">
+							<a href="#"><div class="card-top" >
+								<h4>Free</h4>
+								<p>Ideal for smaller audiences</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+							</div>
+						</div>
+						<div class="card col-sm-4 col-lg-4 col-md-4" id="basic">
+							<a href="#"><div class="card-top" >
+								<h4>Plus</h4>
+								<p>Unlimited modules for incredible functionality</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card col-sm-4 col-lg-4 col-md-4" id="pro">
+							<div class="small-card">
+							<a href="#"><div class="card-top" >
+								<h4>Pro</h4>
+								<p>Access to VIP customer service</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-pane" id="contact">
+				<div class="container-fluid">
+					<h1>Contact Info</h1>
+					<div class="row">
+						<div class="col-sm-7 col-lg-7 col-md-7" >
+							<h2>Ask us a question</h2>
+							<div id="contact-form">
+								<form role="form">
+								  <div class="form-group">
+								   
+								    <input type="text" class="form-control" id="name-input" placeholder="Enter full name">
+								  </div>
+								  <div class="form-group">
+								    
+								    <input type="email" class="form-control" id="email-input" placeholder="Enter email">
+								  </div>
+								  <textarea class="form-control" rows="3" placeholder="Leave us a comment"></textarea>
+								  <button type="submit" class="btn btn-default">Submit</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-sm-5 col-lg-5 col-md-5">
+							<div  id="contact-boxes">
+								<h3>Office Address</h3>
+								<div class="contact-box">
+									<p>Mumblecore cornhole accusamus nostrud PBR&B ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress.</p>
+								</div>
+								<h3>Email Address</h3>
+								<div class="contact-box">
+									<p>Mumblecore cornhole accusamus nostrud PBR&B ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress.</p>
+								</div>
+								<h3>Social Media</h3>
+								<div class="contact-box">
+									<p>Mumblecore cornhole accusamus nostrud PBR&B ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-xs-4" id="subnav">
+						<ul>
+							<li>Build</li>
+							<li>Work here</li>
+							<li>Contact Us</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-xs-4" id="social-icons">
+						<ul>
+							<li><img src="http://placehold.it/30x30" alt="facebook"></li>
+							<li><img src="http://placehold.it/30x30" alt="linkedin"></li>
+							<li><img src="http://placehold.it/30x30" alt="maps"></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-xs-4" id="copyright">
+						<p>&#169; 2013 Mobile X Labs</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/mxl.js"></script>
+		<script src="./js/canvas.js"></script>
+		<script>
+
+
+	$(window).on('load', function(){
+		if ($(window).width() > 991){
+
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						$('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						$('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show();					}
+				});
+			});
+		}
+	});
+if($('#mxl-logo-icon-center')){
+	$( ".navbar" ).hover(
+  function() {
+    $('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show(); 
+  }, function() {
+    $('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+  }
+);
+}
+	
+
+	$(window).on('resize', function(){
+		if ($(window).width() > 991){
+
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						$('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						$('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show();					}
+				});
+			});
+		}
+	});
+
+</script>
+	</body>
+</html>

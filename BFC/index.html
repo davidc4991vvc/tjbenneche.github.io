@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery.js"></script> 
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mxl-topnav">
+						<span class="sr-only">Toggle nav</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img id="mxl-logo-icon" src="./img/mxl-logo-icon.svg" alt="MXL">
+					</a>
+				</div>
+				<img id="mxl-logo-icon-center" src="./img/mxl-logo-icon.svg" alt="MXL">
+				<a class="navbar-brand" id="big-logo" href="#"><img id="mxl-logo" src="./img/mxl_logo_vert.svg" alt="MXL"></a>
+				<div class="collapse navbar-collapse" id="mxl-topnav">
+					<ul class="nav navbar-nav">
+						<!-- <li class="active"><a href="#">Home</a></li> -->
+						<li><a href="#">Menus</a></li>
+						<li><a href="#">Story</a></li>
+						<li class="spacer"><p>Spacer</p></li>
+						<li class="spacer"><p>Spacer</p></li>
+						<li class="spacer"><p>Spacer</p></li>
+						<li class="spacer"><p>Spacer</p></li>
+						<li class="spacer"><p>Spacer</p></li>
+						<li><a href="#">Events &amp; Catering</a>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main-content">
+			<div class="content-pane" id="about">
+				<h1>Build an app without writing code</h1>
+				<p>Use our app builder to create beautiful, custom apps that work across all platforms, all in a matter of minutes.</p>
+				<a href="#">Get Started</a>
+			</div>
+			<div class="content-pane" id="previous-apps">
+				<div class="app-array container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-sm-4">
+							<img src="./img/apps/bbmg_app.png" alt="bbmg app">
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<img src="./img/apps/bike_race_app.png" alt="bike race app">
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<img src="./img/apps/gorilla_zoe_app.png" alt="gorilla zoe app">
+						</div>
+					</div>
+				</div>
+				<h1>Apps our users have made</h1>
+				<div class="app-array container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-sm-4">
+							<img src="./img/apps/riqu3_app.png" alt="riqu3 app">
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<img src="./img/apps/stoffer_app.png" alt="stoffer app">
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<img src="./img/apps/ultra_app.png" alt="ultra app">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-pane" id="previous-apps-mobile">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <img src="./img/apps/bbmg_app.png" alt="...">
+				      <div class="carousel-caption">
+				        <h3>BBMG App</h3>
+				        <p>Details about the app</p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="./img/apps/bike_race_app.png" alt="...">
+				      <div class="carousel-caption">
+				        <h3>Bike Race App</h3>
+				        <p>Details about bike race app</p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="./img/apps/gorilla_zoe_app.png" alt="...">
+				      <div class="carousel-caption">
+				        <h3>Gorilla Zoe</h3>
+				        <p>Details about gorilla zoe</p>
+				      </div>
+				    </div>
+				    
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div>
+			</div>
+			<div class="content-pane" id="assets-mobile">
+				<a href="#"><div>
+					<h2>Features</h2>
+				</div></a>
+				<a href="#"><div>
+					<h2>Marketing Tools</h2>
+				</div></a>
+				<a href="#"><div>
+					<h2>Analytics Tools</h2>
+				</div></a>
+				<a href="#"><div>
+					<h2>3rd Party Integration</h2>
+				</div></a>
+			</div>
+			<div class="content-pane" id="assets-desktop">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 left">
+							<a href="#"><div class="left-box" id="small-features">
+								<h2>Features</h2>
+							</div></a>
+							<a href="#"><div class="left-box" id="small-marketing">
+								<h2>Marketing Tools</h2>
+							</div></a>
+							<a href="#"><div class="left-box" id="small-analytics">
+								<h2>Analytics Tools</h2>
+							</div></a>
+							<a href="#"><div class="left-box" id="small-3rdparty">
+								<h2>Third Party Integration</h2>
+							</div></a>
+						</div>
+						<div class="col-lg-8 right">
+							<a href="#"><div class="right-box" id="big-features">
+								<h2>Features</h2>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<a href="#"><div class="right-box" id="big-marketing">
+								<h2>Marketing Tools</h2>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<a href="#"><div class="right-box" id="big-analytics">
+								<h2>Analytics Tools</h2>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<a href="#"><div class="right-box" id="big-3rdparty">
+								<h2>Third Party Integration</h2>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+										<div class="col-lg-3">
+											<img src="./img/social/twitter.png" alt="twitter">
+										</div>
+									</div>
+								</div>
+							</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-pane" id="technicalities">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <img src="http://placehold.it/1200x600" alt="...">
+				      <div class="carousel-caption">
+				        <h3>Create</h3>
+				        <p>Make a custom app with our builder</p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="http://placehold.it/1200x600" alt="...">
+				      <div class="carousel-caption">
+				        <h3>Submit</h3>
+				        <p>Submit app for review and approval</p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="http://placehold.it/1200x600" alt="...">
+				      <div class="carousel-caption">
+				        <h3>Make tha Monay</h3>
+				        <p>Retain 80% of profits made from your app</p>
+				      </div>
+				    </div>
+				    
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div>
+			</div>
+			<div class="content-pane" id="pricing">
+				<div class="container-fluid">
+					<div class="row" id="pricing-cards">
+						<div class="card col-lg-4 col-md-4" id="free">
+							<a href="#"><div class="card-top" >
+								<h4>Free</h4>
+								<p>Ideal for smaller audiences</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-md-4" id="basic">
+							<a href="#"><div class="card-top" >
+								<h4>Plus</h4>
+								<p>Unlimited modules for incredible functionality</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-md-4" id="pro">
+							<a href="#"><div class="card-top" >
+								<h4>Pro</h4>
+								<p>Access to VIP customer service</p>
+							</div></a>
+							<div class="plan-info">
+								<ul class="plan-items">
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+									<li>test</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4" id="subnav">
+						<ul>
+							<li>Build</li>
+							<li>Work here</li>
+							<li>Contact Us</li>
+						</ul>
+					</div>
+					<div class="col-lg-4" id="social-icons">
+						<ul>
+							<li><img src="./img/social/fbook.png" alt="facebook"></li>
+							<!-- <li><img src="./img/social/twitter.png" alt="twitter"></li> -->
+							<li><img src="./img/social/linkedin.png" alt="linkedin"></li>
+							<li><img src="./img/social/maps.png" alt="maps"></li>
+						</ul>
+					</div>
+					<div class="col-lg-4" id="copyright">
+						<p>&#169; 2013 Mobile X Labs</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/bfc.js"></script>
+		<script>
+
+
+	$(window).on('load', function(){
+		if ($(window).width() > 991){
+
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						$('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						$('.navbar').css('height', '180px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show();					}
+				});
+			});
+		}
+	});
+
+	$(window).on('resize', function(){
+		if ($(window).width() > 991){
+
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						$('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  p').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						$('.navbar').css('height', '180px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show();					}
+				});
+			});
+		}
+	});
+
+</script>
+	</body>
+</html>

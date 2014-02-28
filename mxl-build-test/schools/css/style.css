@@ -1,0 +1,71 @@
+/*css doc for musicians splash page*/
+
+body{
+	/*background-image: url('../img/concert.jpg');*/
+	padding:0px;
+	margin:0px;
+}
+
+video{
+	width:100%;
+	float:left;
+}
+
+.main-content{
+	width:100%%;
+	height:1000px;
+	background: rgba(54, 110, 255, .4);
+	padding:0px;
+	margin:0px;
+	z-index:30000;
+	float:left;
+	position:absolute;
+}
+
+.main-content .info-pane{
+	/*background: rgba(54, 110, 255, .7);*/
+	float:left;
+	margin-top:20%;
+	margin-left:200px;
+	color:white;
+}
+
+.main-content .info-pane h1{
+	margin:0px;
+	padding:0px;
+	font-size:4em;
+}
+
+.main-content .info-pane p{
+	width:400px;
+	font-size:1.2em;
+	text-align: justify;
+	font-style:italic;
+	margin-top:10px;
+}
+
+.main-content #logo {
+	margin-top:60%;
+}
+
+.main-content .info-pane .input-field{
+	color:#262261;
+	margin:25px 0px;
+	width:250px;
+	background: rgba(255, 255, 255, 1);
+}
+
+.main-content .info-pane .input-field h2{
+	font-weight:lighter;
+	margin-left:10px;
+	font-size:1.4em;
+}
+
+.main-content .info-pane a{
+	color:#fff;
+	background-color:#262261;
+	font-weight:lighter;
+	padding:10px 10px;
+	font-size:1.8em;
+}
+
