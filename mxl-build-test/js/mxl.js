@@ -61,6 +61,55 @@ $('#pro .small-card a').on('click', function(){
 
 
 
+$('#engage-learn-button').on('click', function(){
+	event.preventDefault();
+	$('#engage-block').toggle('slow');
+	$('#engage-block-hidden').toggle('slow');
+	$('#engage-exit-button').toggle('slow');
+});
+$('#engage-exit-button').on('click', function(){
+	event.preventDefault();
+	$('#engage-block').toggle('slow');
+	$('#engage-block-hidden').toggle('slow');
+	$('#engage-exit-button').toggle('slow');
+});
+$('#build-learn-button').on('click', function(){
+	event.preventDefault();
+	$('#build-block').toggle('slow');
+	$('#build-block-hidden').toggle('slow');
+	$('#build-exit-button').toggle('slow');
+});
+$('#build-exit-button').on('click', function(){
+	event.preventDefault();
+	$('#build-block').toggle('slow');
+	$('#build-block-hidden').toggle('slow');
+	$('#build-exit-button').toggle('slow');
+});
+$('#grow-learn-button').on('click', function(){
+	event.preventDefault();
+	$('#grow-block').toggle('slow');
+	$('#grow-block-hidden').toggle('slow');
+	$('#grow-exit-button').toggle('slow');
+});
+$('#grow-exit-button').on('click', function(){
+	event.preventDefault();
+	$('#grow-block').toggle('slow');
+	$('#grow-block-hidden').toggle('slow');
+	$('#grow-exit-button').toggle('slow');
+});
+$('#monetize-learn-button').on('click', function(){
+	event.preventDefault();
+	$('#monetize-block').toggle('slow');
+	$('#monetize-block-hidden').toggle('slow');
+	$('#monetize-exit-button').toggle('slow');
+});
+$('#monetize-exit-button').on('click', function(){
+	event.preventDefault();
+	$('#monetize-block').toggle('slow');
+	$('#monetize-block-hidden').toggle('slow');
+	$('#monetize-exit-button').toggle('slow');
+});
+
 $(function() {
   $('a[href*=#]:not([href=#carousel-example-generic])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
