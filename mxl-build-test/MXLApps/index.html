@@ -4,8 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>MXLApps</title>
-		<link href="../css/bootstrap.css" rel="stylesheet">
-		<link href="../css/style.css" rel="stylesheet">
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/animations.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery.js"></script> 
 	</head>
 	<body>
@@ -19,38 +20,41 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#">
-						<img id="mxl-logo-icon" src="../img/mxl-logo-icon.svg" alt="MXL">
+						<img id="mxl-logo-icon" src="./img/logos/mxl-apps-logo-icon.svg" alt="MXL">
 					</a>
 				</div>
-				<img id="mxl-logo-icon-center" src="../img/mxl-logo-icon.svg" alt="MXL">
-				<a class="navbar-brand" id="big-logo" href="#"><img id="mxl-logo" src="../img/mxl-logo-horiz.svg" alt="MXL"></a>
+				<img id="mxl-logo-icon-center" src="./img/logos/mxl-apps-logo-icon.svg" alt="MXL">
+				<a class="navbar-brand" id="big-logo" href="#"><img id="mxl-logo" src="./img/logos/mxl-apps-logo.svg" alt="MXL"></a>
 				<div class="collapse navbar-collapse" id="mxl-topnav">
 					<ul class="nav navbar-nav">
 						<!-- <li class="active"><a href="#">Home</a></li> -->
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Builder</a></li>
-						<li><a href="#">Games</a></li>
-						<li><a href="#">Blog</a>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Press</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#">Login</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<video src='./vid/apps.mp4' loop></video>
 		<div class="main-content">
 			<div class="content-pane" id="about">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-6 col-md-6 col-lg-6">
 							<div id="brand-copy">
-								<h1>Games made by gamers, for gamers</h1>
-								<p>*enjoyed by all</p>
-								<a href="#">See our games!</a>
+								<h1>We've got a for-us, by-us mentality when it comes to apps</h1>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-6">
+							<div id="games">
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="#assets">
+				<a href="#portfolio">
 					<svg version="1.1" class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 fill="#fff" width="2em" height="2em" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
 					<g>
@@ -67,145 +71,41 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-3 col-md-3 col-lg-3 left">
-							<a href="#"><div class="left-box" id="small-features">
-								<h2>Game One</h2>
+							<a href="#"><div class="left-box" id="small-insta">
+								<div class="game-icon">
+									<img src="./img/apps/instaliker.png" alt="instaliker">
+								</div>
+								<h2>InstaLiker</h2>
 							</div></a>
-							<a href="#"><div class="left-box" id="small-marketing">
-								<h2>Game Two</h2>
-							</div></a>
-							<a href="#"><div class="left-box" id="small-analytics">
-								<h2>Game Three</h2>
-							</div></a>
-							<a href="#"><div class="left-box" id="small-3rdparty">
-								<h2>Game Four</h2>
+							<a href="#"><div class="left-box" id="small-kai">
+							<div class="game-icon">
+								<img src="./img/apps/kai.png" alt="kai">
+							</div>
+								<h2>Kai</h2>
 							</div></a>
 						</div>
 						<div class="col-sm-8 col-md-9 col-lg-9 right">
-							<a href="#"><div class="right-box" id="big-features">
-								<h2>Game One BIG</h2>
+							<a href="#"><div class="right-box" id="big-insta">
+								<h2>Instaliker</h2>
 							</div></a>
-							<a href="#"><div class="right-box" id="big-marketing">
-								<h2>Game Two BIG</h2>
-							</div></a>
-							<a href="#"><div class="right-box" id="big-analytics">
-								<h2>Game Three BIG</h2>
-							</div></a>
-							<a href="#"><div class="right-box" id="big-3rdparty">
-								<h2>Game Four BIG</h2>
+							<a href="#"><div class="right-box" id="big-kai">
+								<h2>Kai</h2>
 							</div></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			<div class="content-pane" id="press">
-				<div class="container-fluid">
-					<div class="row">
-						<div id="press-icon-row">
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-								<img src='http://placehold.it/100x100' alt="company">
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-								<img src='http://placehold.it/100x100' alt="company">
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-								<img src='http://placehold.it/100x100' alt="company">
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-								<img src='http://placehold.it/100x100' alt="company">
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-								<img src='http://placehold.it/100x100' alt="company">
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-								<img src='http://placehold.it/100x100' alt="company">
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr />
-				<div class="container-fluid">
-					<div class="row">
-						<div class="press-pic-row">
-							<div class="col-sm-4 col-lg-4 col-md-4">
-								<div class="press-pic" id="pic-one">
-									<img src='http://placehold.it/200x200' alt='picture'>
-								</div>
-							</div>
-							<div class="col-sm-4 col-lg-4 col-md-4">
-								<div id="test-one">
-									<p>"This is an example of a snippet quote from a press article about MobileX Labs."</p>
-									<p class="press-outlet-name">TechCrunch</p>
-								</div>
-								<div id="test-two">
-									<p>"This is an example of a snippet quote from a press article about MobileX Labs."</p>
-									<p class="press-outlet-name">TechCrunch</p>
-								</div>
-							</div>
-							<div class="col-sm-4 col-lg-4 col-md-4">
-								<div class="press-pic" id="pic-two">
-									<img src='http://placehold.it/200x200' alt='picture'>
-								</div>
-							</div>
-						</div>
-					</div>
-						<div class="press-pic-row">
-							<div class="row">
-								<div class="col-sm-4 col-lg-4 col-md-4">
-									<div class="press-pic" id="pic-three">
-										<img src='http://placehold.it/200x200' alt='picture'>
-									</div>
-								</div>
-								<div class="col-sm-4 col-lg-4 col-md-4">
-									<div id="test-three">
-									<p>"This is an example of a snippet quote from a press article about MobileX Labs."</p>
-									<p class="press-outlet-name">TechCrunch</p>
-								</div>
-								<div id="test-four">
-									<p>"This is an example of a snippet quote from a press article about MobileX Labs."</p>
-									<p class="press-outlet-name">TechCrunch</p>
-								</div>
-								</div>
-								<div class="col-sm-4 col-lg-4 col-md-4">
-									<div class="press-pic" id="pic-four">
-										<img src='http://placehold.it/200x200' alt='picture'>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-			</div>
+			
 			<div class="content-pane" id="contact">
 				<div class="container-fluid">
+					<h1>Any thoughts, questions, feedback?</h1>
 					<div class="row">
-						<div class="col-sm-6 col-lg-6 col-md-6" >
-							<div id="contact-form">
-								<form role="form">
-								  <div class="form-group">
-								    <label for="user name">Full Name</label>
-								    <input type="text" class="form-control" id="name-input" placeholder="Enter full name">
-								  </div>
-								  <div class="form-group">
-								    <label for="user email">Email</label>
-								    <input type="email" class="form-control" id="email-input" placeholder="Enter email">
-								  </div>
-								  <textarea class="form-control" rows="3"></textarea>
-								  <button type="submit" class="btn btn-default">Submit</button>
-								</form>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-6 col-md-6">
-							<div  id="contact-boxes">
-								<div class="contact-box">
-									<p>Mumblecore cornhole accusamus nostrud PBR&B ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress.</p>
-								</div>
-								<div class="contact-box">
-									<p>Mumblecore cornhole accusamus nostrud PBR&B ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress.</p>
-								</div>
-								<div class="contact-box">
-									<p>Mumblecore cornhole accusamus nostrud PBR&B ennui, mollit Shoreditch letterpress bitters authentic proident food truck narwhal. Hoodie bitters quinoa do letterpress.</p>
-								</div>
-							</div>
+						<div id="contact-form">
+							<form role="form">
+							  <textarea class="form-control" rows="3" placeholder="Leave us a comment"></textarea>
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -215,32 +115,28 @@
 	<div class="footer">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-xs-4" id="subnav">
-						<ul>
-							<li>Build</li>
-							<li>Work here</li>
-							<li>Contact Us</li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-4" id="social-icons">
-						<ul>
-							<li><img src="http://placehold.it/30x30" alt="facebook"></li>
-							<li><img src="http://placehold.it/30x30" alt="linkedin"></li>
-							<li><img src="http://placehold.it/30x30" alt="maps"></li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-4" id="copyright">
-						<p>&#169; 2013 Mobile X Labs</p>
-					</div>
+					<a href="../MXLBuild/index.html"><div class="col-lg-4 col-md-4 col-xs-4" id="footer-left">
+						<img src="./img/logos/mxl-build-text-color.svg" alt="mxl build">
+					</div></a>
+					<a href="../index.html"><div class="col-lg-4 col-md-4 col-xs-4" id="footer-center">
+						<img src="./img/logos/mxl-text-color.svg" alt="mxl">
+					</div></a>
+					<a href="../MXLGames/index.html"><div class="col-lg-4 col-md-4 col-xs-4" id="footer-right">
+						<img src="./img/logos/mxl-games-text-color.svg" alt="mxl games">
+					</div></a>
 				</div>
 			</div>
 		</div>
 
 
-
+		<script>
+			var v = document.getElementsByTagName("video")[0];
+			v.play();
+			v.playbackRate= 1;
+		</script>
 		
-		<script src="../js/bootstrap.js"></script>
-		<script src="../js/mxl.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/apps.js"></script>
 		<script>
 
 

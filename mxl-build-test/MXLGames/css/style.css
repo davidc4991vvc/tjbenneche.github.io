@@ -1,0 +1,624 @@
+/*css doc to sit on top of bootstrap*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*Body*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+h1, h2, h3, h4{
+	font-weight:200;
+}
+p, li, a{
+	font-weight:400;
+}
+
+
+a:hover{
+	text-decoration: none;
+
+}
+.carousel-control.right{
+	background-image:none;
+}
+.carousel-control.left{
+	background-image:none;
+}
+	.carousel-control.right .glyphicon-chevron-right{
+		right:0;
+	}
+	.carousel-control.left .glyphicon-chevron-left{
+		left:0;
+	}
+
+video{
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	
+	background-size: cover;
+}
+
+
+/*Navbar*/
+
+.navbar{
+	background-color:#fff;
+	height:40px;
+	z-index:10000;
+}
+	.navbar .container-fluid{
+		background-color: #fff;
+		height:40px;
+		z-index:10000;
+	}
+		.navbar .container-fluid #big-logo{
+			display:none;
+		}
+		.navbar .container-fluid #mxl-logo{
+			display:none;
+		}
+		.navbar .container-fluid #mxl-logo-icon-center{
+			display:none;
+		}
+		.navbar .container-fluid .navbar-brand{
+			padding: 8px 15px;
+		}
+		.navbar .container-fluid .navbar-collapse{
+			background-color: #fff;
+			z-index:1000;
+		}
+		.navbar .container-fluid .navbar-collapse .nav{
+			z-index:1000;
+		}
+				.navbar .container-fluid .navbar-collapse .nav .active > a{
+					background-color:transparent;
+				}
+				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
+					background-color:transparent;
+				}
+				.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+					display:block;
+					width:100%;
+				}
+			.navbar .container-fluid .navbar-collapse .nav .spacer{
+				display:none;
+			}
+			.navbar .container-fluid .navbar-collapse .nav li a{
+				font-size:1.4em;
+			}
+/*Navbar end*/
+
+
+/*Main Content*/
+
+.main-content{
+	padding-top:50px;
+	background-color: transparent;
+}
+	.main-content  .content-pane{
+		text-align:center;
+	}
+
+
+/*About Pane*/
+
+	.main-content #about{
+		background-color:#262261;
+		background: rgba(241, 90, 41, .8);
+		height:400px;
+		color:#fff;
+		z-index:10;
+	}
+				.main-content #about #brand-copy h1{
+					margin-top:20%;
+					margin-bottom:15%;
+					font-size:4em;
+					width:80%;
+					margin-left:auto;
+					margin-right:auto;
+				}
+					.main-content #about #brand-copy h1 em{
+						color:#FFF100;
+						font-style:normal;
+					}
+			
+				/* MAKE THIS INTO A BUTTON CLASS FOR MODULARITY
+				ALSO FIX FONT SIZES SO NOT MIXING EMS AND PXS*/
+				.main-content #about #brand-copy a{
+					color:#fff;
+					background-color:#FFDD17;
+					font-weight:lighter;
+					padding:10px 10px;
+					font-size:1.8em;
+					
+				}
+
+				.main-content #about #phone-mock{
+					display:none;
+				}
+			.main-content .arrow-svg{
+				margin-top:15%;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				height:3em;
+				width:3em;
+			}
+
+
+/*About Pane end*/
+
+.main-content #portfolio{
+	display:block;
+	background-color: #e6e7e8;
+	height:400px;
+	padding-left:0;
+	padding-right:0;
+}
+
+.main-content #portfolio .left{
+	padding:0px;
+}
+.main-content #portfolio .left-box{
+	width:100%;
+	height:100px;
+	border:1px solid #fff;
+	color:#1A1A1A;
+}
+.main-content #portfolio .left-box .game-icon{
+	width:30%;
+	float:left;
+	padding-left:10px;
+}
+.main-content #portfolio .left-box .game-icon img{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:8px;
+}
+.main-content #portfolio .left-box h2{
+	font-weight:lighter;
+	padding:20px;
+	width:70%;
+	float:left;
+	margin-top:0;
+	margin-bottom:0;
+	font-size:2.5em;
+	text-align: left;
+}
+
+
+.main-content #portfolio .right{
+	padding:0px;
+	display:none;
+}
+
+.main-content #portfolio .game-info{
+	display:none;
+	background-color: #1A1A1A;
+}
+
+/*Pricing Pane end*/
+
+/*Contact pane*/
+
+	.main-content #contact{
+		background-color:#FEC265;
+		text-align:center;
+		color:#fff;
+
+}
+
+	.main-content #contact h1{
+		padding-top:10%;
+	}
+	.main-content #contact #contact-form .form-group .form-control{
+				border:none;
+				box-shadow:none;
+				font-size: 1.8em;
+				background-color:#F78F3D;
+				height:auto;
+				color:#fff;
+				width:70%;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:5%;
+			}
+			.main-content #contact #contact-form .form-control{
+				border:none;
+				box-shadow:none;
+				font-size: 1.8em;
+				background-color:#F78F3D;
+				height:auto;
+				color:#fff;
+				width:70%;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:5%;
+				font-weight:200;
+			}
+			.main-content #contact #contact-form .btn{
+				margin-top:5%;
+				margin-bottom:10%;
+				border-radius: 0;
+				font-size:1.5em;
+				background-color: #F78F3D;
+				color:#fff;
+				font-weight:200;
+			}
+			.main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+			.main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+			.main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+
+/*Footer*/
+
+.footer{
+	background-color:#fff;
+	height:50px;
+}
+.footer .container-fluid{
+	height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+	height:50px;
+}
+	.footer img{
+		margin-top:10px;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width:90%;
+	}
+
+	.footer #footer-left:hover{
+		border-bottom: 5px solid #FFDD17;
+	}
+	.footer #footer-center:hover{
+		border-bottom: 5px solid #262261;
+	}
+	.footer #footer-right:hover{
+		border-bottom: 5px solid #38B449;
+	}
+
+/*Footer End*/
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+/*Navbar*/
+
+.navbar{
+	height:40px;
+}
+	.navbar .container-fluid{
+		height:inherit;
+	}
+		.navbar .container-fluid .navbar-brand{
+			display:block;
+		}
+		.navbar .container-fluid #mxl-logo-icon-center{
+			margin-left:auto;
+			margin-right:auto;
+			width:40px;
+			float:center;
+		}
+		.navbar .container-fluid .navbar-collapse .nav{
+			float:right;
+		}
+		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+		}
+			.navbar .container-fluid .navbar-collapse .nav .spacer{
+				display:block;
+				visibility:hidden;
+			}
+			.navbar .container-fluid .navbar-collapse .nav li a{
+				font-size:1.2em;
+			}
+		
+/*Navbar ends*/
+
+
+/*About Pane*/
+
+	.main-content #about{
+		height:800px;
+		text-align: left;
+	}
+	.main-content #about #brand-copy{
+		padding-top:30%;
+			
+	}
+				.main-content #about #brand-copy h1{
+					font-size:6em;
+					margin-top:0;
+					width:100%;
+					text-align: center;
+				}
+
+		.main-content #about #brand-copy a{
+	
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.main-content .arrow-svg{
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				width:3em;
+				height:3em;
+				margin-top:8%;
+			}
+				
+
+.main-content #portfolio{
+	display:block;
+	background-color: #e6e7e8;
+	height:400px;
+	padding-left:0;
+	padding-right:0;
+}
+
+.main-content #portfolio .left{
+	padding:0px;
+}
+.main-content #portfolio .left-box{
+	width:100%;
+	height:100px;
+	border:1px solid #fff;
+	color:#1A1A1A;
+}
+.main-content #portfolio .left-box .game-icon{
+	width:30%;
+	float:left;
+	padding-left:10px;
+}
+.main-content #portfolio .left-box .game-icon img{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:8px;
+}
+.main-content #portfolio .left-box h2{
+	font-weight:lighter;
+	padding:10px;
+	width:70%;
+	float:left;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+
+.main-content #portfolio .right{
+	padding:0px;
+	display:block;
+}
+.main-content #portfolio .right-box{
+	width:100%;
+	height:400px;
+	border:1px solid #fff;
+	color:#1A1A1A;
+	background-color: #9E9E9E;
+}
+.main-content #portfolio .right-box h2{
+	font-weight:normal;
+	padding:50px;
+}
+
+.main-content #portfolio .right-box img{
+	max-width:60%;
+	padding: 15px 15px;
+}
+
+.main-content .content-pane .four-boxes{
+	max-width:80%;
+}
+
+.main-content .content-pane .four-boxes .row div{
+	height:300px;
+}
+.main-content .content-pane .four-boxes .row div h2{
+	padding-top:125px;
+}
+
+.main-content #portfolio #small-3rdparty{
+	
+}
+.main-content #portfolio #big-clumsy-biker, #big-urban, #big-waka{
+	display:none;
+}
+			
+.main-content #portfolio #small-jamkings{
+	background-color:#9E9E9E;
+}
+
+}
+
+
+
+.footer{
+	height:50px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+/*Navbar*/
+
+
+.navbar{
+	height:100px;
+}
+	.navbar .container-fluid{
+		padding:0;
+	}
+		.navbar .container-fluid .navbar-brand{
+			width:100%;
+			display:block;
+			padding:0;
+		}
+		.navbar .container-fluid .navbar-collapse .nav{
+			margin-top:-25px;
+			margin-right:2%;
+		}
+		.navbar .container-fluid #big-logo{
+			display:block;
+		}
+		.navbar .container-fluid #mxl-logo{
+			display:block;
+			width:20%;
+			margin-left:8%;
+			margin-top:2%;
+		}
+		.navbar .container-fluid #mxl-logo-icon-center{
+			display:none;
+		}
+		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+			display:none;
+		}
+
+/*Navbar ends*/
+
+.main-content .content-pane{
+	height:600px;
+}
+.footer{
+	height:50px;
+	color:white;
+}
+
+/*About Pane*/
+	.main-content #about #brand-copy{
+		padding-top:18%;
+	}
+	.main-content #about #phone-mock{
+		padding-top:40%;
+	}
+			.main-content #about #brand-copy h1{
+				font-size:4em;
+			}
+			.main-content #about #brand-copy a{
+				margin-top:5%;
+			}
+
+				.main-content .arrow-svg{
+				margin-top:3%;
+			}
+/*About Pane ends*/
+
+
+.main-content .assets{
+		background-color:#B8B8B8;
+		height:1200px;
+	}
+	.main-content .assets h1{
+		font-size:3em;
+		margin-top:20%;
+		text-align: left
+	}
+	.main-content .assets .right-button{
+		font-size:1.2em;
+		float:right;
+	}
+	.main-content .assets .info-block{
+		display:none;
+	}
+	.main-content .assets .exit-button{
+		display:none;
+	}
+		.main-content .assets .info-block{
+			height:300px;
+		}
+
+.main-content #instructions {
+			height:500px;
+		}
+
+.main-content #about{
+	height:700px;
+}
+
+
+.main-content #press{
+	height:900px;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+	.main-content .content-pane{
+			padding-left:10%;
+			padding-right:10%;
+		}
+		.main-content .assets{
+			padding:0;
+		}
+
+
+}
+
+@media (min-width:1366px){
+
+
+
+/*About Pane*/
+
+		.main-content #about #brand-copy{
+			padding-top:20%;
+			padding-left:10%;
+		}
+			.main-content #about #brand-copy h1{
+				font-size:4em;
+			}
+			.main-content #about #brand-copy p{
+			}
+		.main-content #about #phone-mock{
+			padding-top:20%;
+		}
+
+
+/*About Pane end*/
+
+/*Assets Pane*/
+
+		
+		.main-content #instructions {
+			height:800px;
+		}
+		.main-content #press{
+			height:1100px;
+		}
+
+
+
+}
+
+
+
+@media (min-width:1500px){
+.navbar .container-fluid #mxl-logo{
+
+			width:15%;
+
+		}
+
+
+
+	.main-content #about #phone-mock img{
+		width:40%;
+	}
+}
