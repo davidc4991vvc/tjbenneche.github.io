@@ -2,16 +2,16 @@
 
 $('#apps-logo > a').on('click', function(){
 	event.preventDefault();
-	$('#apps-info').toggle('slow');
+	$('#apps-info').slideToggle();
 });
 
 $('#games-logo > a').on('click', function(){
 	event.preventDefault();
-	$('#games-info').toggle('slow');
+	$('#games-info').slideToggle();
 });
 $('#build-logo > a').on('click', function(){
 	event.preventDefault();
-	$('#build-info').toggle('slow');
+	$('#build-info').slideToggle();
 });
 
 

@@ -157,7 +157,7 @@
 		if ($(window).width() > 991){
 
 			$(window).scroll(function() {
-				$('#about  p').each(function(){
+				$('#about  a').each(function(){
 				var imagePos = $(this).offset().top;
 
 				var topOfWindow = $(window).scrollTop();
@@ -171,7 +171,7 @@
 				});
 			});
 			$(window).scroll(function() {
-				$('#about  p').each(function(){
+				$('#about  a').each(function(){
 				var imagePos = $(this).offset().top;
 
 				var topOfWindow = $(window).scrollTop();
@@ -186,11 +186,31 @@
 		}
 	});
 
+if ($(window).width() > 991){
+if($('#mxl-logo-icon-center')){
+	$( ".navbar .container-fluid" ).hover(
+  function() {
+    $('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show(); 
+  }, function() {
+    $('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+  }
+);
+}
+}
+
 	$(window).on('resize', function(){
 		if ($(window).width() > 991){
 
 			$(window).scroll(function() {
-				$('#about  p').each(function(){
+				$('#about  a').each(function(){
 				var imagePos = $(this).offset().top;
 
 				var topOfWindow = $(window).scrollTop();
@@ -204,7 +224,7 @@
 				});
 			});
 			$(window).scroll(function() {
-				$('#about  p').each(function(){
+				$('#about  a').each(function(){
 				var imagePos = $(this).offset().top;
 
 				var topOfWindow = $(window).scrollTop();

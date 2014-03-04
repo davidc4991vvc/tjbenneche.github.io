@@ -98,7 +98,93 @@
 		</div>
 	</div>
 
+<script>
+	$(window).on('load', function(){
+		if ($(window).width() > 991){
 
+			$(window).scroll(function() {
+				$('#about  h1').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						$('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  h1').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						$('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show();					}
+				});
+			});
+		}
+	});
+
+if ($(window).width() > 991){
+if($('#mxl-logo-icon-center')){
+	$( ".navbar .container-fluid" ).hover(
+  function() {
+    $('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show(); 
+  }, function() {
+    $('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+  }
+);
+}
+}
+
+	$(window).on('resize', function(){
+		if ($(window).width() > 991){
+
+			$(window).scroll(function() {
+				$('#about  h1').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						$('.navbar').css('height', '40px');
+						$('#mxl-logo').hide();
+						$('#big-logo').hide();
+						$('#mxl-logo-icon-center').css('display', 'block');
+						$('.nav').hide();
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  h1').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						$('.navbar').css('height', '100px');
+						$('#mxl-logo').show();
+						$('#big-logo').show();
+						$('#mxl-logo-icon-center').hide();
+						$('.nav').show();					}
+				});
+			});
+		}
+	});
+</script>
 
 		<script>
 			var v = document.getElementsByTagName("video")[0];

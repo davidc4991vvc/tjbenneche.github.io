@@ -102,7 +102,7 @@ video{
 	.main-content #about{
 		background-color:#262261;
 		background: rgba(38, 34, 97, .8);
-		height:400px;
+		
 		color:#fff;
 		z-index:10;
 	}
@@ -134,11 +134,14 @@ video{
 				}
 			.main-content .arrow-svg{
 				margin-top:15%;
+				
 				display:block;
 				margin-left:auto;
 				margin-right:auto;
 			}
-
+			.main-content #about .arrow-svg{
+				padding-bottom:5%;
+			}
 
 /*About Pane end*/
 
@@ -148,10 +151,9 @@ video{
 
 	.main-content .assets{
 		background-color:#B8B8B8;
-		height:1200px;
+		
 	}
 	.main-content .assets .sub-content-pane{
-		height:300px;
 	}
 	.main-content .assets .left-header{
 		font-size:3em;
@@ -184,7 +186,7 @@ video{
 		margin-right:auto;
 	}
 		.main-content .assets .info-block{
-			height:300px;
+			
 		}
 		.main-content .assets .info-block .asset-icon{
 			padding-top:10%;
@@ -204,6 +206,8 @@ video{
 		.main-content .assets .exit-button img{
 			float:right;
 			padding-right:5%;
+			width:15%;
+
 		}
 		.main-content .assets #build-section{
 			background-color:#A8A8A8;
@@ -254,6 +258,9 @@ video{
 				}
 				.main-content #personas .use-case-story{
 					display:none;
+				}
+				.main-content #personas .arrow-svg{
+					padding-bottom:5%;
 				}
 
 
@@ -461,7 +468,7 @@ video{
 		text-align: left;
 	}
 	.main-content #about #brand-copy{
-		padding-top:30%;
+		padding-top:15%;
 			padding-left:8%;
 	}
 				.main-content #about #brand-copy h1{
@@ -479,7 +486,9 @@ video{
 			padding-top:40%;
 			padding-left:25%;
 		}
-	
+		.main-content #about .arrow-svg{
+			padding-bottom: 0;
+	}
 
 		.main-content .arrow-svg{
 				display:block;
@@ -488,6 +497,7 @@ video{
 				width:3em;
 				height:3em;
 				margin-top:8%;
+			
 			}
 				.main-content #about .game-art{
 					visibility: hidden;
@@ -529,12 +539,12 @@ video{
 /*About Pane ends*/
 
 /*Assets Pane*/
-	/*.main-content .assets{
+	.main-content .assets{
 		background-color:#B8B8B8;
-		height:1200px;
+		
 	}
 	.main-content .assets .sub-content-pane{
-		height:300px;
+		
 	}
 	.main-content .assets .left-header{
 		font-size:3em;
@@ -567,7 +577,7 @@ video{
 		margin-right:auto;
 	}
 		.main-content .assets .info-block{
-			height:300px;
+			
 		}
 		.main-content .assets .info-block .asset-icon{
 			padding-top:10%;
@@ -582,11 +592,13 @@ video{
 		}
 		.main-content .assets .exit-button{
 			width:100%;
-			height:20px;
+			height:50px;
 		}
 		.main-content .assets .exit-button img{
 			float:right;
-			padding-right:5%;
+			padding-right:2%;
+			padding-top:2%;
+			width:6%;
 		}
 		.main-content .assets #build-section{
 			background-color:#A8A8A8;
@@ -595,16 +607,15 @@ video{
 			background-color: #969696;
 		}
 		.main-content .assets #monetize-section{
-			background-color: #7D7D7D;*/
-		
-
+			background-color: #7D7D7D;
+		}
 
 /*Assets Pane ends*/
 
 
 /*Personas Pane*/
 		.main-content #personas{
-			height:1000px;
+			
 		}
 			
 			.main-content #personas .user-avatar{
@@ -620,6 +631,7 @@ video{
 			}
 			.main-content #personas .arrow-svg{
 				margin-top:5%;
+				padding-bottom: 0;
 			}
 /*Personas Pane ends*/
 
@@ -838,7 +850,7 @@ video{
 /*Navbar ends*/
 
 .main-content .content-pane{
-	height:600px;
+	
 }
 .footer{
 	height:50px;
@@ -859,15 +871,16 @@ video{
 				margin-top:5%;
 			}
 
-				.main-content .arrow-svg{
+				.main-content #about .arrow-svg{
 				margin-top:3%;
+				padding-bottom:0;
 			}
 /*About Pane ends*/
 
 
 .main-content .assets{
 		background-color:#B8B8B8;
-		height:1200px;
+		
 	}
 	.main-content .assets h1{
 		font-size:3em;
@@ -885,21 +898,26 @@ video{
 		display:none;
 	}
 		.main-content .assets .info-block{
-			height:300px;
+			
+		}
+		.main-content .assets .exit-button{
+			width:100%;
+			height:50px;
+		}
+		.main-content .assets .exit-button img{
+			float:right;
+			padding-right:2%;
+			padding-top:2%;
+			width:5%;
 		}
 
-.main-content #instructions {
-			height:500px;
-		}
+
 
 .main-content #about{
 	height:700px;
 }
 
 
-.main-content #press{
-	height:900px;
-}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
@@ -911,7 +929,16 @@ video{
 		.main-content .assets{
 			padding:0;
 		}
-
+.main-content .assets .exit-button{
+			width:100%;
+			height:50px;
+		}
+		.main-content .assets .exit-button img{
+			float:right;
+			padding-right:2%;
+			padding-top:2%;
+			width:4%;
+		}
 
 }
 
