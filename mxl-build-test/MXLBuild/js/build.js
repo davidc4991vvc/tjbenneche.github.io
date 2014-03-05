@@ -136,54 +136,25 @@ $('#venue-btn').on('click', function(){
 
 
 
-$('#engage-learn-button').on('click', function(){
+$('#engage-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#engage-block').slideToggle();
 	$('#engage-block-hidden').slideToggle();
-	$('#engage-exit-button').show();
 });
-$('#engage-exit-button').on('click', function(){
+
+$('#build-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#engage-block').slideToggle();
-	$('#engage-block-hidden').slideToggle();
-	$('#engage-exit-button').hide();
-});
-$('#build-learn-button').on('click', function(){
-	event.preventDefault();
-	$('#build-block').slideToggle();
 	$('#build-block-hidden').slideToggle();
-	$('#build-exit-button').show();
 });
-$('#build-exit-button').on('click', function(){
+
+$('#grow-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#build-block').slideToggle();
-	$('#build-block-hidden').slideToggle();
-	$('#build-exit-button').hide();
-});
-$('#grow-learn-button').on('click', function(){
-	event.preventDefault();
-	$('#grow-block').slideToggle();
 	$('#grow-block-hidden').slideToggle();
-	$('#grow-exit-button').show();
 });
-$('#grow-exit-button').on('click', function(){
+$('#monetize-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#grow-block').slideToggle();
-	$('#grow-block-hidden').slideToggle();
-	$('#grow-exit-button').hide();
-});
-$('#monetize-learn-button').on('click', function(){
-	event.preventDefault();
-	$('#monetize-block').slideToggle();
 	$('#monetize-block-hidden').slideToggle();
-	$('#monetize-exit-button').show();
 });
-$('#monetize-exit-button').on('click', function(){
-	event.preventDefault();
-	$('#monetize-block').slideToggle();
-	$('#monetize-block-hidden').slideToggle();
-	$('#monetize-exit-button').hide();
-});
+
 
 $(function() {
   $('a[href*=#]:not([href=#carousel-example-generic])').click(function() {
@@ -200,7 +171,9 @@ $(function() {
   });
 });
 
-
+$('#engage-section').waypoint(function(direction) {
+  $('.nav li:nth-child(1)').addClass('active');
+});
 
 // $(document).ready(function() {
 	

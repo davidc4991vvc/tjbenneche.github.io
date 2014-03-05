@@ -70,6 +70,7 @@ video{
 		}
 				.navbar .container-fluid .navbar-collapse .nav .active > a{
 					background-color:transparent;
+					color:#00ACF5;
 				}
 				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
 					background-color:transparent;
@@ -83,6 +84,9 @@ video{
 			}
 			.navbar .container-fluid .navbar-collapse .nav li a{
 				font-size:1.4em;
+			}
+			.navbar .container-fluid .navbar-collapse .nav .active{
+				
 			}
 /*Navbar end*/
 
@@ -463,7 +467,7 @@ video{
 			}
 			.main-content #press #press-icon-row div img{
 				width:80%;
-				z-index:1000;
+				
 			}
 		.main-content #press #press-quotes{
 			width:90%;
@@ -491,7 +495,7 @@ video{
 		.main-content #contact h1{
 			text-align: center;
 			font-size:4em;
-			padding-top:10%;
+			padding-top:5%;
 		}
 		.main-content #contact .contact-box{
 			background-color:#555;
@@ -729,7 +733,7 @@ video{
 		.main-content #contact h1{
 			text-align: center;
 			font-size:4em;
-			padding-top:10%;
+			padding-top:5%;
 		}
 		.main-content #contact .contact-box{
 			background-color:#555;
@@ -931,7 +935,7 @@ video{
 		.main-content #contact h1{
 			text-align: center;
 			font-size:4em;
-			padding-top:10%;
+			padding-top:5%;
 		}
 		.main-content #contact .contact-box{
 			background-color:#555;

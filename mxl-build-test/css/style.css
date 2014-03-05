@@ -53,6 +53,7 @@ video{display:none;}
 		}
 				.navbar .container-fluid .navbar-collapse .nav .active > a{
 					background-color:transparent;
+					color:#00ACF5;
 				}
 				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
 					background-color:transparent;
@@ -73,7 +74,7 @@ video{display:none;}
 /*Main Content*/
 
 .main-content{
-	height:100%;
+
 	width:100%;
 	background-image: url('./img/mxl-bg.png');
 	margin:0;
@@ -104,12 +105,21 @@ video{display:none;}
 		margin-top:5%;
 		padding-bottom:10%;
 	}
+		.main-content #other-sites #logo-row #build-logo:hover{
+			background: rgba(255, 221, 23, .1);
+		}
+		.main-content #other-sites #logo-row #apps-logo:hover{
+			background: rgba(56, 180, 73, .1);
+		}
+		.main-content #other-sites #logo-row #games-logo:hover{
+			background: rgba(241, 90, 41, .1);
+		}
 	.main-content #other-sites #logo-row hr{
 		display:block;
 		height:2px;
 		background: #e6e7e8;
 		margin-top:2%;
-		margin-bottom:2%;
+		
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -120,14 +130,14 @@ video{display:none;}
 	}
 	.main-content #about .arrow-svg{
 		margin-top:35%;
-		margin-bottom:10%;
+		
 		height:3em;
 		width:3em;
 	}
 .main-content #other-sites{
 	background-color: #fff;
 	width:100%;
-	padding:40px 80px;
+	padding:0px 80px;
 	z-index:10;
 
 }
@@ -136,7 +146,7 @@ video{display:none;}
 }
 
 .main-content #other-sites .sub-info a{
-	color:#fff;
+	color:#fff !important;
 	padding:2%;
 }	
 
@@ -155,80 +165,8 @@ video{display:none;}
 
 /*About Pane end*/
 
-.main-content #contact{
-		background-color: #58585B;
-		text-align:left;
-		color:#fff;
-		height:700px;
 
-	}
-		.main-content #contact h1{
-			text-align: center;
-		}
-		.main-content #contact .contact-box{
-			background-color:#555;
-			height:100px;
-			color:#E6E7E8;
-			margin-bottom:50px;
-		}
-			.main-content #contact #contact-form{
-				padding-top:50px;
-			}
-			.main-content #contact #contact-boxes{
-				padding-left:50px;
-			}
 
-			.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow: none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:10%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #e6e7e8;
-			}
-
-.footer{
-	background-color:#fff;
-	height:50px;
-}
-.footer .container-fluid{
-	height:50px;
-}
-.footer .container-fluid .row {
-}
-.footer .container-fluid .row .col-xs-4{
-	height:50px;
-}
-	.footer img{
-		margin-top:10px;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-
-	.footer #footer-left:hover{
-		border-bottom: 5px solid #FFDD17;
-	}
-	.footer #footer-center:hover{
-		border-bottom: 5px solid #262261;
-	}
-	.footer #footer-right:hover{
-		border-bottom: 5px solid #F15A29;
-	}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -352,84 +290,7 @@ video{
 
 
 
-/*About Pane end*/
 
-.main-content #contact{
-		background-color: #58585B;
-		text-align:left;
-		color:#fff;
-		height:700px;
-
-	}
-		.main-content #contact h1{
-			text-align: center;
-		}
-		.main-content #contact .contact-box{
-			background-color:#555;
-			height:100px;
-			color:#E6E7E8;
-			margin-bottom:50px;
-		}
-			.main-content #contact #contact-form{
-				padding-top:50px;
-			}
-			.main-content #contact #contact-boxes{
-				padding-left:50px;
-			}
-
-			.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow: none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:10%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #e6e7e8;
-			}
-
-.footer{
-	background-color:#fff;
-	height:50px;
-}
-.footer .container-fluid{
-	height:50px;
-}
-.footer .container-fluid .row {
-}
-.footer .container-fluid .row .col-xs-4{
-	height:50px;
-}
-	.footer img{
-		margin-top:10px;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-
-	.footer #footer-left:hover{
-		border-bottom: 5px solid #FFDD17;
-	}
-	.footer #footer-center:hover{
-		border-bottom: 5px solid #262261;
-	}
-	.footer #footer-right:hover{
-		border-bottom: 5px solid #F15A29;
-	}
-
-/*About Pane*/
 
 
 
@@ -472,7 +333,7 @@ video{
 
 /*Navbar ends*/
 .main-content{
-	height:100%;
+	
 	width:100%;
 	margin:0;
 
@@ -489,7 +350,7 @@ video{
 		padding:0;
 		color:#fff;
 		z-index:10;
-		height:800px;
+		
 		width:100%;
 
 	}
@@ -497,43 +358,15 @@ video{
 		margin-top:30%;
 		font-size:4em;
 	}
-/*	.main-content #other-sites #logo-row{
-		margin-top:10%;
-	}
-	.main-content #other-sites #logo-row .sub-logo img{
-		width:100%;
-	}
 
-	.main-content #other-sites #logo-row .sub-info{
-		display:none;
-		margin-top:10%;
-	}
-	.main-content #about .arrow-svg{
-		margin-top:25%;
-		height:3em;
-		width:3em;
-	}
-.main-content #other-sites{
-	background-color: #fff;
-	height:700px;
-	width:100%;
-	z-index:10;
-	padding-top:40px;
-
-	padding-left:0;
-	padding-right:0;
-
-}
-.main-content #other-sites hr{
-	height:1px;
-	background:#e6e7e8;
-}*/
 .main-content #other-sites #logo-row{
 		margin-top:10%;
 		padding-bottom:30%;
 	}
 	.main-content #other-sites #logo-row .sub-logo img{
-		width:100%;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -544,19 +377,21 @@ video{
 		margin-top:15%;
 		height:3em;
 		width:3em;
+		margin-bottom:5%;
 	}
 .main-content #other-sites{
 	background-color: #fff;
-	
 	width:100%;
 	z-index:10;
-	padding-top:40px;
+	padding-top:60px;
 
 
 }
 .main-content #other-sites hr{
+	display:block;
 	height:1px;
 	background:#e6e7e8;
+	
 }
 
 .main-content #other-sites #apps-info a{
@@ -572,104 +407,17 @@ video{
 	float:right;
 }
 
-.main-content #other-sites #apps-info a{
-	color:#38B449;
-	float:right;
-}
-.main-content #other-sites #build-info a{
-	color:#FFDD17;
-	float:right;
-}
-.main-content #other-sites #games-info a{
-	color:#F15A29;
-	float:right;
-}
 
-/*About Pane end*/
 
-.main-content #contact{
-		background-color: #58585B;
-		text-align:left;
-		color:#fff;
-		height:700px;
 
-	}
-		.main-content #contact h1{
-			text-align: center;
-		}
-		.main-content #contact .contact-box{
-			background-color:#555;
-			height:100px;
-			color:#E6E7E8;
-			margin-bottom:50px;
-		}
-			.main-content #contact #contact-form{
-				padding-top:50px;
-			}
-			.main-content #contact #contact-boxes{
-				padding-left:50px;
-			}
-
-			.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow: none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:10%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #e6e7e8;
-			}
-
-.footer{
-	background-color:#fff;
-	height:50px;
-}
-.footer .container-fluid{
-	height:50px;
-}
-.footer .container-fluid .row {
-}
-.footer .container-fluid .row .col-xs-4{
-	height:50px;
-}
-	.footer img{
-		margin-top:10px;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-
-	.footer #footer-left:hover{
-		border-bottom: 5px solid #FFDD17;
-	}
-	.footer #footer-center:hover{
-		border-bottom: 5px solid #262261;
-	}
-	.footer #footer-right:hover{
-		border-bottom: 5px solid #F15A29;
-	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
 .main-content{
-	height:100%;
 	width:100%;
-	background: rgba(0, 188, 242, .8);
+	
 	margin:0;
 
 }
@@ -684,7 +432,6 @@ video{
 		padding:0;
 		color:#fff;
 		z-index:10;
-		height:800px;
 		width:100%;
 
 	}
@@ -716,11 +463,13 @@ video{
 
 	width:100%;
 	z-index:10;
-	padding-top:40px;
+	padding-top:50px;
 
 
 }
 .main-content #other-sites hr{
+	width:100%;
+	
 	height:1px;
 	background:#e6e7e8;
 }
@@ -740,80 +489,6 @@ video{
 
 /*About Pane end*/
 
-.main-content #contact{
-		background-color: #58585B;
-		text-align:left;
-		color:#fff;
-		height:700px;
-
-	}
-		.main-content #contact h1{
-			text-align: center;
-		}
-		.main-content #contact .contact-box{
-			background-color:#555;
-			height:100px;
-			color:#E6E7E8;
-			margin-bottom:50px;
-		}
-			.main-content #contact #contact-form{
-				padding-top:50px;
-			}
-			.main-content #contact #contact-boxes{
-				padding-left:50px;
-			}
-
-			.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow: none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:10%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #e6e7e8;
-			}
-
-.footer{
-	background-color:#fff;
-	height:50px;
-}
-.footer .container-fluid{
-	height:50px;
-}
-.footer .container-fluid .row {
-}
-.footer .container-fluid .row .col-xs-4{
-	height:50px;
-}
-	.footer img{
-		margin-top:10px;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-
-	.footer #footer-left:hover{
-		border-bottom: 5px solid #FFDD17;
-	}
-	.footer #footer-center:hover{
-		border-bottom: 5px solid #262261;
-	}
-	.footer #footer-right:hover{
-		border-bottom: 5px solid #F15A29;
-	}
 
 }
 
@@ -821,10 +496,8 @@ video{
 
 
 .main-content{
-	height:100%;
 	width:100%;
-	background: rgba(0, 188, 242, .8);
-	margin:0;
+		margin:0;
 
 }
 	.main-content  .content-pane{
@@ -838,7 +511,7 @@ video{
 		padding:0;
 		color:#fff;
 		z-index:10;
-		height:800px;
+		
 		width:100%;
 
 	}
@@ -867,7 +540,7 @@ video{
 
 	width:100%;
 	z-index:10;
-	padding-top:40px;
+	padding-top:50px;
 
 }
 .main-content #other-sites hr{
@@ -890,81 +563,6 @@ video{
 
 /*About Pane end*/
 
-.main-content #contact{
-		background-color: #58585B;
-		text-align:left;
-		color:#fff;
-		height:700px;
-
-	}
-		.main-content #contact h1{
-			text-align: center;
-		}
-		.main-content #contact .contact-box{
-			background-color:#555;
-			height:100px;
-			color:#E6E7E8;
-			margin-bottom:50px;
-		}
-			.main-content #contact #contact-form{
-				padding-top:50px;
-			}
-			.main-content #contact #contact-boxes{
-				padding-left:50px;
-			}
-
-			.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow: none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:10%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #e6e7e8;
-			}
-
-.footer{
-	background-color:#fff;
-	height:50px;
-}
-.footer .container-fluid{
-	height:50px;
-}
-.footer .container-fluid .row {
-}
-.footer .container-fluid .row .col-xs-4{
-	height:50px;
-}
-	.footer img{
-		margin-top:10px;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-
-	.footer #footer-left:hover{
-		border-bottom: 5px solid #FFDD17;
-	}
-	.footer #footer-center:hover{
-		border-bottom: 5px solid #262261;
-	}
-	.footer #footer-right:hover{
-		border-bottom: 5px solid #F15A29;
-	}
-
 
 
 
@@ -980,9 +578,8 @@ video{
 
 		}
 .main-content{
-	height:100%;
 	width:100%;
-	background: rgba(0, 188, 242, .8);
+	
 	margin:0;
 
 }
@@ -1048,81 +645,5 @@ video{
 }
 
 /*About Pane end*/
-
-.main-content #contact{
-		background-color: #58585B;
-		text-align:left;
-		color:#fff;
-		height:700px;
-
-	}
-		.main-content #contact h1{
-			text-align: center;
-		}
-		.main-content #contact .contact-box{
-			background-color:#555;
-			height:100px;
-			color:#E6E7E8;
-			margin-bottom:50px;
-		}
-			.main-content #contact #contact-form{
-				padding-top:50px;
-			}
-			.main-content #contact #contact-boxes{
-				padding-left:50px;
-			}
-
-			.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow: none;
-				font-size: 1.8em;
-				background-color:#555;
-				height:auto;
-				color:#fff;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:10%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #e6e7e8;
-			}
-
-.footer{
-	background-color:#fff;
-	height:50px;
-}
-.footer .container-fluid{
-	height:50px;
-}
-.footer .container-fluid .row {
-}
-.footer .container-fluid .row .col-xs-4{
-	height:50px;
-}
-	.footer img{
-		margin-top:10px;
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-
-	.footer #footer-left:hover{
-		border-bottom: 5px solid #FFDD17;
-	}
-	.footer #footer-center:hover{
-		border-bottom: 5px solid #262261;
-	}
-	.footer #footer-right:hover{
-		border-bottom: 5px solid #F15A29;
-	}
-
 
 }

@@ -108,14 +108,17 @@ video{
 	.main-content #about{
 		background-color:#262261;
 		background: rgba(241, 90, 41, .8);
-		height:400px;
+		
 		color:#fff;
 		z-index:10;
 	}
+		.main-content #about .container-fluid{
+			padding-bottom:5%;
+		}
 				.main-content #about #brand-copy h1{
 					margin-top:20%;
 					margin-bottom:15%;
-					font-size:4em;
+					font-size:3.5em;
 					width:80%;
 					margin-left:auto;
 					margin-right:auto;
@@ -127,7 +130,7 @@ video{
 			
 				/* MAKE THIS INTO A BUTTON CLASS FOR MODULARITY
 				ALSO FIX FONT SIZES SO NOT MIXING EMS AND PXS*/
-				.main-content #about #brand-copy a{
+				.main-content #about #brand-copy p{
 					color:#fff;
 					background-color:#FFDD17;
 					font-weight:lighter;
@@ -135,7 +138,7 @@ video{
 					font-size:1.8em;
 					margin-left:auto;
 					margin-right:auto;
-
+					width:30%;
 					
 				}
 
@@ -157,7 +160,7 @@ video{
 .main-content #portfolio{
 	display:block;
 	background-color: #e6e7e8;
-	height:400px;
+	
 	padding-left:0;
 	padding-right:0;
 }
@@ -267,7 +270,8 @@ video{
 .footer{
 	background-color:#fff;
 	height:50px;
-}
+	display:none;
+	}
 .footer .container-fluid{
 	height:50px;
 }
@@ -294,6 +298,29 @@ video{
 		border-bottom: 5px solid #38B449;
 	}
 
+	.mobile-footer{
+	height:50px;
+}
+.mobile-footer .container-fluid{
+	height:50px;
+}
+
+.mobile-footer .container-fluid .row .col-xs-4{
+	height:50px;
+	color:#fff;
+	text-align: center;
+}
+
+	.mobile-footer #mobile-footer-left{
+		background-color:  #FFDD17;
+	}
+	.mobile-footer #mobile-footer-center{
+		background-color:  #262261;
+	}
+	.mobile-footer #mobile-footer-right{
+		background-color:  #38B449;
+	}
+
 /*Footer End*/
 
 
@@ -301,6 +328,14 @@ video{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+
+.footer{
+	display:block;
+}
+.mobile-footer{
+	display:none;
+}
 
 /*Navbar*/
 
@@ -338,24 +373,27 @@ video{
 /*About Pane*/
 
 	.main-content #about{
-		height:800px;
+		
 		text-align: left;
+	}
+	.main-content #about .container-fluid{
+		padding-bottom:10%;
 	}
 	.main-content #about #brand-copy{
 		padding-top:30%;
 			
 	}
 				.main-content #about #brand-copy h1{
-					font-size:6em;
+					font-size:5.5em;
 					margin-top:0;
 					width:100%;
 					text-align: center;
+					margin-bottom:5%;
 				}
 
-		.main-content #about #brand-copy a{
-			
-			margin-left:auto;
-			margin-right:auto;
+		.main-content #about #brand-copy a p{
+			text-align: center;
+			width:25%;
 		}
 
 		.main-content .arrow-svg{
@@ -365,13 +403,14 @@ video{
 				width:3em;
 				height:3em;
 				margin-top:8%;
+				
 			}
 				
 
 .main-content #portfolio{
 	display:block;
 	background-color: #e6e7e8;
-	height:400px;
+	
 	padding-left:0;
 	padding-right:0;
 }
@@ -487,9 +526,9 @@ video{
 		}
 		.navbar .container-fluid #mxl-logo{
 			display:block;
-			width:20%;
-			margin-left:8%;
-			margin-top:2%;
+			width:25%;
+			margin-left:7%;
+			margin-top:2.5%;
 		}
 		.navbar .container-fluid #mxl-logo-icon-center{
 			display:none;
@@ -501,7 +540,7 @@ video{
 /*Navbar ends*/
 
 .main-content .content-pane{
-	height:600px;
+	
 }
 .footer{
 	height:50px;
@@ -510,27 +549,27 @@ video{
 
 /*About Pane*/
 	.main-content #about #brand-copy{
-		padding-top:18%;
+		padding-top:30%;
 	}
-	.main-content #about #phone-mock{
-		padding-top:40%;
-	}
+	
 			.main-content #about #brand-copy h1{
-				font-size:4em;
+				font-size:5.5em;
+				float:right;
 			}
-			.main-content #about #brand-copy a{
+			.main-content #about #brand-copy p{
 				margin-top:5%;
+				float:right;
 			}
 
 				.main-content .arrow-svg{
-				margin-top:3%;
+				margin-top:20%;
 			}
 /*About Pane ends*/
 
 
 .main-content .assets{
 		background-color:#B8B8B8;
-		height:1200px;
+		
 	}
 	.main-content .assets h1{
 		font-size:3em;
@@ -551,30 +590,34 @@ video{
 			height:300px;
 		}
 
-.main-content #instructions {
-			height:500px;
-		}
 
-.main-content #about{
-	height:700px;
+.main-content #contact #contact-form .form-control{
+	width:60%;
 }
 
-
-.main-content #press{
-	height:900px;
-}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-	.main-content .content-pane{
-			padding-left:10%;
-			padding-right:10%;
-		}
-		.main-content .assets{
-			padding:0;
-		}
+	.main-content #about #brand-copy{
+		padding-top:30%;
+	}
+	
+			.main-content #about #brand-copy h1{
+				font-size:7em;
+				float:right;
+			}
+			.main-content #about #brand-copy p{
+				margin-top:5%;
+				float:right;
+			}
 
+				.main-content .arrow-svg{
+				margin-top:10%;
+			}
+	.main-content #contact #contact-form .form-control{
+	width:50%;
+}
 
 }
 
@@ -591,25 +634,14 @@ video{
 			.main-content #about #brand-copy h1{
 				font-size:4em;
 			}
-			.main-content #about #brand-copy p{
-			}
-		.main-content #about #phone-mock{
-			padding-top:20%;
-		}
+		
 
 
 /*About Pane end*/
 
 /*Assets Pane*/
 
-		
-		.main-content #instructions {
-			height:800px;
-		}
-		.main-content #press{
-			height:1100px;
-		}
-
+	
 
 
 }
@@ -625,7 +657,4 @@ video{
 
 
 
-	.main-content #about #phone-mock img{
-		width:40%;
-	}
 }
