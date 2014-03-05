@@ -100,16 +100,16 @@ $('#big-waka').on('click', function(){
 
 $('#free .small-card a').on('click', function(){
 	event.preventDefault();
-	$('#free .plan-info').toggle('slow');
+	$('#free .plan-info').slideToggle();
 });
 
 $('#basic a').on('click', function(){
 	event.preventDefault();
-	$('#basic > .plan-info').toggle('slow');
+	$('#basic > .plan-info').slideToggle();
 });
 $('#pro .small-card a').on('click', function(){
 	event.preventDefault();
-	$('#pro .plan-info').toggle('slow');
+	$('#pro .plan-info').slideToggle();
 });
 
 

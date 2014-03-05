@@ -309,6 +309,10 @@ video{
 		.main-content #pricing #pricing-cards{
 			padding:50px 0px;
 		}
+
+		.main-content #pricing h1{
+			color:#fff;
+		}
 			.main-content #pricing #pricing-cards .card { 
 				padding:25px 0px;
 				
@@ -330,7 +334,7 @@ video{
 			}
 				.main-content #pricing #pricing-cards .card ul{
 					list-style: none;
-					padding: 25px 20px;
+					padding: 25px 5px;
 				}
 				.main-content #pricing #pricing-cards .card .card-top{
 					height:80px;
@@ -703,21 +707,21 @@ video{
 
 
 	.main-content #pricing{
-		height:600px;
+		
 	}
 		.main-content #pricing #pricing-cards{
 			padding:25px 0px;
 		}	
 			.main-content #pricing #pricing-cards .card{
 				margin:0px;
-				padding:0px 25px;
+				padding:0px;
 			}
 				.main-content #pricing #pricing-cards .card .plan-info{
 					display:block;
 				}
 				.main-content #pricing #pricing-cards .small-card{
-					width:60%;
-					margin-top:8%;
+					padding:50px 25px;
+					
 					margin-left:auto;
 					margin-right:auto;
 				}
