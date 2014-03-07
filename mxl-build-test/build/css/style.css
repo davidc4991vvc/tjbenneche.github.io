@@ -80,8 +80,12 @@ video{
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:none;
 			}
-			.navbar .container-fluid .navbar-collapse .nav li a{
+			.navbar .container-fluid .email-button{
+				float:right;
 				font-size:1.4em;
+				background-color: #FFDD17;
+				margin-right:2%;
+				padding:;
 			}
 /*Navbar end*/
 
@@ -108,6 +112,7 @@ video{
 	}
 				.main-content #about #brand-copy h1{
 					margin-top:15%;
+					text-align:center;
 				}
 					.main-content #about #brand-copy h1 em{
 						color:#FFF100;
@@ -132,8 +137,21 @@ video{
 				.main-content #about #phone-mock{
 					display:none;
 				}
+			.main-content .learn-button{
+				margin-top:5%;
+				display:block;
+				text-align: center;
+				margin-left:auto;
+				margin-right:auto;
+				color:#262261;
+				background-color:#FFDD17;
+				font-weight:lighter;
+				padding:10px 10px;
+				font-size:1.8em;
+				width:20%;
+			}
 			.main-content .arrow-svg{
-				margin-top:15%;
+				
 				
 				display:block;
 				margin-left:auto;
@@ -509,17 +527,22 @@ video{
 		}
 	.main-content #about #brand-copy{
 		padding-top:15%;
-			padding-left:8%;
+			
 	}
 				.main-content #about #brand-copy h1{
 					font-size:4em;
 					margin-top:0;
 					width:70%;
+					margin-left:auto;
+					margin-right:auto;
 				}
 				.main-content #about #brand-copy p{
 					font-size:1.8em;
 					margin-top:5%;
-					width:50%;
+					width:60%;
+					text-align: center;
+					margin-left:auto;
+					margin-right:auto;
 				}
 				.main-content #about #phone-mock{
 			display:block;
