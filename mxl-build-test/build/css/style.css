@@ -105,6 +105,7 @@ a:hover{
 				.main-content #about #brand-copy h1{
 					margin-top:15%;
 					text-align:center;
+					width:90%;
 				}
 					.main-content #about #brand-copy h1 em{
 						color:#FFF100;
@@ -142,7 +143,7 @@ a:hover{
 				font-weight:lighter;
 				padding:5px;
 				font-size:2em;
-				width:40%;
+				width:60%;
 			}
 			.main-content .arrow-svg{
 				
@@ -270,14 +271,14 @@ a:hover{
 				margin-top:15%;
 			}
 			.main-content #personas .user-avatar img{
-				width:60%;
+				width:70%;
 			}
 
 			.main-content #personas .user-info{
-				width:60%;
+				width:70%;
 				margin-left:auto;
 				margin-right:auto;
-
+				padding-bottom:5%;
 			}
 			.main-content #personas .user-info a{
 				padding:2%;
