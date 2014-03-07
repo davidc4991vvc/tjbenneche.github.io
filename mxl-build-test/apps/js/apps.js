@@ -1,32 +1,6 @@
 //js doc to sit on top of bootstrap
 $('.carousel').carousel()
 
-function makeVisible(elem){
-	$(elem).css('visibility', 'visibile');
-	$(elem).show()
-}
-
-function makeInvisible(elem){
-	$(elem).css('visibility', 'hidden');
-	$(elem).hide();
-}
-
-function horizFlip(elem){
-	$(elem).addClass('animated flipInX');
-}
-
-function pullDown(elem){
-	$(elem).addClass('pullDown');
-}
-
-function leftSlide(elem) {
-	$(elem).addClass('slideLeft');
-}
-
-function rightSlide(elem){
-	$(elem).addClass('slideRight');
-}
-
 
 $('#small-jamkings').on('click', function(){
 	event.preventDefault()
@@ -68,19 +42,44 @@ $('#small-waka').on('click', function(){
 	$('#small-clumsy-biker').css('background-color', '#e6e7e8');
 });
 
+
+
+
+$('#mobile-insta').on('click', function(){
+	event.preventDefault()
+	$('#big-kai').hide();
+	$('#big-insta').show();
+	$('#mobile-insta').css('background-color', '#fff');
+	$('#mobile-kai').css('background-color', '#8CFFB0');
+});
+
+$('#mobile-kai').on('click', function(){
+	event.preventDefault()
+	$('#big-insta').hide();
+	$('#big-kai').show()
+	$('#mobile-kai').css('background-color', '#fff');
+	$('#mobile-insta').css('background-color', '#8CFFB0');
+
+});
+
+
+
+
+
+
 $('#small-insta').on('click', function(){
 	event.preventDefault()
 	$('#big-kai').hide();
 	$('#big-insta').show()
-	$('#small-insta').css('background-color', '#9E9E9E');
-	$('#small-kai').css('background-color', '#e6e7e8');
+	$('#small-insta').css('background-color', '#fff');
+	$('#small-kai').css('background-color', '#8CFFB0');
 });
 $('#small-kai').on('click', function(){
 	event.preventDefault()
 	$('#big-insta').hide();
 	$('#big-kai').show()
-	$('#small-kai').css('background-color', '#9E9E9E');
-	$('#small-insta').css('background-color', '#e6e7e8');
+	$('#small-kai').css('background-color', '#fff');
+	$('#small-insta').css('background-color', '#8CFFB0');
 });
 
 
@@ -100,61 +99,69 @@ $('#big-waka').on('click', function(){
 
 $('#free .small-card a').on('click', function(){
 	event.preventDefault();
-	$('#free .plan-info').slideToggle();
+	$('#free .plan-info').toggle('slow');
 });
 
 $('#basic a').on('click', function(){
 	event.preventDefault();
-	$('#basic > .plan-info').slideToggle();
+	$('#basic > .plan-info').toggle('slow');
 });
 $('#pro .small-card a').on('click', function(){
 	event.preventDefault();
-	$('#pro .plan-info').slideToggle();
+	$('#pro .plan-info').toggle('slow');
 });
 
 
 
 
-$('#musician-btn').on('click', function(){
+$('#engage-learn-button').on('click', function(){
 	event.preventDefault();
-	// pullDown($('#musician-usecase'));
-	$('#musician-usecase').slideToggle();
-	$(this).toggle();
+	$('#engage-block').toggle('slow');
+	$('#engage-block-hidden').toggle('slow');
+	$('#engage-exit-button').toggle('slow');
 });
-$('#small-biz-btn').on('click', function(){
+$('#engage-exit-button').on('click', function(){
 	event.preventDefault();
-	// pullDown($('#small-biz-usecase'));
-	$('#small-biz-usecase').slideToggle();
-	$(this).toggle();
+	$('#engage-block').toggle('slow');
+	$('#engage-block-hidden').toggle('slow');
+	$('#engage-exit-button').toggle('slow');
 });
-$('#venue-btn').on('click', function(){
+$('#build-learn-button').on('click', function(){
 	event.preventDefault();
-	// pullDown($('#venue-usecase'));
-	$('#venue-usecase').slideToggle();
-	$(this).toggle();
+	$('#build-block').toggle('slow');
+	$('#build-block-hidden').toggle('slow');
+	$('#build-exit-button').toggle('slow');
 });
-
-
-
-$('#engage-expand-button').on('click', function(){
+$('#build-exit-button').on('click', function(){
 	event.preventDefault();
-	$('#engage-block-hidden').slideToggle();
+	$('#build-block').toggle('slow');
+	$('#build-block-hidden').toggle('slow');
+	$('#build-exit-button').toggle('slow');
 });
-
-$('#build-expand-button').on('click', function(){
+$('#grow-learn-button').on('click', function(){
 	event.preventDefault();
-	$('#build-block-hidden').slideToggle();
+	$('#grow-block').toggle('slow');
+	$('#grow-block-hidden').toggle('slow');
+	$('#grow-exit-button').toggle('slow');
 });
-
-$('#grow-expand-button').on('click', function(){
+$('#grow-exit-button').on('click', function(){
 	event.preventDefault();
-	$('#grow-block-hidden').slideToggle();
+	$('#grow-block').toggle('slow');
+	$('#grow-block-hidden').toggle('slow');
+	$('#grow-exit-button').toggle('slow');
 });
-$('#monetize-expand-button').on('click', function(){
+$('#monetize-learn-button').on('click', function(){
 	event.preventDefault();
-	$('#monetize-block-hidden').slideToggle();
+	$('#monetize-block').toggle('slow');
+	$('#monetize-block-hidden').toggle('slow');
+	$('#monetize-exit-button').toggle('slow');
 });
-
+$('#monetize-exit-button').on('click', function(){
+	event.preventDefault();
+	$('#monetize-block').toggle('slow');
+	$('#monetize-block-hidden').toggle('slow');
+	$('#monetize-exit-button').toggle('slow');
+});
 
 $(function() {
   $('a[href*=#]:not([href=#carousel-example-generic])').click(function() {
@@ -171,36 +178,34 @@ $(function() {
   });
 });
 
-$('#engage-section').waypoint(function(direction) {
-  $('.nav li:nth-child(1)').addClass('active');
-});
 
-// $(document).ready(function() {
+
+$(document).ready(function() {
 	
-// function leftSlide(elem) {
-// 	$(elem).addClass('slideLeft');
-// }
+function leftSlide(elem) {
+	$(elem).addClass('slideLeft');
+}
 
-// function rightSlide(elem){
-// 	$(elem).addClass('slideRight');
-// }
+function rightSlide(elem){
+	$(elem).addClass('slideRight');
+}
 
-// function fadeIn(elem){
-// 	$(elem).addClass('fadeIn');
-// }
-
-
-// var waka = $('#waka');
-// var bball = $('#bball');
-// var bikerace = $('#bikerace');
+function fadeIn(elem){
+	$(elem).addClass('fadeIn');
+}
 
 
-// setTimeout(function(){leftSlide(waka)}, 2000);
-// setTimeout(function(){leftSlide(bball)}, 3000);
-// setTimeout(function(){leftSlide(bikerace)}, 4000);
+var waka = $('#waka');
+var bball = $('#bball');
+var bikerace = $('#bikerace');
 
 
-// });
+setTimeout(function(){leftSlide(waka)}, 2000);
+setTimeout(function(){leftSlide(bball)}, 3000);
+setTimeout(function(){leftSlide(bikerace)}, 4000);
+
+
+});
 
 
 // function resize(container, list){

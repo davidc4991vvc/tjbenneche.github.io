@@ -1,6 +1,32 @@
 //js doc to sit on top of bootstrap
 $('.carousel').carousel()
 
+function makeVisible(elem){
+	$(elem).css('visibility', 'visibile');
+	$(elem).show()
+}
+
+function makeInvisible(elem){
+	$(elem).css('visibility', 'hidden');
+	$(elem).hide();
+}
+
+function horizFlip(elem){
+	$(elem).addClass('animated flipInX');
+}
+
+function pullDown(elem){
+	$(elem).addClass('pullDown');
+}
+
+function leftSlide(elem) {
+	$(elem).addClass('slideLeft');
+}
+
+function rightSlide(elem){
+	$(elem).addClass('slideRight');
+}
+
 
 $('#small-jamkings').on('click', function(){
 	event.preventDefault()
@@ -74,69 +100,63 @@ $('#big-waka').on('click', function(){
 
 $('#free .small-card a').on('click', function(){
 	event.preventDefault();
-	$('#free .plan-info').toggle('slow');
+	$('#free .plan-info').slideToggle();
 });
 
 $('#basic a').on('click', function(){
 	event.preventDefault();
-	$('#basic > .plan-info').toggle('slow');
+	$('#basic > .plan-info').slideToggle();
 });
 $('#pro .small-card a').on('click', function(){
 	event.preventDefault();
-	$('#pro .plan-info').toggle('slow');
+	$('#pro .plan-info').slideToggle();
 });
 
 
 
 
-$('#engage-learn-button').on('click', function(){
+$('#musician-btn').on('click', function(){
 	event.preventDefault();
-	$('#engage-block').toggle('slow');
-	$('#engage-block-hidden').toggle('slow');
-	$('#engage-exit-button').toggle('slow');
+	// pullDown($('#musician-usecase'));
+	$('#musician-usecase').slideToggle();
+	$(this).toggle();
 });
-$('#engage-exit-button').on('click', function(){
+$('#small-biz-btn').on('click', function(){
 	event.preventDefault();
-	$('#engage-block').toggle('slow');
-	$('#engage-block-hidden').toggle('slow');
-	$('#engage-exit-button').toggle('slow');
+	// pullDown($('#small-biz-usecase'));
+	$('#small-biz-usecase').slideToggle();
+	$(this).toggle();
 });
-$('#build-learn-button').on('click', function(){
+$('#venue-btn').on('click', function(){
 	event.preventDefault();
-	$('#build-block').toggle('slow');
-	$('#build-block-hidden').toggle('slow');
-	$('#build-exit-button').toggle('slow');
+	// pullDown($('#venue-usecase'));
+	$('#venue-usecase').slideToggle();
+	$(this).toggle();
 });
-$('#build-exit-button').on('click', function(){
+
+
+
+$('#engage-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#build-block').toggle('slow');
-	$('#build-block-hidden').toggle('slow');
-	$('#build-exit-button').toggle('slow');
+	$('#engage-block-hidden').slideToggle();
+	$("#engage-expand-button").addClass('rotate');
+ 
 });
-$('#grow-learn-button').on('click', function(){
+
+$('#build-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#grow-block').toggle('slow');
-	$('#grow-block-hidden').toggle('slow');
-	$('#grow-exit-button').toggle('slow');
+	$('#build-block-hidden').slideToggle();
 });
-$('#grow-exit-button').on('click', function(){
+
+$('#grow-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#grow-block').toggle('slow');
-	$('#grow-block-hidden').toggle('slow');
-	$('#grow-exit-button').toggle('slow');
+	$('#grow-block-hidden').slideToggle();
 });
-$('#monetize-learn-button').on('click', function(){
+$('#monetize-expand-button').on('click', function(){
 	event.preventDefault();
-	$('#monetize-block').toggle('slow');
-	$('#monetize-block-hidden').toggle('slow');
-	$('#monetize-exit-button').toggle('slow');
+	$('#monetize-block-hidden').slideToggle();
 });
-$('#monetize-exit-button').on('click', function(){
-	event.preventDefault();
-	$('#monetize-block').toggle('slow');
-	$('#monetize-block-hidden').toggle('slow');
-	$('#monetize-exit-button').toggle('slow');
-});
+
 
 $(function() {
   $('a[href*=#]:not([href=#carousel-example-generic])').click(function() {
@@ -153,34 +173,36 @@ $(function() {
   });
 });
 
-
-
-$(document).ready(function() {
-	
-function leftSlide(elem) {
-	$(elem).addClass('slideLeft');
-}
-
-function rightSlide(elem){
-	$(elem).addClass('slideRight');
-}
-
-function fadeIn(elem){
-	$(elem).addClass('fadeIn');
-}
-
-
-var waka = $('#waka');
-var bball = $('#bball');
-var bikerace = $('#bikerace');
-
-
-setTimeout(function(){leftSlide(waka)}, 2000);
-setTimeout(function(){leftSlide(bball)}, 3000);
-setTimeout(function(){leftSlide(bikerace)}, 4000);
-
-
+$('#engage-section').waypoint(function(direction) {
+  $('.nav li:nth-child(1)').addClass('active');
 });
+
+// $(document).ready(function() {
+	
+// function leftSlide(elem) {
+// 	$(elem).addClass('slideLeft');
+// }
+
+// function rightSlide(elem){
+// 	$(elem).addClass('slideRight');
+// }
+
+// function fadeIn(elem){
+// 	$(elem).addClass('fadeIn');
+// }
+
+
+// var waka = $('#waka');
+// var bball = $('#bball');
+// var bikerace = $('#bikerace');
+
+
+// setTimeout(function(){leftSlide(waka)}, 2000);
+// setTimeout(function(){leftSlide(bball)}, 3000);
+// setTimeout(function(){leftSlide(bikerace)}, 4000);
+
+
+// });
 
 
 // function resize(container, list){

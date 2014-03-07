@@ -388,7 +388,7 @@ video{
 
 }
 .main-content #other-sites hr{
-	display:block;
+	
 	height:1px;
 	background:#e6e7e8;
 	
@@ -443,10 +443,10 @@ video{
 		margin-right:auto;
 	}
 	.main-content #other-sites #logo-row{
-		margin-top:10%;
+		margin-top:5%;
 	}
 	.main-content #other-sites #logo-row .sub-logo img{
-		width:100%;
+		width:80%;
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -468,10 +468,8 @@ video{
 
 }
 .main-content #other-sites hr{
-	width:100%;
-	
-	height:1px;
-	background:#e6e7e8;
+	margin-top:5%;
+	display:block;
 }
 
 .main-content #other-sites #apps-info a{
