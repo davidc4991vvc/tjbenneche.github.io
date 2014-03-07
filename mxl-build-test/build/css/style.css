@@ -104,8 +104,11 @@ a:hover{
 	}
 				.main-content #about #brand-copy h1{
 					margin-top:15%;
+					font-size:3em;
 					text-align:center;
 					width:90%;
+					margin-left:auto;
+					margin-right:auto;
 				}
 					.main-content #about #brand-copy h1 em{
 						color:#FFF100;
