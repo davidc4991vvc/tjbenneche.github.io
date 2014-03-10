@@ -15,17 +15,29 @@ p, li, a{
 	font-weight:400;
 }
 
+video{
+	display: none;
+}
 
 a:hover{
 	text-decoration: none;
 
 }
-
-
-
-video{
-	display:none;
+.carousel-control.right{
+	background-image:none;
 }
+.carousel-control.left{
+	background-image:none;
+}
+	.carousel-control.right .glyphicon-chevron-right{
+		right:0;
+	}
+	.carousel-control.left .glyphicon-chevron-left{
+		left:0;
+	}
+
+
+
 
 /*Navbar*/
 
@@ -37,6 +49,7 @@ video{
 	.navbar .container-fluid{
 		background-color: #fff;
 		height:40px;
+		z-index:10000;
 	}
 		.navbar .container-fluid #big-logo{
 			display:none;
@@ -52,6 +65,10 @@ video{
 		}
 		.navbar .container-fluid .navbar-collapse{
 			background-color: #fff;
+			z-index:1000;
+		}
+		.navbar .container-fluid .navbar-collapse .nav{
+			z-index:1000;
 		}
 				.navbar .container-fluid .navbar-collapse .nav .active > a{
 					background-color:transparent;
@@ -88,6 +105,7 @@ video{
 	.main-content #about{
 		background-color:#262261;
 		background: rgba(56, 180, 73, .8);
+
 		color:#fff;
 		z-index:10;
 	}
@@ -95,79 +113,77 @@ video{
 			padding-bottom:5%;
 		}
 				.main-content #about #brand-copy h1{
-					margin-top:20%;
-					margin-bottom:15%;
+					margin-top:10%;
+					margin-bottom:8%;
 					font-size:3em;
 					width:80%;
 					margin-left:auto;
 					margin-right:auto;
+					text-align: center;
 				}
-					
+
+
 				/* MAKE THIS INTO A BUTTON CLASS FOR MODULARITY
 				ALSO FIX FONT SIZES SO NOT MIXING EMS AND PXS*/
 				.main-content #about #brand-copy p{
 					color:#fff;
-					background-color:#FFDD17;
-					font-weight:lighter;
-					padding:10px 10px;
 					font-size:1.8em;
 					margin-left:auto;
 					margin-right:auto;
-					width:35%;
-					
+					width:80%;
+					text-align: center;
 				}
-			
-			.main-content .arrow-svg{
+
+			.main-content #about .learn-button{
 				margin-top:5%;
+				display:block;
+				text-align: center;
+				margin-left:auto;
+				margin-right:auto;
+				color:#FFDD17;
+				font-weight:lighter;
+				padding:5px;
+				font-size:2em;
+				width:60%;
+			}
+			.main-content .arrow-svg{
+
 				display:block;
 				margin-left:auto;
 				margin-right:auto;
 				height:3em;
 				width:3em;
 			}
+			.main-content #about .arrow-svg{
+
+				fill:#FFDD17;
+			}
 
 
 /*About Pane end*/
 
-
 .main-content #portfolio{
 	display:block;
 	background-color: #fff;
+	overflow: hidden;
 	padding-left:0;
 	padding-right:0;
 }
 
-.main-content #portfolio .left-mobile{
-	margin:0;
-}
-.main-content #portfolio .container-fluid{
-	padding:0;
-}
-.main-content #portfolio .container-fluid .row{
-	margin:0;
-}
-
 .main-content #portfolio .left-mobile img{
-	width:40%;
-	margin-left: auto;
-	margin-right: auto;
+	width:80%;
 }
 
 .main-content #portfolio .left-mobile .game-icon{
 	background-color: #8CFFB0;
 }
 
-.main-content #portfolio #mobile-jamkings{
-	background-color: #fff;
+.main-content #portfolio #mobile-insta{
+
 }
 
-.main-content #portfolio .left-mobile #mobile-jamkings img{
-	padding-bottom:6%;
-}
+
 .main-content #portfolio .left-mobile .col-xs-3{
-	padding:0;
-}
-.main-content #portfolio .left-mobile .col-xs-6{
 	padding:0;
 }
 .main-content #portfolio .left{
@@ -176,7 +192,7 @@ video{
 }
 .main-content #portfolio .left-box{
 	width:100%;
-	height:100px;
+
 	border:1px solid #fff;
 	color:#1A1A1A;
 	background-color: #8CFFB0;
@@ -207,6 +223,7 @@ video{
 
 .main-content #portfolio .right{
 	padding:0px;
+	overflow:hidden;
 	background-color: #fff;
 }
 .main-content #portfolio .right-box{
@@ -214,36 +231,66 @@ video{
 	background-color:#fff;
 }
 
-
+.main-content #portfolio .game-info{
+	display:none;
+	background-color: #1A1A1A;
+}
 
 .main-content #portfolio .right h2{
-	padding-top:5%;
+	padding-bottom:3%;
 	font-size:2.5em;
 }
+.main-content #portfolio .right .appstore-links{
+	padding-bottom:2%;
+}
 .main-content #portfolio .right p{
-	width:80%;
+	width:90%;
 	padding-top:3%;
 	margin-left: auto;
 	margin-right: auto;
 	font-size:1.5em;
+	text-align: left;
 }
 
-
-
-/*Assets Pane end*/
-.main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #FFF;
+.main-content #portfolio .right .right-box .mobile-title{
+	padding-top:5%;
 }
-			.main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #FFF;
+
+.main-content #portfolio .right .right-box .game-quote{
+	font-size:2em;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
 }
-			.main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #FFF;
+.main-content #portfolio .right .right-box #appstore{
+
 }
-/*Personas Pane*/
+.main-content #portfolio .right .right-box #googleplay{
+	width:70%;
+}
 
+.main-content #portfolio .right .right-box .game-description{
+	width:80%;
+}
 
+.main-content #portfolio .right .right-box #stars{
+	visibility:hidden;
+	margin-bottom:5%;
+}
 
+.main-content #portfolio .right .right-box .iphone-mock{
+	width:100%;
+	-webkit-transform: translateX(-100px) ;
+		-o-transform:translateX(-100px);
+		transform: translate(-100px);
+}
+.main-content #portfolio .right .right-box .vertical-iphone-mock{
+	width:60%;
+	-webkit-transform: translateX(-100px) ;
+		-o-transform:translateX(-100px);
+		transform: translate(-100px);
+}
+/*Pricing Pane end*/
 
 /*Contact pane*/
 
@@ -252,12 +299,7 @@ video{
 		text-align:center;
 		color:#fff;
 
-
 }
-
-	.main-content #contact .container-fluid{
-		padding-bottom:10%;
-	}
 
 	.main-content #contact h1{
 		padding-top:10%;
@@ -269,7 +311,7 @@ video{
 				background-color:#71BF43;
 				height:auto;
 				color:#fff;
-				width:30%;
+				width:70%;
 				margin-left:auto;
 				margin-right:auto;
 				margin-top:5%;
@@ -281,18 +323,30 @@ video{
 				background-color:#71BF43;
 				height:auto;
 				color:#fff;
-				width:80%;
+				width:70%;
 				margin-left:auto;
 				margin-right:auto;
 				margin-top:5%;
+				font-weight:200;
 			}
 			.main-content #contact #contact-form .btn{
 				margin-top:5%;
+				margin-bottom:10%;
 				border-radius: 0;
 				font-size:1.5em;
 				background-color: #71BF43;
 				color:#fff;
+				font-weight:200;
 			}
+			.main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+		color:    #FFF;
+}
+			.main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color:    #FFF;
+}
+			.main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color:    #FFF;
+}
 
 /*Footer*/
 
@@ -300,7 +354,7 @@ video{
 	background-color:#fff;
 	height:50px;
 	display:none;
-}
+	}
 .footer .container-fluid{
 	height:50px;
 }
@@ -314,6 +368,7 @@ video{
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
+		width:90%;
 	}
 
 	.footer #footer-left:hover{
@@ -325,7 +380,8 @@ video{
 	.footer #footer-right:hover{
 		border-bottom: 5px solid #F15A29;
 	}
-.mobile-footer{
+
+	.mobile-footer{
 	height:50px;
 }
 .mobile-footer .container-fluid{
@@ -347,15 +403,15 @@ video{
 	.mobile-footer #mobile-footer-right{
 		background-color:  #F15A29;
 	}
+
 /*Footer End*/
 
 
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
-/*Navbar*/
 
 video{
 	position: fixed; right: 0; bottom: 0;
@@ -365,14 +421,12 @@ video{
 	background-size: cover;
 }
 
-.mobile-footer{
-	display:none;
-}
-
 .footer{
 	display:block;
 }
-
+.mobile-footer{
+	display:none;
+}
 .main-content #portfolio .left-mobile{
 	display: none;
 }
@@ -382,6 +436,7 @@ video{
 .main-content #portfolio .right{
 	display: block;
 }
+/*Navbar*/
 
 .navbar{
 	height:40px;
@@ -410,51 +465,42 @@ video{
 			.navbar .container-fluid .navbar-collapse .nav li a{
 				font-size:1.2em;
 			}
-		
+
 /*Navbar ends*/
 
 
 /*About Pane*/
 
-
 	.main-content #about{
+
 		text-align: left;
 	}
 	.main-content #about .container-fluid{
 		padding-bottom:10%;
 	}
 	.main-content #about #brand-copy{
-		padding-top:20%;
-			
+		padding-top:15%;
+
 	}
 				.main-content #about #brand-copy h1{
-					font-size:3.5em;
+					font-size:4em;
 					margin-top:0;
 					width:80%;
-					text-align: center;
 					margin-bottom:5%;
 				}
 
 		.main-content #about #brand-copy a p{
 			text-align: center;
-			width:25%;
+			width:100%;
 		}
 
-		.main-content .arrow-svg{
-				display:block;
-				margin-left:auto;
-				margin-right:auto;
-				width:3em;
-				height:3em;
-				margin-top:8%;
-				
-			}
-				
+
+
 
 .main-content #portfolio{
 	display:block;
+	background-color: #e6e7e8;
 
-	
 	padding-left:0;
 	padding-right:0;
 }
@@ -464,7 +510,7 @@ video{
 }
 .main-content #portfolio .left-box{
 	width:100%;
-	
+	height:100px;
 	border:1px solid #fff;
 	color:#1A1A1A;
 }
@@ -490,85 +536,68 @@ video{
 
 
 .main-content #portfolio .right{
+	height:400px;
 	padding:0px;
 	display:block;
 	background-color: #fff;
 }
 .main-content #portfolio .right-box{
 	width:100%;
-
+	height:400px;
 	border:1px solid #fff;
 	color:#1A1A1A;
 
 }
 .main-content #portfolio .right-box h2{
-	padding-top:0;
-	margin-top:5px;
-}
-.main-content #portfolio .right-box p{
-	padding-top: 0;
-	font-size:1.1em;
-	
+
+
 }
 
-.main-content #portfolio .right-box img{
-	max-width:60%;
-	padding: 15px 15px;
+.main-content #portfolio .right .right-box .mobile-title{
+	padding-top:5%;
+	display:none;
+}
+
+.main-content #portfolio .right .right-box .game-quote{
+	font-size:2em;
+}
+
+.main-content #portfolio .right .right-box #stars{
+	margin-bottom:5%;
+}
+
+.main-content #portfolio .right .right-box .game-description{
+	font-size:1.2em;
+	width:100%;
+}
+
+.main-content #portfolio .right .right-box .iphone-mock{
+	width:140%;
+	-webkit-transform: translateX(-100px) ;
+		-o-transform:translateX(-100px);
+		transform: translate(-100px);
+}
+.main-content #portfolio .right .right-box .vertical-iphone-mock{
+	width:80%;
+	-webkit-transform: translateY(-50px) ;
+		-o-transform:translateY(-50px);
+		transform: translate(-100px);
+}
+
+.main-content #portfolio .right .right-box #googleplay{
+	width:90%;
 }
 
 .main-content #portfolio #big-insta{
 	display:block;
 }
-.main-content #portfolio #big-kai{
+.main-content #portfolio #big-kai, #big-snapcatch, #big-vine{
 	display:none;
 }
-			
-.main-content #portfolio #small-jamkings{
-	background-color:#fff;
+
+.main-content #portfolio #small-insta{
+	background-color: #61B079;
 }
-
-}
-
-.main-content #contact .container-fluid{
-		padding-bottom:10%;
-	}
-
-	.main-content #contact h1{
-		padding-top:10%;
-	}
-	.main-content #contact #contact-form .form-group .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#71BF43;
-				height:auto;
-				color:#fff;
-				width:30%;
-				margin-left:auto;
-				margin-right:auto;
-				margin-top:5%;
-			}
-			.main-content #contact #contact-form .form-control{
-				border:none;
-				box-shadow:none;
-				font-size: 1.8em;
-				background-color:#71BF43;
-				height:auto;
-				color:#fff;
-				width:60%;
-				margin-left:auto;
-				margin-right:auto;
-				margin-top:5%;
-			}
-			.main-content #contact #contact-form .btn{
-				margin-top:5%;
-				border-radius: 0;
-				font-size:1.5em;
-				background-color: #71BF43;
-				color:#fff;
-			}
-/*Assets Pane ends*/
-
 
 }
 
@@ -578,8 +607,12 @@ video{
 	height:50px;
 }
 
+.footer img{
+	width:auto;
+}
+
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 /*Navbar*/
 
@@ -604,9 +637,9 @@ video{
 		}
 		.navbar .container-fluid #mxl-logo{
 			display:block;
-			width:20%;
-			margin-left:8%;
-			margin-top:2%;
+			width:25%;
+			margin-left:7%;
+			margin-top:2.5%;
 		}
 		.navbar .container-fluid #mxl-logo-icon-center{
 			display:none;
@@ -617,6 +650,35 @@ video{
 
 /*Navbar ends*/
 
+.main-content #portfolio .right .right-box .game-quote{
+	font-size:2em;
+}
+
+.main-content #portfolio .right .right-box #stars{
+	margin-bottom:5%;
+}
+
+.main-content #portfolio .right .right-box .game-description{
+	font-size:1.2em;
+	width:90%;
+}
+
+.main-content #portfolio .right .right-box .iphone-mock{
+	width:140%;
+	-webkit-transform: translateX(-100px) ;
+		-o-transform:translateX(-100px);
+		transform: translate(-100px);
+}
+.main-content #portfolio .right .right-box .vertical-iphone-mock{
+	width:60%;
+	-webkit-transform: translateY(-50px) ;
+		-o-transform:translateY(-50px);
+		transform: translate(-100px);
+}
+
+.main-content #portfolio .right .right-box #googleplay{
+	width:60%;
+}
 
 .footer{
 	height:50px;
@@ -625,36 +687,69 @@ video{
 
 /*About Pane*/
 	.main-content #about #brand-copy{
-		padding-top:18%;
+		padding-top:15%;
 	}
-	.main-content #about #phone-mock{
-		padding-top:40%;
-	}
+
 			.main-content #about #brand-copy h1{
-				font-size:4em;
+				font-size:5em;
 			}
-			.main-content #about #brand-copy a{
+			.main-content #about #brand-copy p{
 				margin-top:5%;
 			}
 
-				.main-content .arrow-svg{
-				margin-top:3%;
-			}
+
 /*About Pane ends*/
 
+
+.main-content #contact #contact-form .form-control{
+	width:60%;
 }
+
+
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
-	.main-content .content-pane{
-			padding-left:10%;
-			padding-right:10%;
-		}
-		.main-content .assets{
-			padding:0;
-		}
+	.navbar .container-fluid #mxl-logo{
+		margin-top:2%;
+				width:15%;
 
 
+
+			}
+
+	.main-content #about #brand-copy{
+		padding-top:15%;
+	}
+
+			.main-content #about #brand-copy h1{
+				font-size:5.5em;
+			}
+			.main-content #about #brand-copy p{
+				margin-top:5%;
+			}
+
+
+	.main-content #contact #contact-form .form-control{
+	width:50%;
+}
+
+
+.main-content #portfolio .right .right-box #googleplay{
+	width:50%;
+}
+
+.main-content #portfolio .right .right-box .iphone-mock{
+	width:125%;
+	-webkit-transform: translateX(-100px) ;
+		-o-transform:translateX(-100px);
+		transform: translate(-100px);
+}
+.main-content #portfolio .right .right-box .vertical-iphone-mock{
+	width:60%;
+	-webkit-transform: translateY(-100px) ;
+		-o-transform:translateY(-100px);
+		transform: translate(-100px);
+}
 }
 
 @media (min-width:1366px){
@@ -664,23 +759,28 @@ video{
 /*About Pane*/
 
 		.main-content #about #brand-copy{
-			padding-top:20%;
-			padding-left:10%;
+			padding-top:15%;
 		}
 			.main-content #about #brand-copy h1{
-				font-size:4em;
+				font-size:5.5em;
+				width:70%
 			}
-			.main-content #about #brand-copy p{
-			}
-		.main-content #about #phone-mock{
-			padding-top:20%;
-		}
-
+.main-content #portfolio .left-box .game-icon{
+	width:25%;
+}
+.main-content #portfolio .right .right-box #googleplay{
+	width:40%;
+}
+.main-content #portfolio .right .right-box .iphone-mock{
+	width:110%;
+	-webkit-transform: translateX(-70px) ;
+		-o-transform:translateX(-70px);
+		transform: translate(-70px);
+}
 
 /*About Pane end*/
 
 /*Assets Pane*/
-
 
 
 
@@ -691,11 +791,16 @@ video{
 
 @media (min-width:1500px){
 .navbar .container-fluid #mxl-logo{
-
+	margin-top:1.5%;
 			width:15%;
+
+
 
 		}
 
 
+.main-content #portfolio .left-box .game-icon{
+	width:20%;
+}
 
 }

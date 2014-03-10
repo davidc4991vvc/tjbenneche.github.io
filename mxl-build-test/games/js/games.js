@@ -6,7 +6,7 @@ $('#small-jamkings').on('click', function(){
 	event.preventDefault()
 	$('#big-clumsy-biker, #big-urban, #big-waka').hide();
 	$('#big-jamkings').show();
-	$('#small-jamkings').css('background-color', '#fff');
+	$('#small-jamkings').css('background-color', '#FFBC8A');
 	$('#small-urban').css('background-color', '#FFE9C7');
 	$('#small-clumsy-biker').css('background-color', '#FFE9C7');
 	$('#small-waka').css('background-color', '#FFE9C7');
@@ -16,7 +16,7 @@ $('#small-clumsy-biker').on('click', function(){
 	event.preventDefault()
 	$('#big-jamkings, #big-urban, #big-waka').hide();
 	$('#big-clumsy-biker').show()
-	$('#small-clumsy-biker').css('background-color', '#fff');
+	$('#small-clumsy-biker').css('background-color', '#FFBC8A');
 	$('#small-jamkings').css('background-color', '#FFE9C7');
 	$('#small-urban').css('background-color', '#FFE9C7');
 	$('#small-waka').css('background-color', '#FFE9C7');
@@ -26,7 +26,7 @@ $('#small-urban').on('click', function(){
 	event.preventDefault()
 	$('#big-jamkings, #big-clumsy-biker, #big-waka').hide();
 	$('#big-urban').show()
-	$('#small-urban').css('background-color', '#fff');
+	$('#small-urban').css('background-color', '#FFBC8A');
 	$('#small-jamkings').css('background-color', '#FFE9C7');
 	$('#small-clumsy-biker').css('background-color', '#FFE9C7');
 	$('#small-waka').css('background-color', '#FFE9C7');
@@ -36,7 +36,7 @@ $('#small-waka').on('click', function(){
 	event.preventDefault();
 	$('#big-jamkings, #big-clumsy-biker, #big-urban').hide();
 	$('#big-waka').show()
-	$('#small-waka').css('background-color', '#fff');
+	$('#small-waka').css('background-color', '#FFBC8A');
 	$('#small-jamkings').css('background-color', '#FFE9C7');
 	$('#small-urban').css('background-color', '#FFE9C7');
 	$('#small-clumsy-biker').css('background-color', '#FFE9C7');
@@ -48,7 +48,7 @@ $('#mobile-jamkings').on('click', function(){
 	event.preventDefault()
 	$('#big-clumsy-biker, #big-urban, #big-waka').hide();
 	$('#big-jamkings').show();
-	$('#mobile-jamkings').css('background-color', '#fff');
+	$('#mobile-jamkings').css('background-color', '#FFBC8A');
 	$('#mobile-urban').css('background-color', '#FFE9C7');
 	$('#mobile-clumsy-biker').css('background-color', '#FFE9C7');
 	$('#mobile-waka').css('background-color', '#FFE9C7');
@@ -58,7 +58,7 @@ $('#mobile-clumsy-biker').on('click', function(){
 	event.preventDefault()
 	$('#big-jamkings, #big-urban, #big-waka').hide();
 	$('#big-clumsy-biker').show()
-	$('#mobile-clumsy-biker').css('background-color', '#fff');
+	$('#mobile-clumsy-biker').css('background-color', '#FFBC8A');
 	$('#mobile-jamkings').css('background-color', '#FFE9C7');
 	$('#mobile-urban').css('background-color', '#FFE9C7');
 	$('#mobile-waka').css('background-color', '#FFE9C7');
@@ -68,7 +68,7 @@ $('#mobile-urban').on('click', function(){
 	event.preventDefault()
 	$('#big-jamkings, #big-clumsy-biker, #big-waka').hide();
 	$('#big-urban').show()
-	$('#mobile-urban').css('background-color', '#fff');
+	$('#mobile-urban').css('background-color', '#FFBC8A');
 	$('#mobile-jamkings').css('background-color', '#FFE9C7');
 	$('#mobile-clumsy-biker').css('background-color', '#FFE9C7');
 	$('#mobile-waka').css('background-color', '#FFE9C7');
@@ -78,7 +78,7 @@ $('#mobile-waka').on('click', function(){
 	event.preventDefault();
 	$('#big-jamkings, #big-clumsy-biker, #big-urban').hide();
 	$('#big-waka').show()
-	$('#mobile-waka').css('background-color', '#fff');
+	$('#mobile-waka').css('background-color', '#FFBC8A');
 	$('#mobile-jamkings').css('background-color', '#FFE9C7');
 	$('#mobile-urban').css('background-color', '#FFE9C7');
 	$('#mobile-clumsy-biker').css('background-color', '#FFE9C7');
