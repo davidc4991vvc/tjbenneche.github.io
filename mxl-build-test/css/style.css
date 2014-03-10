@@ -119,7 +119,7 @@ video{display:none;}
 		height:2px;
 		background: #e6e7e8;
 		margin-top:2%;
-		
+
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -130,7 +130,7 @@ video{display:none;}
 	}
 	.main-content #about .arrow-svg{
 		margin-top:35%;
-		
+
 		height:3em;
 		width:3em;
 	}
@@ -148,7 +148,7 @@ video{display:none;}
 .main-content #other-sites .sub-info a{
 	color:#fff !important;
 	padding:2%;
-}	
+}
 
 .main-content #other-sites #apps-info a{
 	background-color:#38B449;
@@ -156,6 +156,7 @@ video{display:none;}
 }
 .main-content #other-sites #build-info a{
 	background-color:#FFDD17;
+	color:#262261;
 	float:right;
 }
 .main-content #other-sites #games-info a{
@@ -169,7 +170,7 @@ video{display:none;}
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 
 video{
@@ -177,7 +178,7 @@ video{
 	position: fixed; right: 0; bottom: 0;
 	min-width: 100%; min-height: 100%;
 	width: auto; height: auto; z-index: -100;
-	
+
 	background-size: cover;
 }
 /*Navbar*/
@@ -209,7 +210,7 @@ video{
 			.navbar .container-fluid .navbar-collapse .nav li a{
 				font-size:1.2em;
 			}
-		
+
 /*Navbar ends*/
 .main-content{
 	width:100%;
@@ -239,10 +240,10 @@ video{
 		padding-bottom:50%;
 	}
 		.main-content #other-sites #logo-row div{
-			
+
 		}
 	.main-content #other-sites #logo-row .sub-logo img{
-		
+
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -254,7 +255,7 @@ video{
 	}
 .main-content #other-sites #logo-row hr{
 		display:none;
-		
+
 	}
 
 	.main-content #about .arrow-svg{
@@ -265,7 +266,7 @@ video{
 .main-content #other-sites{
 	background-color: #fff;
 	width:100%;
-	
+
 	z-index:10;
 	padding-top:40px;
 
@@ -295,7 +296,7 @@ video{
 
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 /*Navbar*/
 
@@ -333,7 +334,7 @@ video{
 
 /*Navbar ends*/
 .main-content{
-	
+
 	width:100%;
 	margin:0;
 
@@ -350,7 +351,7 @@ video{
 		padding:0;
 		color:#fff;
 		z-index:10;
-		
+
 		width:100%;
 
 	}
@@ -388,10 +389,10 @@ video{
 
 }
 .main-content #other-sites hr{
-	
+
 	height:1px;
 	background:#e6e7e8;
-	
+
 }
 
 .main-content #other-sites #apps-info a{
@@ -413,11 +414,11 @@ video{
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 .main-content{
 	width:100%;
-	
+
 	margin:0;
 
 }
@@ -446,7 +447,7 @@ video{
 		margin-top:5%;
 	}
 	.main-content #other-sites #logo-row .sub-logo img{
-		width:80%;
+		width:70%;
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -509,7 +510,7 @@ video{
 		padding:0;
 		color:#fff;
 		z-index:10;
-		
+
 		width:100%;
 
 	}
@@ -521,7 +522,7 @@ video{
 		margin-top:10%;
 	}
 	.main-content #other-sites #logo-row .sub-logo img{
-		width:100%;
+		width:70%;
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -577,7 +578,7 @@ video{
 		}
 .main-content{
 	width:100%;
-	
+
 	margin:0;
 
 }
@@ -592,7 +593,7 @@ video{
 		padding:0;
 		color:#fff;
 		z-index:10;
-		height:800px;
+
 		width:100%;
 
 	}
@@ -604,7 +605,7 @@ video{
 		margin-top:10%;
 	}
 	.main-content #other-sites #logo-row .sub-logo img{
-		width:100%;
+		width:60%;
 	}
 
 	.main-content #other-sites #logo-row .sub-info{
@@ -618,7 +619,7 @@ video{
 	}
 .main-content #other-sites{
 	background-color: #fff;
-	height:800px;
+
 	width:100%;
 	z-index:10;
 	padding-top:40px;

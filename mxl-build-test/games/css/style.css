@@ -195,9 +195,9 @@ a:hover{
 .main-content #portfolio .left-box{
 	width:100%;
 
-	border:1px solid #fff;
+
 	color:#1A1A1A;
-	background-color: #FFE9C7;
+	background-color: #FFF7E5;
 }
 .main-content #portfolio .left-box .game-icon{
 	width:30%;
@@ -284,8 +284,8 @@ a:hover{
 }
 .main-content #portfolio .right .right-box .vertical-iphone-mock{
 	width:60%;
-	-webkit-transform: translateX(-50px) ;
-		-o-transform:translateX(-50px);
+	-webkit-transform: translateX(-100px) ;
+		-o-transform:translateX(-100px);
 		transform: translate(-100px);
 }
 /*Pricing Pane end*/
@@ -509,8 +509,12 @@ video{
 .main-content #portfolio .left-box{
 	width:100%;
 	height:100px;
-	border:1px solid #fff;
+	border-bottom:1px inset #FFBC8A;
 	color:#1A1A1A;
+
+}
+.main-content #portfolio #small-clumsy-biker{
+	border:none;
 }
 .main-content #portfolio .left-box .game-icon{
 	width:30%;
@@ -525,13 +529,17 @@ video{
 }
 .main-content #portfolio .left-box h2{
 	font-weight:lighter;
+	font-size:1.5em;
 	padding:10px;
+	padding-top:15%;
 	width:70%;
 	float:left;
 	margin-top:0;
 	margin-bottom:0;
 }
+.main-content #portfolio #small-urban{
 
+}
 
 .main-content #portfolio .right{
 	height:400px;
@@ -566,7 +574,8 @@ video{
 
 .main-content #portfolio .right .right-box .game-description{
 	font-size:1.2em;
-	width:100%;
+	line-height:1.6em;
+	width:90%;
 }
 
 .main-content #portfolio .right .right-box .iphone-mock{
@@ -583,17 +592,17 @@ video{
 }
 
 .main-content #portfolio .right .right-box #googleplay{
-	width:90%;
+	width:80%;
 }
 
-.main-content #portfolio #big-jamkings{
+.main-content #portfolio #big-waka{
 	display:block;
 }
-.main-content #portfolio #big-clumsy-biker, #big-urban, #big-waka{
+.main-content #portfolio #big-clumsy-biker, #big-urban, #big-jamkings{
 	display:none;
 }
 
-.main-content #portfolio #small-jamkings{
+.main-content #portfolio #small-waka{
 	background-color: #FFBC8A;
 }
 
@@ -678,6 +687,17 @@ video{
 	width:60%;
 }
 
+.main-content #portfolio .left-box h2{
+	font-weight:lighter;
+	font-size:1.5em;
+	padding:10px;
+	padding-top:10%;
+	width:70%;
+	float:left;
+	margin-top:0;
+	margin-bottom:0;
+}
+
 .footer{
 	height:50px;
 	color:white;
@@ -707,6 +727,14 @@ video{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+.navbar .container-fluid #mxl-logo{
+
+			width:18%;
+
+
+
+		}
+
 	.main-content #about #brand-copy{
 		padding-top:15%;
 	}
@@ -723,6 +751,16 @@ video{
 	width:50%;
 }
 
+.main-content #portfolio .left-box h2{
+	font-weight:lighter;
+	font-size:1.8em;
+	padding:10px;
+	padding-top:10%;
+	width:70%;
+	float:left;
+	margin-top:0;
+	margin-bottom:0;
+}
 
 .main-content #portfolio .right .right-box #googleplay{
 	width:50%;

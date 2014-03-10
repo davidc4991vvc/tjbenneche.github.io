@@ -193,9 +193,8 @@ a:hover{
 .main-content #portfolio .left-box{
 	width:100%;
 
-	border:1px solid #fff;
-	color:#1A1A1A;
-	background-color: #8CFFB0;
+
+	background-color: #D7E5D6;
 }
 .main-content #portfolio .left-box .game-icon{
 	width:30%;
@@ -508,11 +507,16 @@ video{
 .main-content #portfolio .left{
 	padding:0px;
 }
+
+.main-content #portfolio .left #small-vine{
+	border:none;
+}
 .main-content #portfolio .left-box{
 	width:100%;
 	height:100px;
-	border:1px solid #fff;
+	border-bottom:1px inset #61B079;
 	color:#1A1A1A;
+
 }
 .main-content #portfolio .left-box .game-icon{
 	width:30%;
@@ -527,7 +531,9 @@ video{
 }
 .main-content #portfolio .left-box h2{
 	font-weight:lighter;
+	font-size:1.5em;
 	padding:10px;
+	padding-top:15%;
 	width:70%;
 	float:left;
 	margin-top:0;
@@ -568,7 +574,8 @@ video{
 
 .main-content #portfolio .right .right-box .game-description{
 	font-size:1.2em;
-	width:100%;
+	line-height:1.8em;
+	width:90%;
 }
 
 .main-content #portfolio .right .right-box .iphone-mock{
@@ -578,14 +585,14 @@ video{
 		transform: translate(-100px);
 }
 .main-content #portfolio .right .right-box .vertical-iphone-mock{
-	width:80%;
+	width:90%;
 	-webkit-transform: translateY(-50px) ;
 		-o-transform:translateY(-50px);
 		transform: translate(-100px);
 }
 
 .main-content #portfolio .right .right-box #googleplay{
-	width:90%;
+	width:75%;
 }
 
 .main-content #portfolio #big-insta{
@@ -650,6 +657,17 @@ video{
 
 /*Navbar ends*/
 
+.main-content #portfolio .left-box h2{
+	font-weight:lighter;
+	font-size:1.5em;
+	padding:10px;
+	padding-top:10%;
+	width:70%;
+	float:left;
+	margin-top:0;
+	margin-bottom:0;
+}
+
 .main-content #portfolio .right .right-box .game-quote{
 	font-size:2em;
 }
@@ -659,7 +677,7 @@ video{
 }
 
 .main-content #portfolio .right .right-box .game-description{
-	font-size:1.2em;
+	font-size:1.3em;
 	width:90%;
 }
 
@@ -670,14 +688,14 @@ video{
 		transform: translate(-100px);
 }
 .main-content #portfolio .right .right-box .vertical-iphone-mock{
-	width:60%;
-	-webkit-transform: translateY(-50px) ;
-		-o-transform:translateY(-50px);
+	width:90%;
+	-webkit-transform: translateY(-80px) ;
+		-o-transform:translateY(-80px);
 		transform: translate(-100px);
 }
 
 .main-content #portfolio .right .right-box #googleplay{
-	width:60%;
+	width:50%;
 }
 
 .footer{
@@ -722,20 +740,23 @@ video{
 	}
 
 			.main-content #about #brand-copy h1{
-				font-size:5.5em;
+				font-size:5em;
+				width:70%
 			}
 			.main-content #about #brand-copy p{
 				margin-top:5%;
 			}
 
-
+.main-content #portfolio .left-box h2{
+	padding-top:10%;
+}
 	.main-content #contact #contact-form .form-control{
 	width:50%;
 }
 
 
 .main-content #portfolio .right .right-box #googleplay{
-	width:50%;
+	width:40%;
 }
 
 .main-content #portfolio .right .right-box .iphone-mock{
@@ -745,7 +766,7 @@ video{
 		transform: translate(-100px);
 }
 .main-content #portfolio .right .right-box .vertical-iphone-mock{
-	width:60%;
+	width:75%;
 	-webkit-transform: translateY(-100px) ;
 		-o-transform:translateY(-100px);
 		transform: translate(-100px);
@@ -754,7 +775,9 @@ video{
 
 @media (min-width:1366px){
 
-
+.main-content #portfolio .left-box h2{
+	padding-top:5%;
+}
 
 /*About Pane*/
 
@@ -762,20 +785,24 @@ video{
 			padding-top:15%;
 		}
 			.main-content #about #brand-copy h1{
-				font-size:5.5em;
+				font-size:5em;
 				width:70%
 			}
 .main-content #portfolio .left-box .game-icon{
 	width:25%;
 }
 .main-content #portfolio .right .right-box #googleplay{
-	width:40%;
+	width:35%;
 }
 .main-content #portfolio .right .right-box .iphone-mock{
 	width:110%;
 	-webkit-transform: translateX(-70px) ;
 		-o-transform:translateX(-70px);
 		transform: translate(-70px);
+}
+
+.main-content #portfolio .right .right-box .vertical-iphone-mock{
+	width:80%
 }
 
 /*About Pane end*/

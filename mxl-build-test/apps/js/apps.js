@@ -7,9 +7,9 @@ $('#small-insta').on('click', function(){
 	$('#big-kai, #big-snapcatch, #big-vine').hide();
 	$('#big-insta').show();
 	$('#small-insta').css('background-color', '#61B079');
-	$('#small-snapcatch').css('background-color', '#8CFFB0');
-	$('#small-kai').css('background-color', '#8CFFB0');
-	$('#small-vine').css('background-color', '#8CFFB0');
+	$('#small-snapcatch').css('background-color', '#D7E5D6');
+	$('#small-kai').css('background-color', '#D7E5D6');
+	$('#small-vine').css('background-color', '#D7E5D6');
 });
 
 $('#small-kai').on('click', function(){
@@ -17,9 +17,9 @@ $('#small-kai').on('click', function(){
 	$('#big-insta, #big-snapcatch, #big-vine').hide();
 	$('#big-kai').show()
 	$('#small-kai').css('background-color', '#61B079');
-	$('#small-insta').css('background-color', '#8CFFB0');
-	$('#small-snapcatch').css('background-color', '#8CFFB0');
-	$('#small-vine').css('background-color', '#8CFFB0');
+	$('#small-insta').css('background-color', '#D7E5D6');
+	$('#small-snapcatch').css('background-color', '#D7E5D6');
+	$('#small-vine').css('background-color', '#D7E5D6');
 });
 
 $('#small-snapcatch').on('click', function(){
@@ -27,9 +27,9 @@ $('#small-snapcatch').on('click', function(){
 	$('#big-insta, #big-kai, #big-vine').hide();
 	$('#big-snapcatch').show()
 	$('#small-snapcatch').css('background-color', '#61B079');
-	$('#small-insta').css('background-color', '#8CFFB0');
-	$('#small-kai').css('background-color', '#8CFFB0');
-	$('#small-vine').css('background-color', '#8CFFB0');
+	$('#small-insta').css('background-color', '#D7E5D6');
+	$('#small-kai').css('background-color', '#D7E5D6');
+	$('#small-vine').css('background-color', '#D7E5D6');
 });
 
 $('#small-vine').on('click', function(){
@@ -37,9 +37,9 @@ $('#small-vine').on('click', function(){
 	$('#big-insta, #big-kai, #big-snapcatch').hide();
 	$('#big-vine').show()
 	$('#small-vine').css('background-color', '#61B079');
-	$('#small-insta').css('background-color', '#8CFFB0');
-	$('#small-snapcatch').css('background-color', '#8CFFB0');
-	$('#small-kai').css('background-color', '#8CFFB0');
+	$('#small-insta').css('background-color', '#D7E5D6');
+	$('#small-snapcatch').css('background-color', '#D7E5D6');
+	$('#small-kai').css('background-color', '#D7E5D6');
 });
 
 
@@ -49,9 +49,9 @@ $('#mobile-insta').on('click', function(){
 	$('#big-kai, #big-snapcatch, #big-vine').hide();
 	$('#big-insta').show();
 	$('#mobile-insta').css('background-color', '#61B079');
-	$('#mobile-snapcatch').css('background-color', '#8CFFB0');
-	$('#mobile-kai').css('background-color', '#8CFFB0');
-	$('#mobile-vine').css('background-color', '#8CFFB0');
+	$('#mobile-snapcatch').css('background-color', '#D7E5D6');
+	$('#mobile-kai').css('background-color', '#D7E5D6');
+	$('#mobile-vine').css('background-color', '#D7E5D6');
 });
 
 $('#mobile-kai').on('click', function(){
@@ -59,9 +59,9 @@ $('#mobile-kai').on('click', function(){
 	$('#big-insta, #big-snapcatch, #big-vine').hide();
 	$('#big-kai').show()
 	$('#mobile-kai').css('background-color', '#61B079');
-	$('#mobile-insta').css('background-color', '#8CFFB0');
-	$('#mobile-snapcatch').css('background-color', '#8CFFB0');
-	$('#mobile-vine').css('background-color', '#8CFFB0');
+	$('#mobile-insta').css('background-color', '#D7E5D6');
+	$('#mobile-snapcatch').css('background-color', '#D7E5D6');
+	$('#mobile-vine').css('background-color', '#D7E5D6');
 });
 
 $('#mobile-snapcatch').on('click', function(){
@@ -69,9 +69,9 @@ $('#mobile-snapcatch').on('click', function(){
 	$('#big-insta, #big-kai, #big-vine').hide();
 	$('#big-snapcatch').show()
 	$('#mobile-snapcatch').css('background-color', '#61B079');
-	$('#mobile-insta').css('background-color', '#8CFFB0');
-	$('#mobile-kai').css('background-color', '#8CFFB0');
-	$('#mobile-vine').css('background-color', '#8CFFB0');
+	$('#mobile-insta').css('background-color', '#D7E5D6');
+	$('#mobile-kai').css('background-color', '#D7E5D6');
+	$('#mobile-vine').css('background-color', '#D7E5D6');
 });
 
 $('#mobile-vine').on('click', function(){
@@ -79,9 +79,9 @@ $('#mobile-vine').on('click', function(){
 	$('#big-insta, #big-kai, #big-snapcatch').hide();
 	$('#big-vine').show()
 	$('#mobile-vine').css('background-color', '#61B079');
-	$('#mobile-insta').css('background-color', '#8CFFB0');
-	$('#mobile-snapcatch').css('background-color', '#8CFFB0');
-	$('#mobile-kai').css('background-color', '#8CFFB0');
+	$('#mobile-insta').css('background-color', '#D7E5D6');
+	$('#mobile-snapcatch').css('background-color', '#D7E5D6');
+	$('#mobile-kai').css('background-color', '#D7E5D6');
 });
 
 

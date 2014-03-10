@@ -37,7 +37,7 @@ video{
 	position: fixed; right: 0; bottom: 0;
 	min-width: 100%; min-height: 100%;
 	width: auto; height: auto; z-index: -100;
-	
+
 	background-size: cover;
 }
 
@@ -86,7 +86,7 @@ video{
 				font-size:1.4em;
 			}
 			.navbar .container-fluid .navbar-collapse .nav .active{
-				
+
 			}
 /*Navbar end*/
 
@@ -119,14 +119,14 @@ video{
 		font-size:4em;
 		padding-left:5%;
 	}
-	
+
 	.main-content #about p{
 		padding-left:5%;
 		font-size:1.5em;
 		padding-top:2%;
 		width:80%;
 	}
-	
+
 	.main-content #about .arrow-svg{
 		margin-top:15%;
 		height:3em;
@@ -139,10 +139,10 @@ video{
 
 .main-content #team .container-fluid{
 	padding-top:5%;
-	padding-bottom: 10%
+	padding-bottom: 5%
 }
 .main-content #team h1{
-		padding-top:10%;
+		padding-top:5%;
 		font-size:3.5em;
 		padding-left:5%;
 		text-align: left;
@@ -159,19 +159,19 @@ video{
 	color:#00ACF5;
 	margin-top:0;
 	margin-bottom:0;
-	font-size:1.6em;
+	font-size:1.4em;
 }
 .main-content #team .team-pic .name-bg h3{
 	color:#fff;
 	margin-bottom:5%;
 	margin-top:0;
+	font-size:1.3em;
 }
 
 
 .main-content #team .team-pic img{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
+	overflow:hidden;
 	width:100%;
 }
 
@@ -188,10 +188,10 @@ video{
 				background-color: #CCC;
 	}
 		.main-content #press #press-icon-row{
-			
+
 		}
 			.main-content #press #press-icon-row div{
-				padding-top:50px;
+				padding-top:25px;
 				padding-bottom:25px;
 			}
 			.main-content #press #press-icon-row div img{
@@ -338,7 +338,7 @@ video{
 	}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 .mobile-footer{
 	display:none;
@@ -375,7 +375,7 @@ video{
 			.navbar .container-fluid .navbar-collapse .nav li a{
 				font-size:1.2em;
 			}
-		
+
 /*Navbar ends*/
 
 
@@ -385,7 +385,7 @@ video{
 		padding:0;
 		color:#262261;
 		z-index:10;
-	
+
 		width:100%;
 		text-align: left;
 	}
@@ -400,7 +400,7 @@ video{
 		padding-top:2%;
 		width:80%;
 	}
-	
+
 	.main-content #about .arrow-svg{
 		margin-top:15%;
 		height:3em;
@@ -425,16 +425,17 @@ video{
 }
 .main-content #team .team-pic .name-bg h2{
 	color:#00ACF5;
-	margin-top:5%;
+	margin-top:3%;
 	margin-bottom:0;
 	margin-left:5%;
 }
 .main-content #team .team-pic .name-bg h3{
 	color:#fff;
 	margin-bottom:5%;
-	margin-top:2%;
+	margin-top:1%;
 	margin-left:5%;
 }
+
 
 
 
@@ -450,9 +451,7 @@ video{
 }
 .main-content #team .team-pic img{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	
+
 }
 
 .main-content #team .team-pic{
@@ -467,7 +466,7 @@ video{
 				background-color: #CCC;
 	}
 		.main-content #press #press-icon-row{
-			
+
 		}
 			.main-content #press #press-icon-row div{
 				padding-top:50px;
@@ -475,7 +474,7 @@ video{
 			}
 			.main-content #press #press-icon-row div img{
 				width:80%;
-				
+
 			}
 		.main-content #press #press-quotes{
 			width:90%;
@@ -595,7 +594,7 @@ video{
 
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 /*Navbar*/
 
@@ -639,7 +638,7 @@ video{
 		padding:0;
 		color:#262261;
 		z-index:10;
-	
+
 		width:100%;
 		text-align: left;
 	}
@@ -654,7 +653,7 @@ video{
 		padding-top:2%;
 		width:70%;
 	}
-	
+
 	.main-content #about .arrow-svg{
 		margin-top:15%;
 		height:3em;
@@ -689,8 +688,10 @@ video{
 }
 .main-content #team .team-pic img{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
+}
+
+.main-content #team .team-pic .name-bg{
+	height:25%;
 }
 
 .main-content #team .team-pic{
@@ -705,7 +706,7 @@ video{
 				background-color: #CCC;
 	}
 		.main-content #press #press-icon-row{
-			
+
 		}
 			.main-content #press #press-icon-row div{
 				padding-top:50px;
@@ -832,7 +833,7 @@ video{
 
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 
 /*About Pane*/
@@ -841,7 +842,7 @@ video{
 		padding:0;
 		color:#262261;
 		z-index:10;
-	
+
 		width:100%;
 		text-align: left;
 	}
@@ -856,7 +857,7 @@ video{
 		padding-top:2%;
 		width:70%;
 	}
-	
+
 	.main-content #about .arrow-svg{
 		margin-top:15%;
 		height:3em;
@@ -891,8 +892,23 @@ video{
 }
 .main-content #team .team-pic img{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
+}
+
+.main-content #team .team-pic .name-bg{
+	height:25%;
+}
+
+.main-content #team .team-pic .name-bg h2{
+	font-size:1.6em;
+	margin-top:3%;
+	margin-bottom:0;
+	margin-left:5%;
+}
+.main-content #team .team-pic .name-bg h3{
+	font-size:1.6em;
+	margin-bottom:5%;
+	margin-top:1%;
+	margin-left:5%;
 }
 
 .main-content #team .team-pic{
@@ -907,7 +923,7 @@ video{
 				background-color: #CCC;
 	}
 		.main-content #press #press-icon-row{
-			
+
 		}
 			.main-content #press #press-icon-row div{
 				padding-top:50px;
@@ -1043,7 +1059,7 @@ video{
 		padding:0;
 		color:#262261;
 		z-index:10;
-	
+
 		width:100%;
 		text-align: left;
 	}
@@ -1058,7 +1074,7 @@ video{
 		padding-top:2%;
 		width:60%;
 	}
-	
+
 	.main-content #about .arrow-svg{
 		margin-top:15%;
 		height:3em;
@@ -1093,8 +1109,6 @@ video{
 }
 .main-content #team .team-pic img{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 .main-content #team .team-pic{
@@ -1109,7 +1123,7 @@ video{
 				background-color: #CCC;
 	}
 		.main-content #press #press-icon-row{
-			
+
 		}
 			.main-content #press #press-icon-row div{
 				padding-top:50px;
@@ -1253,7 +1267,7 @@ video{
 		padding:0;
 		color:#262261;
 		z-index:10;
-	
+
 		width:100%;
 		text-align: left;
 	}
@@ -1268,7 +1282,7 @@ video{
 		padding-top:2%;
 		width:60%;
 	}
-	
+
 	.main-content #about .arrow-svg{
 		margin-top:15%;
 		height:3em;
@@ -1303,8 +1317,6 @@ video{
 }
 .main-content #team .team-pic img{
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 .main-content #team .team-pic{
@@ -1319,7 +1331,7 @@ video{
 				background-color: #CCC;
 	}
 		.main-content #press #press-icon-row{
-			
+
 		}
 			.main-content #press #press-icon-row div{
 				padding-top:50px;

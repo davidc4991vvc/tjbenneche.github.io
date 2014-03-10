@@ -1,5 +1,7 @@
 
 
+
+
 $('#apps-logo > a').on('click', function(){
 	event.preventDefault();
 	$('#apps-info').slideToggle();

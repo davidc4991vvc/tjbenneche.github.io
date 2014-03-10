@@ -98,7 +98,7 @@ a:hover{
 	.main-content #about{
 		background-color:#262261;
 		background: rgba(38, 34, 97, .8);
-		
+
 		color:#fff;
 		z-index:10;
 	}
@@ -149,8 +149,8 @@ a:hover{
 				width:60%;
 			}
 			.main-content .arrow-svg{
-				
-			
+
+
 				display:block;
 				margin-left:auto;
 				margin-right:auto;
@@ -168,7 +168,7 @@ a:hover{
 
 	.main-content .assets{
 		background-color:#B8B8B8;
-		
+
 	}
 	.main-content .assets .sub-content-pane{
 		overflow: hidden;
@@ -203,7 +203,7 @@ a:hover{
 
 
 		.main-content .assets .info-block{
-			
+
 		}
 		.main-content .assets .info-block .asset-icon{
 			padding-top:10%;
@@ -226,13 +226,14 @@ a:hover{
 			width:15%;
 
 		}
-	
+
 
 		.main-content .assets #engage-section{
 			background-color: #38B449;
 		}
 		.main-content .assets #build-section{
 			background-color: #FFDD17;
+
 		}
 		.main-content .assets #grow-section{
 			background-color: #F15A29;
@@ -242,7 +243,19 @@ a:hover{
 		}
 
 
+		.main-content .assets #build-block h1{
+			color:#262261;
+		}
+		.main-content .assets #build-block .arrow-svg{
+			fill: #262261;
+		}
 
+		.main-content .assets #build-block-hidden .asset-icon img{
+			
+		}
+		.main-content .assets #build-block-hidden .asset-blurb{
+			color:#262261;
+		}
 		.main-content .assets .color-block h1{
 			width:100%;
 			text-align: center;
@@ -254,7 +267,7 @@ a:hover{
 		}
 		.main-content .assets .info-block .asset-blurb{
 			color:#fff;
-			
+
 		}
 
 
@@ -330,9 +343,9 @@ a:hover{
 			padding-top:2%;
 			font-size: 1.4em
 		}
-			.main-content #pricing #pricing-cards .card { 
+			.main-content #pricing #pricing-cards .card {
 				padding:25px 0px;
-				
+
 				margin-left:30px;
 				margin-right:30px;
 			}
@@ -473,7 +486,7 @@ a:hover{
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 .footer{
 	display:block;
@@ -521,14 +534,14 @@ video{
 				background-color: #FFDD17;
 				padding:10px;
 			}
-		
+
 /*Navbar ends*/
 
 
 /*About Pane*/
 
 	.main-content #about{
-		
+
 		text-align: left;
 	}
 		.main-content #about .container-fluid{
@@ -536,7 +549,7 @@ video{
 		}
 	.main-content #about #brand-copy{
 		padding-top:10%;
-			
+
 	}
 				.main-content #about #brand-copy h1{
 					font-size:5em;
@@ -570,12 +583,12 @@ video{
 				margin-right:auto;
 				width:3em;
 				height:3em;
-				
-			
+
+
 			}
 				.main-content #about .game-art{
 					visibility: hidden;
-					
+
 				}
 					.main-content #about .game-art img{
 						width:40%;
@@ -615,10 +628,10 @@ video{
 /*Assets Pane*/
 	.main-content .assets{
 		background-color:#B8B8B8;
-		
+
 	}
 	.main-content .assets .sub-content-pane{
-		
+
 	}
 	.main-content .assets .left-header{
 		font-size:3em;
@@ -685,7 +698,7 @@ video{
 			-webkit-transform: rotate(180deg);
 		    -webkit-transform-origin: 100%;
 
-		    -o-transform:translate(100px) rotate(20deg); 
+		    -o-transform:translate(100px) rotate(20deg);
 		    -o-transform-origin:60% 100%;
 
 		    transform: rotate(180deg);
@@ -697,12 +710,12 @@ video{
 
 /*Personas Pane*/
 		.main-content #personas{
-			
+
 		}
 		.main-content #personas .container-fluid{
 			padding-bottom:5%;
 		}
-			
+
 			.main-content #personas .user-avatar{
 				margin-top:10%;
 			}
@@ -715,7 +728,7 @@ video{
 				margin-right:auto;
 			}
 			.main-content #personas .arrow-svg{
-				
+
 				padding-bottom: 0;
 			}
 /*Personas Pane ends*/
@@ -727,11 +740,11 @@ video{
 
 
 	.main-content #pricing{
-		
+
 	}
 		.main-content #pricing #pricing-cards{
 			padding:25px 0px;
-		}	
+		}
 			.main-content #pricing #pricing-cards .card{
 				margin:0px;
 				padding:0px;
@@ -741,7 +754,7 @@ video{
 				}
 				.main-content #pricing #pricing-cards .small-card{
 					padding:50px 25px;
-					
+
 					margin-left:auto;
 					margin-right:auto;
 				}
@@ -795,7 +808,7 @@ video{
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 /*Navbar*/
 
@@ -834,7 +847,7 @@ video{
 /*Navbar ends*/
 
 .main-content .content-pane{
-	
+
 }
 .footer{
 	height:50px;
@@ -856,7 +869,7 @@ video{
 			}
 
 				.main-content #about .arrow-svg{
-				
+
 				padding-bottom:0;
 			}
 /*About Pane ends*/
@@ -864,7 +877,7 @@ video{
 
 .main-content .assets{
 		background-color:#B8B8B8;
-		
+
 	}
 	.main-content .assets h1{
 		font-size:3em;
@@ -882,7 +895,7 @@ video{
 		display:none;
 	}
 		.main-content .assets .info-block{
-			
+
 		}
 		.main-content .assets .exit-button{
 			width:100%;
@@ -951,7 +964,7 @@ video{
 
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 	.main-content .content-pane{
 			padding-left:10%;
@@ -985,7 +998,7 @@ video{
 
 		.main-content #about #brand-copy{
 			padding-top:20%;
-			
+
 		}
 			.main-content #about #brand-copy h1{
 				font-size:4em;
