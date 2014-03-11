@@ -251,7 +251,7 @@ a:hover{
 		}
 
 		.main-content .assets #build-block-hidden .asset-icon img{
-			
+
 		}
 		.main-content .assets #build-block-hidden .asset-blurb{
 			color:#262261;
@@ -426,6 +426,9 @@ a:hover{
 				font-size:1.5em;
 				background-color: #e6e7e8;
 			}
+			.main-content #contact #contact-form textarea{
+				display:none;
+			}
 
 /*Footer*/
 
@@ -530,7 +533,7 @@ video{
 			}
 			.navbar .container-fluid .navbar-collapse .nav li a{
 				font-size:1.4em;
-				margin-top:6%;
+				margin-top:4%;
 				background-color: #FFDD17;
 				padding:10px;
 			}
@@ -965,6 +968,14 @@ video{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+	.navbar .container-fluid #mxl-logo{
+
+				width:18%;
+
+
+
+			}
 
 	.main-content .content-pane{
 			padding-left:10%;
