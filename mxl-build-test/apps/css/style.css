@@ -175,13 +175,14 @@ a:hover{
 }
 
 .main-content #portfolio .left-mobile .game-icon{
-	background-color: #8CFFB0;
 }
 
 .main-content #portfolio #mobile-insta{
 
 }
-
+.main-content #portfolio .left-mobile{
+	background-color: #D7E5D6;
+}
 
 .main-content #portfolio .left-mobile .col-xs-3{
 	padding:0;
@@ -189,6 +190,7 @@ a:hover{
 .main-content #portfolio .left{
 	padding:0px;
 	display:none;
+	background-color: #D7E5D6;
 }
 .main-content #portfolio .left-box{
 	width:100%;

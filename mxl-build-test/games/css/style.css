@@ -174,8 +174,11 @@ a:hover{
 	width:80%;
 }
 
+.main-content #portfolio .left-mobile{
+	background-color: #FFF7E5;
+}
 .main-content #portfolio .left-mobile .game-icon{
-	background-color: #FFE9C7;
+	
 }
 
 .main-content #portfolio #mobile-jamkings{
@@ -191,6 +194,7 @@ a:hover{
 .main-content #portfolio .left{
 	padding:0px;
 	display:none;
+	background-color: #FFF7E5;
 }
 .main-content #portfolio .left-box{
 	width:100%;
