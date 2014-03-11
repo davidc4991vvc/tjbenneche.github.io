@@ -137,6 +137,9 @@ video{
 
 /*About Pane end*/
 
+.main-content #team{
+	padding-bottom:10%;
+}
 .main-content #team .container-fluid{
 	padding-top:5%;
 	padding-bottom: 5%
@@ -152,7 +155,7 @@ video{
 .main-content #team .team-pic .name-bg{
 	background: rgba(0,0,0, .5);
 	width:100%;
-	height:35%;
+	height:45%;
 	position:absolute;
 	bottom:0;
 }
@@ -166,7 +169,7 @@ video{
 	color:#fff;
 	margin-bottom:5%;
 	margin-top:0;
-	font-size:1.3em;
+	font-size:1.2em;
 }
 
 
