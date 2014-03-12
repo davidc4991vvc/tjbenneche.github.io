@@ -44,7 +44,7 @@ a:hover{
 				}
 				.navbar .navbar-header .navbar-brand #bfc-icon{
 					display:block;
-					width:30%;
+					width:60%;
 				}
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:none;
@@ -105,6 +105,11 @@ a:hover{
 	/*background: rgba(146, 171, 89, 1);*/
 	/*border-radius: 10px 10px;*/
 }
+
+#action-buttons .sub-section{
+	margin-bottom:10%;
+}
+
 #action-buttons .container-fluid .sub-section svg{
 	display:block;
 	margin-left: auto;
@@ -116,17 +121,105 @@ a:hover{
 }
 
 
+#email-capture{
+	background-color:#F0F5E9;
+	text-align:left;
+	color:#18692D;
+}
+#email-capture h1{
+	font-size:2em;
+	padding-top:10%;
+	padding-bottom:10%;
+	margin:0;
+}
+#email-capture form{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#email-capture .form-group .form-control{
+	border:none;
+	box-shadow:none;
+	font-size: 1.8em;
+	background-color:#72CF7C;
+	height:auto;
+	color:#fff;
+	text-align:left;
+	font-weight:200;
+}
+
+#email-capture .form-control::-webkit-input-placeholder { /* WebKit browsers */
+color:    #FFF;
+}
+#email-capture .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:    #FFF;
+}
+#email-capture .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:    #FFF;
+}
+#email-capture .btn{
+	margin-top:10%;
+	border-radius: 0;
+	font-size:1.5em;
+	background-color:#18692D;;
+	color:#fff;
+	margin-bottom:10%;
+	font-weight:200;
+}
+
+
+
+
+
+
+#about-us{
+	color:#fff;
+}
+
+#about-us p{
+	color:#18692D;
+	font-size:1.2em;
+	line-height:1.5em;
+}
+
+
+
+
 
 /*Footer*/
 
 .footer{
-	background-color:#262261;
+	background-color:#420B21;
 	color:white;
-	height:100px;
+	height:50px;
+	padding-top:1%;
+
 }
 	.footer ul{
 		list-style: none;
 	}
+
+	.footer #subnav{
+		display:none;
+	}
+		.footer #subnav li{
+			display:inline;
+			float:left;
+		}
+
+		.footer #social-icons li{
+			float:left;
+			display:inline;
+			width:33%;
+		}
+			.footer #social-icons li img{
+				width:30%;
+			}
+
+		.footer #copyright{
+			text-align:right;
+			display:none;
+		}
 
 /*Footer End*/
 
@@ -134,7 +227,7 @@ a:hover{
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 /*Navbar*/
 
@@ -147,9 +240,14 @@ a:hover{
 		margin-left:auto;
 		margin-right:auto;
 	}
+		.navbar .container-fluid .nav{
+			float:right;
+		}
 
-			
-		
+.navbar .navbar-header .navbar-brand #bfc-icon{
+	width:60%;
+}
+
 /*Navbar ends*/
 
 
@@ -160,7 +258,7 @@ a:hover{
 #picture-slider .carousel .item .carousel-caption p{
 	font-size:2.8em;
 }
-			
+
 #picture-slider .carousel .item .color-overlay{
 	position:absolute;
 	top:45%;
@@ -174,17 +272,165 @@ a:hover{
 	width:70%;
 }
 
+
+.row div #reservation-hover, #delivery-hover, #giftcard-hover{
+	width:90%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	fill: #18692D;
+	/*background-color:#12141C;*/
+	border: 3px dashed #fff;
+	/*background: rgba(146, 171, 89, 1);*/
+	/*border-radius: 10px 10px;*/
+}
+
+#action-buttons .sub-section{
+	margin-bottom:10%;
+}
+
+#action-buttons .container-fluid .sub-section svg{
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+}
+#action-buttons .container-fluid .sub-section h3{
+	text-align: center;
+	color:#18692D;
+	font-size:1.3em;
+}
+
 #about-us{
-	width:70%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 }
 
+#about-us img{
+	width:30%;
+}
+}
+
+
+#email-capture{
+	background-color:#F0F5E9;
+	text-align:left;
+	color:#18692D;
+}
+#email-capture h1{
+	font-size:3em;
+	padding-top:10%;
+	margin:0;
+}
+#email-capture form{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#email-capture .form-group .form-control{
+	border:none;
+	box-shadow:none;
+	font-size: 1.8em;
+
+	height:auto;
+	color:#fff;
+	text-align:left;
+	font-weight:200;
+}
+#email-capture .form-control{
+	border:none;
+	box-shadow: none;
+	font-size: 1.8em;
+	height:auto;
+	color:#fff;
+	text-align: left;
+	font-weight:200;
+}
+#email-capture .form-control::-webkit-input-placeholder { /* WebKit browsers */
+color:    #FFF;
+}
+#email-capture .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:    #FFF;
+}
+#email-capture .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:    #FFF;
+}
+#email-capture .btn{
+	margin-top:3%;
+	border-radius: 0;
+	font-size:1.5em;
+
+	color:#fff;
+	margin-bottom:15%;
+	font-weight:200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer{
+	background-color:#420B21;
+	color:white;
+	height:50px;
+	padding-top:2%;
+
+}
+	.footer ul{
+		list-style: none;
+	}
+
+	.footer #subnav{
+		display:block;
+	}
+		.footer #subnav li{
+			display:inline;
+			float:left;
+			padding-right:5%;
+		}
+
+		.footer #social-icons li{
+			float:left;
+			display:inline;
+			width:33%;
+		}
+			.footer #social-icons li img{
+				width:30%;
+			}
+
+		.footer #copyright{
+			text-align:right;
+			display:block;
+		}
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 /*Navbar*/
+
+.footer{
+	height:60px;
+
+}
+
+.footer .container-fluid{
+
+}
+
+.footer #social-icons li img{
+	width:20%;
+
+}
 
 .navbar{
 	height:100px;
@@ -233,11 +479,19 @@ a:hover{
 
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 /*Navbar*/
 
-
+#about-us{
+	width:70%;
+}
+#about-us h2{
+	font-size:2.5em;
+}
+#about-us p{
+	font-size:1.6em;
+}
 /*Navbar ends*/
 
 
