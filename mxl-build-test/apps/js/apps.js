@@ -2,20 +2,18 @@
 $('.carousel').carousel()
 
 
-
 // When the page finishes loading
 window.onload = function () {
 
 	// Grab the email form
 	$("#contact-form").submit(function(event) {
-
 		// Create an AJAX request object
 		var api_request = new XMLHttpRequest();
 		api_request.open("POST", "http://mobilexlabs.com/feedback.php", true);
 		api_request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
 		// Set the data to send. We want to grab the email input and the feedback input
-		api_request.send("email=" + $("#email-input").value + "&feedback="+$("#feedback-input"));
+		api_request.send("email=" + document.getElementById("email-input").value + "&feedback="+document.getElementById("feedback-input").value);
 
 		api_request.onreadystatechange = function() {
 

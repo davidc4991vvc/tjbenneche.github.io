@@ -1,0 +1,1472 @@
+/*css doc to sit on top of bootstrap*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*Body*/
+
+body{
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+h1, h2, h3, h4{
+  font-weight:200;
+}
+p, li, a{
+  font-weight:400;
+}
+
+
+a:hover{
+  text-decoration: none;
+
+}
+.carousel-control.right{
+  background-image:none;
+}
+.carousel-control.left{
+  background-image:none;
+}
+  .carousel-control.right .glyphicon-chevron-right{
+    right:0;
+  }
+  .carousel-control.left .glyphicon-chevron-left{
+    left:0;
+  }
+
+video{
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+
+  background-size: cover;
+}
+
+
+/*Navbar*/
+
+.navbar{
+  background-color:#fff;
+  height:40px;
+  z-index:10000;
+}
+  .navbar .container-fluid{
+    background-color: #fff;
+    height:40px;
+  }
+    .navbar .container-fluid #big-logo{
+      display:none;
+    }
+    .navbar .container-fluid #mxl-logo{
+      display:none;
+    }
+    .navbar .container-fluid #mxl-logo-icon-center{
+      display:none;
+    }
+    .navbar .container-fluid .navbar-brand{
+      padding: 8px 15px;
+    }
+    .navbar .container-fluid .navbar-collapse{
+      background-color: #fff;
+    }
+        .navbar .container-fluid .navbar-collapse .nav .active > a{
+          background-color:transparent;
+          color:#00ACF5;
+        }
+        .navbar .container-fluid .navbar-collapse .nav .active > a:hover{
+          background-color:transparent;
+        }
+        .navbar .navbar-header .navbar-brand #mxl-logo-icon{
+          display:block;
+          width:100%;
+        }
+      .navbar .container-fluid .navbar-collapse .nav .spacer{
+        display:none;
+      }
+      .navbar .container-fluid .navbar-collapse .nav li a{
+        font-size:1.4em;
+      }
+      .navbar .container-fluid .navbar-collapse .nav .active{
+
+      }
+/*Navbar end*/
+
+
+/*Main Content*/
+
+.main-content{
+  height:100%;
+  width:100%;
+  background-color:#e6e7e8;
+  margin:0;
+  padding-top:15%;
+}
+  .main-content  .content-pane{
+    text-align:center;
+  }
+
+
+/*About Pane*/
+
+  .main-content #about{
+    padding:0;
+    color:#262261;
+    z-index:10;
+    width:100%;
+    text-align: left;
+  }
+  .main-content #about h1{
+    padding-top:20%;
+    font-size:3em;
+    padding-left:5%;
+  }
+
+  .main-content #about p{
+    padding-left:5%;
+    font-size:1.5em;
+    padding-top:2%;
+    width:80%;
+  }
+
+  .main-content #about .arrow-svg{
+    margin-top:15%;
+    height:3em;
+    width:3em;
+  }
+
+
+
+/*About Pane end*/
+
+.main-content #team{
+  padding-bottom:10%;
+}
+.main-content #team .container-fluid{
+  padding-top:5%;
+  padding-bottom: 5%
+  overflow:hidden;
+}
+.main-content #team h1{
+    padding-top:2%;
+    font-size:3em;
+    padding-left:5%;
+    text-align: left;
+    color:#262261;
+  }
+.main-content #team .team-pic .name-bg{
+  background: rgba(0,0,0, .5);
+  width:100%;
+  height:45%;
+  position:absolute;
+  bottom:0;
+}
+.main-content #team .team-pic .name-bg h2{
+  color:#00ACF5;
+  margin-top:0;
+  margin-bottom:0;
+  font-size:1.4em;
+}
+.main-content #team .team-pic .name-bg h3{
+  color:#fff;
+  margin-bottom:5%;
+  margin-top:0;
+  font-size:1.2em;
+}
+
+
+.main-content #team .team-pic img{
+  display:block;
+  overflow:hidden;
+  width:100%;
+}
+
+.main-content #team .team-pic{
+  padding-top:5%;
+  position:relative;
+  text-align: left;
+}
+
+
+/*Press Pane*/
+/*Press pane*/
+  .main-content #press{
+        background-color: #CCC;
+  }
+    .main-content #press #press-icon-row{
+
+    }
+      .main-content #press #press-icon-row div{
+        padding-top:25px;
+        padding-bottom:25px;
+      }
+      .main-content #press #press-icon-row div img{
+        width:80%;
+
+      }
+    .main-content #press #press-quotes{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .main-content #press #press-quotes h4{
+      color:#fff;
+    }
+    .main-content #press #press-quotes p{
+      color:#fff;
+      width:100%;
+      text-align: right
+    }
+
+
+
+
+.main-content #contact{
+    background-color: #e6e7e8;
+    text-align:center;
+    color:#262261;
+  }
+    .main-content #contact h1{
+      text-align: center;
+      font-size:4em;
+      padding-top:10%;
+    }
+    .main-content #contact .contact-box{
+      background-color:#555;
+      height:100px;
+      color:#E6E7E8;
+      margin-bottom:50px;
+    }
+      .main-content #contact h3{
+        font-weight:400;
+        text-align: left;
+        padding-top:5%;
+      }
+      .main-content #contact #contact-form{
+        padding-top:50px;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .main-content #contact #contact-form .form-group .form-control{
+        border:none;
+        box-shadow:none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align:left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control{
+        border:none;
+        box-shadow: none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align: left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .btn{
+        margin-top:10%;
+        border-radius: 0;
+        font-size:1.5em;
+        background-color:#00ACF5;;
+        color:#fff;
+        margin-bottom:10%;
+        font-weight:200;
+      }
+
+
+.footer{
+  display:none;
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+.mobile-footer{
+  height:50px;
+}
+.mobile-footer .container-fluid{
+  height:50px;
+}
+
+.mobile-footer .container-fluid .row .col-xs-4{
+  height:50px;
+  color:#fff;
+  text-align: center;
+}
+
+  .mobile-footer #mobile-footer-left{
+    background-color:  #FFDD17;
+  }
+  .mobile-footer #mobile-footer-center{
+    background-color:  #F15A29;
+  }
+  .mobile-footer #mobile-footer-right{
+    background-color:  #38B449;
+  }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+.mobile-footer{
+  display:none;
+}
+.footer{
+  display:block;
+}
+/*Navbar*/
+
+.navbar{
+  height:40px;
+}
+  .navbar .container-fluid{
+    height:inherit;
+  }
+    .navbar .container-fluid .navbar-brand{
+      display:block;
+    }
+    .navbar .container-fluid #mxl-logo-icon-center{
+      margin-left:auto;
+      margin-right:auto;
+      width:40px;
+      float:center;
+    }
+    .navbar .container-fluid .navbar-collapse .nav{
+      float:right;
+    }
+    .navbar .navbar-header .navbar-brand #mxl-logo-icon{
+    }
+      .navbar .container-fluid .navbar-collapse .nav .spacer{
+        display:block;
+        visibility:hidden;
+      }
+      .navbar .container-fluid .navbar-collapse .nav li a{
+        font-size:1.2em;
+      }
+
+/*Navbar ends*/
+
+
+/*About Pane*/
+
+  .main-content #about{
+    padding:0;
+    color:#262261;
+    z-index:10;
+    width:100%;
+    text-align: left;
+  }
+  .main-content #about h1{
+    padding-top:10%;
+    font-size:3.5em;
+    padding-left:5%;
+  }
+  .main-content #about p{
+    padding-left:5%;
+    font-size:1.5em;
+    padding-top:0;
+    width:90%;
+  }
+
+
+
+
+
+/*About Pane end*/
+
+.main-content #team .container-fluid{
+  padding-top:1%;
+}
+.main-content #team .container-fluid .row{
+  margin-top:3%;
+  margin-bottom:8%;
+}
+.main-content #team .post-content{
+  position:absolute;
+  top:60%;
+  left:10%;
+}
+.main-content #team h1{
+  padding-top:0;
+  font-size:3.5em;
+  text-align:center;
+}
+.main-content #team .team-pic .name-bg{
+  height:30%;
+}
+.main-content #team .team-pic .name-bg h2{
+  color:#00ACF5;
+  margin-top:3%;
+  margin-bottom:0;
+  margin-left:5%;
+}
+.main-content #team .team-pic .name-bg h3{
+  color:#fff;
+  margin-bottom:5%;
+  margin-top:1%;
+  margin-left:5%;
+}
+
+.main-content #team #advisors{
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.main-content #team .team-pic .member-name h2{
+  font-weight:400;
+  margin-bottom:0;
+  color:#00ACF5;
+}
+.main-content #team .team-pic  .member-name .member-title h3{
+  font-weight:300;
+  color:#fff;
+  margin-top:0;
+}
+.main-content #team .team-pic img{
+  display:block;
+
+}
+
+.main-content #team .team-pic{
+  position:relative;
+  text-align: left;
+}
+
+
+/*Press Pane*/
+/*Press pane*/
+  .main-content #press{
+        background-color: #CCC;
+  }
+    .main-content #press #press-icon-row{
+
+    }
+      .main-content #press #press-icon-row div{
+        padding-top:50px;
+        padding-bottom:25px;
+      }
+      .main-content #press #press-icon-row div img{
+        width:80%;
+
+      }
+    .main-content #press #press-quotes{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .main-content #press #press-quotes h4{
+      color:#fff;
+    }
+    .main-content #press #press-quotes p{
+      color:#fff;
+      width:100%;
+      text-align: right
+    }
+
+
+
+
+.main-content #contact{
+    background-color: #e6e7e8;
+    text-align:center;
+    color:#262261;
+  }
+    .main-content #contact h1{
+      text-align: center;
+      font-size:4em;
+      padding-top:5%;
+    }
+    .main-content #contact .contact-box{
+      background-color:#555;
+      height:100px;
+      color:#E6E7E8;
+      margin-bottom:50px;
+    }
+      .main-content #contact h3{
+        font-weight:400;
+        text-align: left;
+        padding-top:5%;
+      }
+      .main-content #contact #contact-form{
+        padding-top:50px;
+        width:60%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .main-content #contact #contact-form .form-group .form-control{
+        border:none;
+        box-shadow:none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align:left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control{
+        border:none;
+        box-shadow: none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align: left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .btn{
+        margin-top:10%;
+        border-radius: 0;
+        font-size:1.5em;
+        background-color:#00ACF5;;
+        color:#fff;
+        margin-bottom:10%;
+        font-weight:200;
+      }
+
+
+.footer{
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:auto;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+/*Navbar*/
+
+
+.navbar{
+  height:100px;
+}
+  .navbar .container-fluid{
+    padding:0;
+  }
+    .navbar .container-fluid .navbar-brand{
+      width:100%;
+      display:block;
+      padding:0;
+    }
+    .navbar .container-fluid .navbar-collapse .nav{
+      margin-top:-25px;
+      margin-right:2%;
+    }
+    .navbar .container-fluid #big-logo{
+      display:block;
+    }
+    .navbar .container-fluid #mxl-logo{
+      display:block;
+      width:20%;
+      margin-left:8%;
+      margin-top:3%;
+    }
+    .navbar .container-fluid #mxl-logo-icon-center{
+      display:none;
+    }
+    .navbar .navbar-header .navbar-brand #mxl-logo-icon{
+      display:none;
+    }
+
+/*Navbar ends*/
+
+/*About Pane*/
+
+  .main-content #about{
+    padding:0;
+    color:#262261;
+    z-index:10;
+    width:100%;
+    text-align: left;
+  }
+  .main-content #about h1{
+    padding-top:10%;
+    font-size:4em;
+    padding-left:5%;
+  }
+  .main-content #about p{
+    padding-left:5%;
+    font-size:1.3em;
+    width:70%;
+  }
+
+
+
+
+/*About Pane end*/
+
+.main-content #team{
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.main-content #team h1{
+  font-size:4em;
+}
+
+.main-content #team .container-fluid{
+  padding-top:1%;
+}
+.main-content #team .container-fluid .row{
+  margin-top:3%;
+  margin-bottom:8%;
+}
+.main-content #team .post-content{
+  position:absolute;
+  top:60%;
+  left:10%;
+}
+
+.main-content #team .team-pic .member-name h2{
+  font-weight:400;
+  margin-bottom:0;
+  color:#00ACF5;
+}
+.main-content #team .team-pic  .member-name .member-title h3{
+  font-weight:300;
+  margin-top:0;
+}
+.main-content #team .team-pic img{
+  display:block;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.main-content #team .team-pic .name-bg{
+  height:30%;
+  width:80%;
+  left:10%;
+}
+
+.main-content #team .team-pic{
+  position:relative;
+  text-align: left;
+}
+
+
+/*Press Pane*/
+/*Press pane*/
+  .main-content #press{
+        background-color: #CCC;
+  }
+    .main-content #press #press-icon-row{
+
+    }
+      .main-content #press #press-icon-row div{
+        padding-top:50px;
+        padding-bottom:25px;
+      }
+      .main-content #press #press-icon-row div img{
+        width:80%;
+
+      }
+    .main-content #press #press-quotes{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .main-content #press #press-quotes h4{
+      color:#fff;
+    }
+    .main-content #press #press-quotes p{
+      color:#fff;
+      width:100%;
+      text-align: right
+    }
+
+
+
+
+.main-content #contact{
+    background-color: #e6e7e8;
+    text-align:center;
+    color:#262261;
+  }
+    .main-content #contact h1{
+      text-align: center;
+      font-size:4em;
+      padding-top:5%;
+    }
+    .main-content #contact .contact-box{
+      background-color:#555;
+      height:100px;
+      color:#E6E7E8;
+      margin-bottom:50px;
+    }
+      .main-content #contact h3{
+        font-weight:400;
+        text-align: left;
+        padding-top:5%;
+      }
+      .main-content #contact #contact-form{
+        padding-top:50px;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .main-content #contact #contact-form .form-group .form-control{
+        border:none;
+        box-shadow:none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align:left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control{
+        border:none;
+        box-shadow: none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align: left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .btn{
+        margin-top:10%;
+        border-radius: 0;
+        font-size:1.5em;
+        background-color:#00ACF5;;
+        color:#fff;
+        margin-bottom:10%;
+        font-weight:200;
+      }
+
+
+.footer{
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+.navbar .container-fluid #mxl-logo{
+
+      width:18%;
+margin-top:2%;
+
+
+    }
+/*About Pane*/
+
+  .main-content #about{
+    padding:0;
+    color:#262261;
+    z-index:10;
+
+    width:100%;
+    text-align: left;
+  }
+  .main-content #about h1{
+    padding-top:10%;
+    font-size:4em;
+    padding-left:5%;
+  }
+  .main-content #about p{
+    padding-left:5%;
+    font-size:1.4em;
+    width:70%;
+  }
+
+
+
+/*About Pane end*/
+.main-content #team{
+  padding-left:100px;
+  padding-right:100px;
+}
+
+.main-content #team .container-fluid{
+  padding-top:1%;
+}
+.main-content #team .container-fluid .row{
+  margin-top:3%;
+  margin-bottom:8%;
+}
+
+
+.main-content #team .team-pic .member-name h2{
+  font-weight:400;
+  margin-bottom:0;
+  color:#00ACF5;
+}
+.main-content #team .team-pic  .member-name .member-title h3{
+  font-weight:300;
+  margin-top:0;
+}
+.main-content #team .team-pic img{
+  display:block;
+}
+
+.main-content #team .team-pic .name-bg{
+  height:30%;
+}
+
+.main-content #team .team-pic .name-bg h2{
+  font-size:1.6em;
+  margin-top:3%;
+  margin-bottom:0;
+  margin-left:5%;
+}
+.main-content #team .team-pic .name-bg h3{
+  font-size:1.6em;
+  margin-bottom:5%;
+  margin-top:1%;
+  margin-left:5%;
+}
+
+.main-content #team .team-pic{
+  position:relative;
+  text-align: left;
+}
+
+
+/*Press Pane*/
+/*Press pane*/
+  .main-content #press{
+        background-color: #CCC;
+  }
+    .main-content #press #press-icon-row{
+
+    }
+      .main-content #press #press-icon-row div{
+        padding-top:50px;
+        padding-bottom:25px;
+      }
+      .main-content #press #press-icon-row div img{
+        width:80%;
+
+      }
+    .main-content #press #press-quotes{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .main-content #press #press-quotes h4{
+      color:#fff;
+    }
+    .main-content #press #press-quotes p{
+      color:#fff;
+      width:100%;
+      text-align: right
+    }
+
+
+
+
+.main-content #contact{
+    background-color: #e6e7e8;
+    text-align:center;
+    color:#262261;
+  }
+    .main-content #contact h1{
+      text-align: center;
+      font-size:4em;
+      padding-top:5%;
+    }
+    .main-content #contact .contact-box{
+      background-color:#555;
+      height:100px;
+      color:#E6E7E8;
+      margin-bottom:50px;
+    }
+      .main-content #contact h3{
+        font-weight:400;
+        text-align: left;
+        padding-top:5%;
+      }
+      .main-content #contact #contact-form{
+        padding-top:50px;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .main-content #contact #contact-form .form-group .form-control{
+        border:none;
+        box-shadow:none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align:left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control{
+        border:none;
+        box-shadow: none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align: left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .btn{
+        margin-top:10%;
+        border-radius: 0;
+        font-size:1.5em;
+        background-color:#00ACF5;;
+        color:#fff;
+        margin-bottom:10%;
+        font-weight:200;
+      }
+
+
+.footer{
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+
+}
+
+@media (min-width:1366px){
+
+
+
+/*About Pane*/
+
+  .main-content #about{
+    padding:0;
+    color:#262261;
+    z-index:10;
+
+    width:100%;
+    text-align: left;
+  }
+  .main-content #about h1{
+    padding-top:8%;
+    font-size:4em;
+    padding-left:5%;
+  }
+  .main-content #about p{
+    padding-left:5%;
+    font-size:1.4em;
+    width:60%;
+  }
+
+
+
+
+
+/*About Pane end*/
+.main-content #team{
+  padding-left:200px;
+  padding-right:200px;
+}
+
+.main-content #team .container-fluid{
+  padding-top:1%;
+}
+.main-content #team .container-fluid .row{
+  margin-top:3%;
+  margin-bottom:8%;
+}
+
+
+.main-content #team .team-pic .member-name h2{
+  font-weight:400;
+  margin-bottom:0;
+  color:#00ACF5;
+}
+.main-content #team .team-pic  .member-name .member-title h3{
+  font-weight:300;
+  margin-top:0;
+}
+.main-content #team .team-pic img{
+  display:block;
+}
+
+.main-content #team .team-pic{
+  position:relative;
+  text-align: left;
+}
+
+
+/*Press Pane*/
+/*Press pane*/
+  .main-content #press{
+        background-color: #CCC;
+  }
+    .main-content #press #press-icon-row{
+
+    }
+      .main-content #press #press-icon-row div{
+        padding-top:50px;
+        padding-bottom:25px;
+      }
+      .main-content #press #press-icon-row div img{
+        width:80%;
+
+      }
+    .main-content #press #press-quotes{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .main-content #press #press-quotes h4{
+      color:#fff;
+    }
+    .main-content #press #press-quotes p{
+      color:#fff;
+      width:100%;
+      text-align: right
+    }
+
+
+
+
+.main-content #contact{
+    background-color: #e6e7e8;
+    text-align:center;
+    color:#262261;
+  }
+    .main-content #contact h1{
+      text-align: center;
+      font-size:4em;
+      padding-top:10%;
+    }
+    .main-content #contact .contact-box{
+      background-color:#555;
+      height:100px;
+      color:#E6E7E8;
+      margin-bottom:50px;
+    }
+      .main-content #contact h3{
+        font-weight:400;
+        text-align: left;
+        padding-top:5%;
+      }
+      .main-content #contact #contact-form{
+        padding-top:50px;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .main-content #contact #contact-form .form-group .form-control{
+        border:none;
+        box-shadow:none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align:left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control{
+        border:none;
+        box-shadow: none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align: left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .btn{
+        margin-top:10%;
+        border-radius: 0;
+        font-size:1.5em;
+        background-color:#00ACF5;;
+        color:#fff;
+        margin-bottom:10%;
+        font-weight:200;
+      }
+
+
+.footer{
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+
+
+}
+
+
+
+@media (min-width:1500px){
+
+.navbar .container-fluid #mxl-logo{
+
+      width:15%;
+
+
+    }
+
+/*About Pane*/
+
+  .main-content #about{
+    padding:0;
+    color:#262261;
+    z-index:10;
+
+    width:100%;
+    text-align: left;
+  }
+  .main-content #about h1{
+    padding-top:7%;
+    font-size:4em;
+    padding-left:5%;
+  }
+  .main-content #about p{
+    padding-left:5%;
+    font-size:1.4em;
+    width:60%;
+  }
+
+
+
+
+/*About Pane end*/
+
+.main-content #team{
+  padding-left:250px;
+  padding-right:250px;
+}
+
+.main-content #team .container-fluid{
+  padding-top:1%;
+}
+.main-content #team .container-fluid .row{
+  margin-top:3%;
+  margin-bottom:8%;
+}
+.main-content #team .post-content{
+  position:absolute;
+  top:60%;
+  left:25%;
+}
+
+.main-content #team .team-pic .member-name h2{
+  font-weight:400;
+  margin-bottom:0;
+  color:#00ACF5;
+}
+.main-content #team .team-pic  .member-name .member-title h3{
+  font-weight:300;
+  margin-top:0;
+}
+.main-content #team .team-pic img{
+  display:block;
+}
+
+.main-content #team .team-pic{
+  position:relative;
+  text-align: left;
+}
+
+
+/*Press Pane*/
+/*Press pane*/
+  .main-content #press{
+        background-color: #CCC;
+  }
+    .main-content #press #press-icon-row{
+
+    }
+      .main-content #press #press-icon-row div{
+        padding-top:50px;
+        padding-bottom:25px;
+      }
+      .main-content #press #press-icon-row div img{
+        width:80%;
+
+      }
+    .main-content #press #press-quotes{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .main-content #press #press-quotes h4{
+      color:#fff;
+    }
+    .main-content #press #press-quotes p{
+      color:#fff;
+      width:100%;
+      text-align: right
+    }
+
+
+
+
+.main-content #contact{
+    background-color: #e6e7e8;
+    text-align:center;
+    color:#262261;
+  }
+    .main-content #contact h1{
+      text-align: center;
+      font-size:4em;
+      padding-top:10%;
+    }
+    .main-content #contact .contact-box{
+      background-color:#555;
+      height:100px;
+      color:#E6E7E8;
+      margin-bottom:50px;
+    }
+      .main-content #contact h3{
+        font-weight:400;
+        text-align: left;
+        padding-top:5%;
+      }
+      .main-content #contact #contact-form{
+        padding-top:50px;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .main-content #contact #contact-form .form-group .form-control{
+        border:none;
+        box-shadow:none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align:left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control{
+        border:none;
+        box-shadow: none;
+        font-size: 1.8em;
+        background-color:#555;
+        height:auto;
+        color:#fff;
+        text-align: left;
+        font-weight:200;
+      }
+      .main-content #contact #contact-form .form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+}
+      .main-content #contact #contact-form .btn{
+        margin-top:10%;
+        border-radius: 0;
+        font-size:1.5em;
+        background-color:#00ACF5;;
+        color:#fff;
+        margin-bottom:10%;
+        font-weight:200;
+      }
+
+
+.footer{
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+
+}

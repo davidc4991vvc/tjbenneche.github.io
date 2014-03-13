@@ -8,7 +8,9 @@
 		<link href="./css/style.css" rel="stylesheet">
 		<link href="./css/animations.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<script src="./js/modernizr.js"></script>
 		<script src="http://code.jquery.com/jquery.js"></script>
+
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -220,7 +222,7 @@
 				<div class="container-fluid">
 					<a href="#" id="monetize-expand-button"><div class="row color-block" id="monetize-block">
 						<div class="col-xs-6 col-sm-7">
-							<h1 class="left-header">Mobilze your market.</h1>
+							<h1 class="left-header">Mobilize your market.</h1>
 							<svg version="1.1" class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 fill="#fff" width="2em" height="2em" viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
 					<g>
@@ -445,7 +447,7 @@
 
 		<script src="./js/bootstrap.js"></script>
 		<script src="./js/build.js"></script>
-		<script src="./js/waypoints.js"></script>
+
 
 
 		<script>
@@ -455,92 +457,114 @@
 		</script>
 		<script>
 
-
-	$(window).on('load', function(){
-		if ($(window).width() > 991){
-
-			$(window).scroll(function() {
-				$('#about  p').each(function(){
-				var imagePos = $(this).offset().top;
-
-				var topOfWindow = $(window).scrollTop();
-					if (imagePos < topOfWindow+200) {
-						$('.navbar').css('height', '40px');
+$(window).on('resize', function(){
+	if( Modernizr.mq('only screen and (max-width: 768px)') ) {
+		$('.navbar').css('height', '40px');
 						$('#mxl-logo').hide();
 						$('#big-logo').hide();
 						$('#mxl-logo-icon-center').css('display', 'block');
 						$('.nav').hide();
-					}
-				});
-			});
-			$(window).scroll(function() {
-				$('#about  p').each(function(){
-				var imagePos = $(this).offset().top;
+	}
+});
+if( Modernizr.mq('only screen and (max-width: 768px)') ) {
 
-				var topOfWindow = $(window).scrollTop();
-					if (imagePos > topOfWindow+200) {
+
+
+
+} else {
+    $(window).scroll(function() {
+			if( Modernizr.mq('only all and (min-width: 992px)') ) {
+					$('#about  p').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos < topOfWindow+200) {
+							$('.navbar').css('height', '40px');
+							$('#mxl-logo').hide();
+							$('#big-logo').hide();
+							$('#mxl-logo-icon-center').css('display', 'block');
+							$('.nav').hide();
+						}
+					});
+				}
+				});
+				$(window).scroll(function() {
+					if( Modernizr.mq('only all and (min-width: 992px)') ) {
+					$('#about  p').each(function(){
+					var imagePos = $(this).offset().top;
+
+					var topOfWindow = $(window).scrollTop();
+						if (imagePos > topOfWindow+200) {
+							$('.navbar').css('height', '100px');
+							$('#mxl-logo').show();
+							$('#big-logo').show();
+							$('#mxl-logo-icon-center').hide();
+							$('.nav').show();					}
+					});
+				}
+				});
+if( Modernizr.mq('only all and (min-width: 992px)') ) {
+				if($('#mxl-logo-icon-center')){
+					$( ".navbar .container-fluid" ).hover(
+					function() {
 						$('.navbar').css('height', '100px');
-						$('#mxl-logo').show();
-						$('#big-logo').show();
-						$('#mxl-logo-icon-center').hide();
-						$('.nav').show();					}
-				});
-			});
-		}
-	});
-if ($(window).width() > 991){
-if($('#mxl-logo-icon-center')){
-	$( ".navbar .container-fluid" ).hover(
-  function() {
-    $('.navbar').css('height', '100px');
-						$('#mxl-logo').show();
-						$('#big-logo').show();
-						$('#mxl-logo-icon-center').hide();
-						$('.nav').show();
-  }, function() {
-    $('.navbar').css('height', '40px');
-						$('#mxl-logo').hide();
-						$('#big-logo').hide();
-						$('#mxl-logo-icon-center').css('display', 'block');
-						$('.nav').hide();
-  }
-);
-}
-}
-
-
-	$(window).on('resize', function(){
-		if ($(window).width() > 991){
-
-			$(window).scroll(function() {
-				$('#about  p').each(function(){
-				var imagePos = $(this).offset().top;
-
-				var topOfWindow = $(window).scrollTop();
-					if (imagePos < topOfWindow+200) {
+										$('#mxl-logo').show();
+										$('#big-logo').show();
+										$('#mxl-logo-icon-center').hide();
+										$('.nav').show();
+					}, function() {
 						$('.navbar').css('height', '40px');
-						$('#mxl-logo').hide();
-						$('#big-logo').hide();
-						$('#mxl-logo-icon-center').css('display', 'block');
-						$('.nav').hide();
+										$('#mxl-logo').hide();
+										$('#big-logo').hide();
+										$('#mxl-logo-icon-center').css('display', 'block');
+										$('.nav').hide();
 					}
-				});
-			});
-			$(window).scroll(function() {
-				$('#about  p').each(function(){
-				var imagePos = $(this).offset().top;
+				);
+				}
+			}
+}
 
-				var topOfWindow = $(window).scrollTop();
-					if (imagePos > topOfWindow+200) {
-						$('.navbar').css('height', '100px');
-						$('#mxl-logo').show();
-						$('#big-logo').show();
-						$('#mxl-logo-icon-center').hide();
-						$('.nav').show();					}
-				});
-			});
-		}
-	});
+
+	// $(window).on('load', function(){
+	//
+	// });
+
+
+
+
+	//
+	// $(window).on('resize', function(){
+	// 	if ($(window).width() > 991){
+	//
+	// 		$(window).scroll(function() {
+	// 			$('#about  p').each(function(){
+	// 			var imagePos = $(this).offset().top;
+	//
+	// 			var topOfWindow = $(window).scrollTop();
+	// 				if (imagePos < topOfWindow+200) {
+	// 					$('.navbar').css('height', '40px');
+	// 					$('#mxl-logo').hide();
+	// 					$('#big-logo').hide();
+	// 					$('#mxl-logo-icon-center').css('display', 'block');
+	// 					$('.nav').hide();
+	// 				}
+	// 			});
+	// 		});
+	// 		$(window).scroll(function() {
+	// 			$('#about  p').each(function(){
+	// 			var imagePos = $(this).offset().top;
+	//
+	// 			var topOfWindow = $(window).scrollTop();
+	// 				if (imagePos > topOfWindow+200) {
+	// 					$('.navbar').css('height', '100px');
+	// 					$('#mxl-logo').show();
+	// 					$('#big-logo').show();
+	// 					$('#mxl-logo-icon-center').hide();
+	// 					$('.nav').show();					}
+	// 			});
+	// 		});
+	// 	}
+	// });
 
 </script>
 	</body>
