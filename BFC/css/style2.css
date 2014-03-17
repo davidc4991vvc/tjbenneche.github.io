@@ -183,7 +183,65 @@ color:    #FFF;
 }
 
 
+#menu-links{
+	background-color:#375024;
+	padding:10%;
+}
 
+#menu-links .menu-section-link{
+	font-size:1.5em;
+	padding-top:40px;
+	padding-bottom:40px;
+	color:#fff;
+	background-color:#A4B49A;
+	text-align:center;
+}
+
+#menu-links .menu-section-link:hover{
+	background-color: #8fa47e;
+}
+
+.menu-section{
+	background-color: #A4B49A;
+	color:#375024;
+	padding:10%;
+}
+
+.menu-section .section-title{
+	color:#420B21;
+	font-size:2em;
+
+}
+.menu-section .subsection-title{
+	color:#F1F6EA;
+	font-size:1.6em;
+	text-align:center;
+}
+.menu-section .section-title-caption{
+	text-align:center;
+	font-style:italic;
+}
+.menu-section .item-name{
+	font-size:1.4em;
+	width:60%;
+
+}
+.menu-section .item-price{
+	float:right;
+}
+.menu-section .item-description{
+	font-style:italic;
+	font-size:.9em;
+}
+
+.menu-section .item-tag{
+	font-weight:lighter;
+	color:#F1F6EA;
+}
+
+#breakfast, #brunch, #lunch, #dinner, #bakery, #beverages, #desserts{
+	display:none;
+}
 
 
 /*Footer*/
