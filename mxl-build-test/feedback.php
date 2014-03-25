@@ -11,17 +11,12 @@ function db_connection() {
 	return $connection;
 }
 
-print_r($_POST);
-echo "asdasd";
-
 $email 	  = mysql_escape_string($_POST['email']);
 $feedback = mysql_escape_string($_POST['feedback']);
 
 $current_epoch = strval(time());
 
 $insert_query = "INSERT INTO user_feedback (email, feedback,  datetime) VALUES ('$email', '$feedback', '$current_epoch')";
-
-echo $insert_query;
 
 if (db_connection()->query($insert_query)) {
 	http_response_code(200);

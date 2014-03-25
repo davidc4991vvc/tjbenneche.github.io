@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{% for post in site.posts limit: 1 %}
+<div class="row-fluid"> <div class="feature-blog-post">
+<div class="post-image">
+<img src="{{ post.image }}">
+</div>
+<a class="read-more" href="./{{ post.url }}"><div class="post-caption">
+<h2 class="post-title">{{ post.title }}</h2>
+<h4 class="post-author">by {{ site.data.authors[post.author].display_name }}</h4>
+<p>Read post</p>
+ </div></a> 
+  </div>
+</div>
+{% endfor %}
+
+<div class="col-sm-12 mobile-sidebar">
+    {% include sidebar.html %}
+  </div>
+<div class="col-sm-4  medium-sidebar">
+    {% include sidebar.html %}
+  </div>
+
+{% for post in site.posts limit: 5 offset: 1 %}
+
+    <div class="row-fluid"> 
+    	<div class="blog-post">
+		    <div class="col-sm-8 post-preview">
+		    	<div class="col-sm-2">
+		    		<div class="post-info">
+		    		<h4 class="post-date">{{ post.date | date_to_long_string }}</h4>
+		    		{% include social-links.html %}
+	</div>
+		    	</div>
+		    	<a class="read-more" href="./{{ post.url }}"><div class="col-sm-10">
+					<h2 class="post-title">{{ post.title }}</h2>
+
+					<h4 class="post-author"><img class="post-avi" src="{{ site.data.authors[post.author].gravatar }}" alt="gravatar"> by {{ site.data.authors[post.author].display_name }}</h4>
+					<div class="post-excerpt">{{ post.excerpt }}</div>
+		 			<p class="post-link">Read Post</p>
+				</div>
+		 	</div></a> 
+ 			<div class="col-sm-4 post-image">
+ 				<img class="mini-image" src="{{ post.image }}">
+ 			</div>
+
+  		</div>
+
+	</div>
+{% endfor %}
+

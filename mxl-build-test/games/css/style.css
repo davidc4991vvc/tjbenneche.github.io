@@ -269,7 +269,7 @@ a:hover{
 .main-content #portfolio .right .right-box #appstore{
 
 }
-.main-content #portfolio .right .right-box #googleplay{
+.main-content #portfolio .right .right-box .googleplay{
 	width:90%;
 }
 
@@ -596,7 +596,7 @@ video{
 		transform: translate(-100px);
 }
 
-.main-content #portfolio .right .right-box #googleplay{
+.main-content #portfolio .right .right-box .googleplay{
 	width:80%;
 }
 
@@ -688,7 +688,7 @@ video{
 		transform: translate(-100px);
 }
 
-.main-content #portfolio .right .right-box #googleplay{
+.main-content #portfolio .right .right-box .googleplay{
 	width:60%;
 }
 
@@ -767,7 +767,7 @@ video{
 	margin-bottom:0;
 }
 
-.main-content #portfolio .right .right-box #googleplay{
+.main-content #portfolio .right .right-box .googleplay{
 	width:50%;
 }
 
@@ -800,7 +800,7 @@ video{
 .main-content #portfolio .left-box .game-icon{
 	width:25%;
 }
-.main-content #portfolio .right .right-box #googleplay{
+.main-content #portfolio .right .right-box .googleplay{
 	width:40%;
 }
 .main-content #portfolio .right .right-box .iphone-mock{

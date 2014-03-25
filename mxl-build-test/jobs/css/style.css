@@ -1,0 +1,683 @@
+/*css doc to sit on top of bootstrap*/
+
+/* Extra small devices (phones, less than 768px) */
+
+/* No media query since this is the default in Bootstrap */
+
+/*Body*/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 200 !important;
+}
+p,
+li,
+a {
+  font-weight: 400 !important;
+}
+a:hover {
+  text-decoration: none;
+}
+video {
+  display: none;
+}
+/*Navbar*/
+
+.navbar {
+  background-color: #fff;
+  height: 40px;
+  z-index: 10000;
+}
+.navbar .container-fluid {
+  background-color: #fff;
+  height: 40px;
+}
+.navbar .container-fluid #big-logo {
+  display: none;
+}
+.navbar .container-fluid #mxl-logo {
+  display: none;
+}
+.navbar .container-fluid #mxl-logo-icon-center {
+  display: none;
+}
+.navbar .container-fluid .navbar-brand {
+  padding: 8px 15px;
+}
+.navbar .container-fluid .navbar-collapse {
+  background-color: #fff;
+}
+.navbar .container-fluid .navbar-collapse .nav .active > a {
+  background-color: transparent;
+  color: #00ACF5;
+}
+.navbar .container-fluid .navbar-collapse .nav .active > a: hover {
+  background-color: transparent;
+}
+.navbar .navbar-header .navbar-brand #mxl-logo-icon {
+  display: block;
+  width: 100%;
+}
+.navbar .container-fluid .navbar-collapse .nav .spacer {
+  display: none;
+}
+.navbar .container-fluid .navbar-collapse .nav li a {
+  font-size: 1.4em;
+}
+/*Navbar end*/
+
+/*Main Content*/
+
+.main-content {
+  width: 100%;
+  background-image: url('./img/mxl-bg.png');
+  margin: 0;
+}
+.main-content .content-pane {
+  text-align: left;
+}
+/*About Pane*/
+
+.main-content #about {
+  background: rgba(0, 188, 242, .8);
+  padding: 0;
+  color: #fff;
+  z-index: 10;
+  width: 100%;
+  text-align:center;
+  font-weight:200;
+}
+.main-content #about h1 {
+  margin-top: 35%;
+  font-size: 3em;
+}
+.main-content #about .arrow-svg{
+  margin-bottom:15%;
+}
+
+.main-content #testimonials{
+  background-color: #e6e7e8;
+  padding-bottom:5%;
+}
+.main-content #testimonials .testimonial{
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:5%;
+
+}
+
+.main-content #testimonials .testimonial .employee-quote{
+  margin-top:10%;
+}
+.main-content #testimonials .testimonial .employee-avatar{
+  margin-top:15%;
+}
+
+.main-content #testimonials div{
+  padding:0;
+}
+
+.main-content #testimonials .employee-avatar img{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:30%;
+}
+
+.main-content .hiring {
+
+  display:block;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.main-content .hiring h3{
+  font-size:2.1em;
+} 
+.main-content .hiring p{
+  font-size:1.1em;
+  text-align: left;
+  padding-left:3%;
+}
+
+.main-content #job-postings{
+  margin-top:5%;
+  background-color:#fff;
+}
+.main-content #job-postings ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.main-content #job-postings #category-list li{
+  background: rgb(0, 188, 242);
+  padding:10px;
+  color:#fff;
+  margin-bottom:5%;
+}
+.main-content #job-postings #category-list .not-avail li{
+  background: rgba(0, 0, 0, .4);
+}
+
+.main-content #job-postings #job-descriptions h1{
+  margin:0;
+}
+
+.main-content #job-postings .job-post{
+  background-color:#e6e7e8;
+  margin-bottom:2%;
+  width:100%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-bottom:2px solid #e6e7e8;
+  padding-left:2%;
+}
+.main-content #job-postings .job-post h1{
+  font-style:italic;
+  font-size:1.4em;
+  padding-bottom:3%;
+}
+.main-content #job-postings .job-post h2{
+  margin:0;
+  font-weight:300;
+  font-size:1.8em;
+  color:#00ACF5;
+  padding-bottom:1%;
+  padding-top:1%;
+}
+.main-content .company-perks{
+  width:90%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.main-content .company-perks ul{
+  list-style: none;
+  padding-left:3%;
+}
+
+.main-content .company-perks h3{
+  font-size:1.8em;
+}
+
+.main-content #job-postings .job-post ul{
+  padding-left:3%;
+}
+.main-content #job-postings .job-post a{
+  padding-left:3%;
+}
+
+.footer{
+  display:none;
+  background-color:#fff;
+  height:50px;
+}
+.footer .container-fluid{
+  height:50px;
+}
+.footer .container-fluid .row {
+}
+.footer .container-fluid .row .col-xs-4{
+  height:50px;
+}
+  .footer img{
+    margin-top:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+  }
+
+  .footer #footer-left:hover{
+    border-bottom: 5px solid #FFDD17;
+  }
+  .footer #footer-center:hover{
+    border-bottom: 5px solid #F15A29;
+  }
+  .footer #footer-right:hover{
+    border-bottom: 5px solid #38B449;
+  }
+
+.mobile-footer{
+  height:50px;
+}
+.mobile-footer .container-fluid{
+  height:50px;
+}
+
+.mobile-footer .container-fluid .row .col-xs-4{
+  height:50px;
+  color:#fff;
+  text-align: center;
+}
+
+  .mobile-footer #mobile-footer-left{
+    background-color:  #FFDD17;
+  }
+  .mobile-footer #mobile-footer-center{
+    background-color:  #F15A29;
+  }
+  .mobile-footer #mobile-footer-right{
+    background-color:  #38B449;
+  }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  video {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+  }
+
+  .mobile-footer{
+    display:none;
+  }
+  .footer{
+    display:block;
+  }
+
+  /*Navbar*/
+  .navbar {
+    height: 40px;
+  }
+  .navbar .container-fluid {
+    height: inherit;
+  }
+  .navbar .container-fluid .navbar-brand {
+    display: block;
+  }
+  .navbar .container-fluid #mxl-logo-icon-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    float: center;
+  }
+  .navbar .container-fluid .navbar-collapse .nav {
+    float: right;
+  }
+  .navbar .navbar-header .navbar-brand #mxl-logo-icon {} .navbar .container-fluid .navbar-collapse .nav .spacer {
+    display: block;
+    visibility: hidden;
+  }
+  .navbar .container-fluid .navbar-collapse .nav li a {
+    font-size: 1.2em;
+  }
+  /*Navbar ends*/
+  .main-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-content #about h1{
+    margin-top:25%;
+    font-size:4.5em;
+  }
+ 
+  .main-content #about .arrow-svg{
+    height:3em;
+    width:3em;
+    margin-top:5%;
+  }
+
+.main-content #testimonials{
+  background-color: #e6e7e8;
+  padding-bottom:2%;
+}
+.main-content #testimonials .testimonial{
+  width:90%;
+  display:block;
+  margin-left:5%;
+  padding-top:2%;
+}
+
+.main-content #testimonials .testimonial .quote-left{
+  margin-right:0;
+  float:right;
+}
+.main-content #testimonials .testimonial .quote-right{
+  margin-left:0;
+}
+
+.main-content #testimonials .testimonial .employee-quote{
+  margin-top:5%;
+  width:80%;
+  display:block;
+  font-size:1.4em;
+}
+.main-content #testimonials .testimonial .employee-avatar{
+  margin-top:5%;
+}
+
+.main-content #testimonials div{
+  padding:0;
+}
+
+.main-content #testimonials .employee-avatar img{
+  width:90%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0;
+}
+
+.main-content .hiring {
+
+  display:block;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.main-content .hiring h3{
+  font-size:2.1em;
+} 
+.main-content .hiring p{
+  font-size:1.1em;
+  text-align: left;
+}
+
+.main-content #job-postings{
+  margin-top:5%;
+  background-color:#fff;
+}
+.main-content #job-postings ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.main-content #job-postings #category-list li{
+  background: rgb(0, 188, 242);
+  padding:10px;
+  color:#fff;
+  margin-bottom:5%;
+}
+.main-content #job-postings #category-list .not-avail li{
+  background: rgba(0, 0, 0, .4);
+}
+
+.main-content #job-postings #job-descriptions h1{
+  margin:0;
+}
+
+.main-content #job-postings .job-post{
+  background-color:#e6e7e8;
+  margin-bottom:2%;
+  width:100%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-bottom:2px solid #e6e7e8;
+  padding-left:2%;
+}
+.main-content #job-postings .job-post h1{
+  font-style:italic;
+  font-size:1.4em;
+  padding-bottom:3%;
+}
+.main-content #job-postings .job-post h2{
+  margin:0;
+  font-weight:300;
+  font-size:1.8em;
+  color:#00ACF5;
+  padding-bottom:1%;
+  padding-top:1%;
+}
+
+
+
+
+
+.main-content .company-perks h3{
+  font-size:1.8em;
+}
+
+.main-content #job-postings .job-post ul{
+  padding-left:3%;
+}
+.main-content #job-postings .job-post a{
+  padding-left:3%;
+}
+
+  .footer{
+    background-color:#fff;
+    height:50px;
+  }
+  .footer .container-fluid{
+    height:50px;
+  }
+  .footer .container-fluid .row {
+  }
+  .footer .container-fluid .row .col-xs-4{
+    height:50px;
+  }
+    .footer img{
+      margin-top:10px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:auto;
+    }
+
+    .footer #footer-left:hover{
+      border-bottom: 5px solid #FFDD17;
+    }
+    .footer #footer-center:hover{
+      border-bottom: 5px solid #F15A29;
+    }
+    .footer #footer-right:hover{
+      border-bottom: 5px solid #38B449;
+    }
+}
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    /*Navbar*/
+    .navbar {
+      height: 100px;
+      border-bottom: 1px solid #e6e7e8;
+    }
+    .navbar .container-fluid {
+      padding: 0;
+    }
+    .navbar .container-fluid .navbar-brand {
+      width: 100%;
+      display: block;
+      padding: 0;
+    }
+    .navbar .container-fluid .navbar-collapse .nav {
+      margin-top: -25px;
+      margin-right: 2%;
+    }
+    .navbar .container-fluid #big-logo {
+      display: block;
+    }
+    .navbar .container-fluid #mxl-logo {
+      display: block;
+      width: 25%;
+      margin-left: 8%;
+      margin-top: 2%;
+    }
+    .navbar .container-fluid #mxl-logo-icon-center {
+      display: none;
+    }
+    .navbar .navbar-header .navbar-brand #mxl-logo-icon {
+      display: none;
+    }
+    /*Navbar ends*/
+    .main-content {
+      width: 100%;
+      margin: 0;
+    }
+    .main-content .content-pane {
+
+    }
+ 
+    .main-content #testimonials{
+  background-color: #e6e7e8;
+  padding-bottom:2%;
+}
+.main-content #testimonials .testimonial{
+  width:70%;
+  display:block;
+  margin-left:15%;
+  padding-top:2%;
+}
+
+.main-content #testimonials .testimonial .quote-left{
+  margin-right:0;
+  float:right;
+}
+.main-content #testimonials .testimonial .quote-right{
+  margin-left:0;
+}
+
+.main-content #testimonials .testimonial .employee-quote{
+  margin-top:5%;
+  width:80%;
+  display:block;
+  font-size:1.4em;
+}
+.main-content #testimonials .testimonial .employee-avatar{
+  margin-top:5%;
+}
+
+.main-content #testimonials div{
+  padding:0;
+}
+
+.main-content #testimonials .employee-avatar img{
+  width:70%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0;
+}
+
+.main-content .hiring {
+  text-align:center;
+  display:block;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.main-content .hiring h3{
+  font-size:2.5em;
+  margin-top:5%;
+} 
+.main-content .hiring p{
+  font-size:1.4em;
+  text-align: left;
+  width:80%;
+  display:block;
+  margin-left:5%;
+}
+
+.main-content .company-perks h3{
+  font-size:2.5em;
+  margin-left:5%;
+  width:90%;
+}
+.main-content .company-perks ul{
+  margin-left:6%;
+  padding:0;
+  font-size:1.2em;
+}
+
+.main-content #job-postings{
+  margin-top:5%;
+  background-color:#fff;
+}
+.main-content #job-postings ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.main-content #job-postings #category-list li{
+  background: rgb(0, 188, 242);
+  padding:10px;
+  color:#fff;
+  margin-bottom:5%;
+}
+.main-content #job-postings #category-list .not-avail li{
+  background: rgba(0, 0, 0, .4);
+}
+
+.main-content #job-postings #job-descriptions h1{
+  margin:0;
+}
+
+.main-content #job-postings .job-post{
+  background-color:#e6e7e8;
+  margin-bottom:2%;
+  width:100%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-bottom:2px solid #e6e7e8;
+  padding-left:2%;
+}
+.main-content #job-postings .job-post h1{
+  font-style:italic;
+  font-size:1.4em;
+  padding-bottom:3%;
+}
+.main-content #job-postings .job-post h2{
+  margin:0;
+  font-weight:300;
+  font-size:1.8em;
+  color:#00ACF5;
+  padding-bottom:1%;
+  padding-top:1%;
+}
+
+  }
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .navbar .container-fluid #mxl-logo {
+      width: 18%;
+    }
+    .main-content {
+      width: 100%;
+      margin: 0;
+    }
+    .main-content .content-pane {
+
+    }
+  
+  }
+  @media (min-width: 1366px) {
+    .main-content {
+      width: 100%;
+      margin: 0;
+    }
+    .main-content .content-pane {
+
+    }
+    
+  }
+  @media (min-width: 1500px) {
+    .navbar .container-fluid #mxl-logo {
+      width: 15%;
+    }
+    .main-content {
+      width: 100%;
+      margin: 0;
+    }
+    .main-content .content-pane {
+
+    }
+ 
+  }
