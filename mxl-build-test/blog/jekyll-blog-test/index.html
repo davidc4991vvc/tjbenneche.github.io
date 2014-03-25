@@ -7,7 +7,7 @@ layout: default
 <div class="post-image">
 <img src="{{ post.image }}">
 </div>
-<a class="read-more" href="./{{ post.url }}"><div class="post-caption">
+<a class="read-more" href=".{{ post.url }}"><div class="post-caption">
 <h2 class="post-title">{{ post.title }}</h2>
 <h4 class="post-author">by {{ site.data.authors[post.author].display_name }}</h4>
 <p>Read post</p>
@@ -34,7 +34,7 @@ layout: default
 		    		{% include social-links.html %}
 	</div>
 		    	</div>
-		    	<a class="read-more" href="./{{ post.url }}"><div class="col-sm-10">
+		    	<a class="read-more" href=".{{ post.url }}"><div class="col-sm-10">
 					<h2 class="post-title">{{ post.title }}</h2>
 
 					<h4 class="post-author"><img class="post-avi" src="{{ site.data.authors[post.author].gravatar }}" alt="gravatar"> by {{ site.data.authors[post.author].display_name }}</h4>
