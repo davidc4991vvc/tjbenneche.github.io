@@ -8,6 +8,7 @@
 		<link href="./css/style.css" rel="stylesheet">
 		<link href="../css/animations.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="../img/favicon.ico">
+		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 	</head>
@@ -21,22 +22,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="../index.html">
+					<a href="../index.html">
 						<img id="mxl-logo-icon" src="../img/logos/mxl-logo-icon.svg" alt="MXL">
 					</a>
 				</div>
 				<img id="mxl-logo-icon-center" src="../img/logos/mxl-logo-icon.svg" alt="MXL">
-				<a class="navbar-brand" id="big-logo" href="../"><img id="mxl-logo" src="../img/logos/mxl-logo-horiz.svg" alt="MXL"></a>
+				<a  href="../"><img id="mxl-logo" src="../img/logos/mxl-logo-horiz.svg" alt="MXL"></a>
 				<div class="collapse navbar-collapse" id="mxl-topnav">
 					<ul class="nav navbar-nav">
 						<!-- <li class="active"><a href="#">Home</a></li> -->
 						<li><a href="#">About</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#press">Press</a></li>
+						<li><a href="../blog/">Blog</a></li>
+						<li><a href="../jobs/">Jobs</a></li>
 						<li><a href="#contact">Contact</a></li>
-						<li><a href="../blog/index.html">Blog</a></li>
-						<li><a href="../jobs/index.html">Jobs</a></li>
-
 					</ul>
 				</div>
 			</div>
@@ -169,25 +167,25 @@
 				<div id="advisors"class="container-fluid">
 
 						<div class="col-xs-6 col-sm-3">
-							<div class="team-pic">
+							<div class="team-pic" id="garland">
 								<!-- <img src="../img/team/dan.jpg"> -->
 								<a href="http://www.garlandfunds.com/"><img src="../img/investors/garland.png"></a>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-3">
-							<div class="team-pic">
+							<div class="team-pic" id="cuban">
 								<!-- <img src="../img/team/dan.jpg"> -->
 								<a href="http://markcubancompanies.com/#/mobilexlabs"><img src="../img/advisors/cuban.png"></a>
 							</div>
 						</div>
 					<div class="col-xs-6 col-sm-3">
-						<div class="team-pic">
+						<div class="team-pic" id="startup">
 							<!-- <img src="../img/team/dan.jpg"> -->
 							<a href="http://startupchile.org/"><img src="../img/awards/startup-chile.png"></a>
 						</div>
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<div class="team-pic">
+						<div class="team-pic" id="eighteen-71">
 							<!-- <img src="../img/team/dan.jpg"> -->
 							<a href="http://www.1871.com/"><img src="../img/press/1871_Logo.png"></a>
 						</div>
@@ -296,11 +294,14 @@
 
 				var topOfWindow = $(window).scrollTop();
 					if (imagePos < topOfWindow+200) {
-						$('.navbar').css('height', '40px');
+						// $('.navbar').stop().animate({
+      //       height:'40px'
+      //   }, 50);
 						$('#mxl-logo').hide();
-						$('#big-logo').hide();
-						$('#mxl-logo-icon-center').css('display', 'block');
-						$('.nav').hide();
+						$('#mxl-logo-icon').show();
+						$('.nav').stop().animate({
+            marginTop: '0'
+        },0);
 					}
 				});
 			});
@@ -310,54 +311,51 @@
 
 				var topOfWindow = $(window).scrollTop();
 					if (imagePos > topOfWindow+200) {
-						$('.navbar').css('height', '100px');
+						// $('.navbar').stop().animate({
+      //       height:'100px'
+      //   }, 50);
+						$('#mxl-logo-icon').hide();
 						$('#mxl-logo').show();
-						$('#big-logo').show();
-						$('#mxl-logo-icon-center').hide();
-						$('.nav').show();					}
+					
+						$('.nav').stop().animate({
+            marginTop: '-5.3em'
+        },0);					}
 				});
 			});
 		}
 	});
-	if ($(window).width() > 991){
-if($('#mxl-logo-icon-center').length > 0){
-	$( ".navbar .container-fluid" ).hover(
-  function() {
-    $('.navbar').css('height', '100px');
-						$('#mxl-logo').show();
-						$('#big-logo').show();
-						$('#mxl-logo-icon-center').hide();
-						$('.nav').show();
-  }, function() {
-    $('.navbar').css('height', '40px');
-						$('#mxl-logo').hide();
-						$('#big-logo').hide();
-						$('#mxl-logo-icon-center').css('display', 'block');
-						$('.nav').hide();
-  }
-);
-}
-}
-
 
 	$(window).on('resize', function(){
-		// $(function(){
-		// 	var picWidth = $('.team-pic img').css('width');
-		// 	$('.name-bg').css('width', picWidth);
-		// });
+		if ($(window).width() < 991){
+			// $('.navbar').css('height', '40px');
+			$('#mxl-logo').hide();
+			$('#mxl-logo-icon').show();
+			$('.nav').css('margin-top','0');
+			$(window).unbind('scroll');
+		}
+		else{
+			// $('.navbar').css('height', '100px');
+			$('#mxl-logo-icon').hide();
+			$('#mxl-logo').show();
+			$('.nav').css('margin-top','-5.3em');
+		}
+	});
+	$(window).on('resize', function(){
 		if ($(window).width() > 991){
-
 			$(window).scroll(function() {
 				$('#about  p').each(function(){
 				var imagePos = $(this).offset().top;
 
 				var topOfWindow = $(window).scrollTop();
 					if (imagePos < topOfWindow+200) {
-						$('.navbar').css('height', '40px');
+						// $('.navbar').stop().animate({
+      //       height:'40px'
+      //   }, 50);
 						$('#mxl-logo').hide();
-						$('#big-logo').hide();
-						$('#mxl-logo-icon-center').css('display', 'block');
-						$('.nav').hide();
+						$('#mxl-logo-icon').show();
+						$('.nav').stop().animate({
+            marginTop: '0'
+        },0);
 					}
 				});
 			});
@@ -367,15 +365,20 @@ if($('#mxl-logo-icon-center').length > 0){
 
 				var topOfWindow = $(window).scrollTop();
 					if (imagePos > topOfWindow+200) {
-						$('.navbar').css('height', '100px');
+						// $('.navbar').stop().animate({
+      //       height:'100px'
+      //   }, 50);
+						$('#mxl-logo-icon').hide();
 						$('#mxl-logo').show();
-						$('#big-logo').show();
-						$('#mxl-logo-icon-center').hide();
-						$('.nav').show();					}
+					
+						$('.nav').stop().animate({
+            marginTop: '-5.3em'
+        },0);					}
 				});
 			});
 		}
 	});
+
 
 </script>
 

@@ -121,8 +121,7 @@ $('#mobile-vine').on('click', function(){
 
 
 
-<<<<<<< HEAD
-=======
+
 $('#big-insta').on('click', function(){
 	event.preventDefault()
 });
@@ -152,7 +151,6 @@ $('#pro .small-card a').on('click', function(){
 });
 
 
->>>>>>> jobs
 
 
 $('#engage-learn-button').on('click', function(){

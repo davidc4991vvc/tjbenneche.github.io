@@ -10,6 +10,7 @@
 		<link rel="icon" type="image/png" href="./img/favicon.ico">
 		<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 		<script src="./js/modernizr.js"></script>
+		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 	</head>
@@ -23,16 +24,18 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">
+					<a href="#">
 						<img id="mxl-logo-icon" src="./img/mxlbuild-logo-icon.svg" alt="MXL">
 					</a>
 				</div>
-				<img id="mxl-logo-icon-center" src="./img/mxlbuild-logo-icon.svg" alt="MXL">
-				<a class="navbar-brand" id="big-logo" href="#"><img id="mxl-logo" src="./img/mxlbuild-logo.svg" alt="MXL"></a>
+				
+				<a href="#"><img id="mxl-logo" src="./img/mxlbuild-logo.svg" alt="MXL"></a>
 				<div class="collapse navbar-collapse" id="mxl-topnav">
 					<ul class="nav navbar-nav">
-						<!-- <li class="active"><a href="#">Home</a></li> -->
-						<li><a href="#contact">Get early access</a></li>
+						<li><a href="../">Home</a></li>
+						<li><a href="#engage-section">Why MXL?</a></li>
+						<li><a href="#contact">Get Early Access</a></li>
+						<li><a href="../blog/">Blog</a></li>
 
 					</ul>
 				</div>
@@ -71,8 +74,8 @@
 			</div>
 			<div class="content-pane assets">
 				<div  class="sub-content-pane" id="engage-section">
-				<div class="container-fluid">
-					<a href="#" id="engage-expand-button"><div class="row color-block" id="engage-block">
+				<a href="#" id="engage-expand-button"><div class="container-fluid">
+					<div class="row color-block" id="engage-block">
 						<div class="col-xs-5" >
 							<img id="zipper-graphic" src='./img/zipper.svg' alt="zipper">
 						</div>
@@ -89,7 +92,7 @@
 					</g>
 					</svg>
 						</div>
-					</div></a>
+					</div>
 				</div>
 				<div class="container-fluid">
 					<div class="row info-block" id="engage-block-hidden">
@@ -119,10 +122,11 @@
 						</div>
 					</div>
 				</div>
+				</a>
 				</div>
 				<div class="sub-content-pane" id="build-section">
-				<div class="container-fluid">
-					<a href="#" id="build-expand-button"><div class="row color-block" id="build-block">
+				<a href="#" id="build-expand-button"><div class="container-fluid">
+					<div class="row color-block" id="build-block">
 						<div class="col-xs-5 col-sm-7">
 							<h1 class="left-header" id="#build-header">Build with blocks.</h1>
 							<svg version="1.1" class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -139,7 +143,7 @@
 						<div class="col-xs-7 col-sm-5">
 							<img id="blocks-graphic" src='./img/blocks.svg' alt="blocks">
 						</div>
-					</div></a>
+					</div>
 				</div>
 				<div class="container-fluid">
 
@@ -170,10 +174,11 @@
 						</div>
 					</div>
 				</div>
+				</a>
 				</div>
 				<div class="sub-content-pane" id="grow-section">
-				<div class="container-fluid">
-					<a href="#" id="grow-expand-button"><div class="row color-block" id="grow-block">
+				<a href="#" id="grow-expand-button"><div class="container-fluid">
+					<div class="row color-block" id="grow-block">
 						<div class="col-xs-7 col-sm-5">
 							<img id="bars-graphic" src='./img/bars.svg' alt="bars">
 						</div>
@@ -190,7 +195,7 @@
 					</g>
 					</svg>
 						</div>
-					</div></a>
+					</div>
 				</div>
 				<div class="container-fluid">
 
@@ -221,10 +226,11 @@
 						</div>
 					</div>
 				</div>
+				</a>
 				</div>
 				<div class="sub-content-pane" id="monetize-section">
-				<div class="container-fluid">
-					<a href="#" id="monetize-expand-button"><div class="row color-block" id="monetize-block">
+				<a href="#" id="monetize-expand-button"><div class="container-fluid">
+					<div class="row color-block" id="monetize-block">
 						<div class="col-xs-6 col-sm-7">
 							<h1 class="left-header">Mobilize your market.</h1>
 							<svg version="1.1" class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -241,7 +247,7 @@
 						<div class="col-xs-6 col-sm-5">
 							<img id="flower-graphic" src='./img/flower.svg' alt="zipper">
 						</div>
-					</div></a>
+					</div>
 				</div>
 				<div class="container-fluid">
 
@@ -272,6 +278,7 @@
 						</div>
 					</div>
 				</div>
+				</a>
 				</div>
 
 			</div>
@@ -290,8 +297,8 @@
 							</div>
 							<div class="user-info">
 								<p>Whether you've got three hundred or three million views on YouTube, you're always searching for a way to grow your fanbase further.</p>
-								<a href="#" class="see-how-btn" id="musician-btn">See how</a>
-								<p class="use-case-story" id="musician-usecase">As DJ ____'s following grew and he began spinning electronic music in large arenas and international venues, he knew he needed a better way to communicate with his listeners. He used MXL Build to centralize his soundcloud, bandsintown, instagram, youtube, twitter and blog into one place. Now, his app-ready fans get exclusive content first and know exatly where he's playing next.</p>
+								<!-- <a href="#" class="see-how-btn" id="musician-btn">See how</a>
+								<p class="use-case-story" id="musician-usecase">As DJ ____'s following grew and he began spinning electronic music in large arenas and international venues, he knew he needed a better way to communicate with his listeners. He used MXL Build to centralize his soundcloud, bandsintown, instagram, youtube, twitter and blog into one place. Now, his app-ready fans get exclusive content first and know exatly where he's playing next.</p> -->
 							</div>
 						</div>
 						<div class="col-sm-4 col-lg-4 col-md-4 persona">
@@ -303,8 +310,8 @@
 							</div>
 							<div class="user-info">
 								<p>A successful small business is founded on outstanding customer service. Customers need to have any questions or concerns addressed immediately.</p>
-								<a href="#" class="see-how-btn" id="small-biz-btn">See how</a>
-								<p class="use-case-story" id="small-biz-usecase">Lynne M. used our in-app messaging feature and some well timed push notifications to better stay in touch with the customers of her mid-century modern furniture store. She even integrated her instagram feed and her ecommerce cart into the app to maximize her potential customer base.</p>
+								<!-- <a href="#" class="see-how-btn" id="small-biz-btn">See how</a>
+								<p class="use-case-story" id="small-biz-usecase">Lynne M. used our in-app messaging feature and some well timed push notifications to better stay in touch with the customers of her mid-century modern furniture store. She even integrated her instagram feed and her ecommerce cart into the app to maximize her potential customer base.</p> -->
 							</div>
 						</div>
 						<div class="col-sm-4 col-lg-4 col-md-4 persona">
@@ -316,8 +323,8 @@
 							</div>
 							<div class="user-info">
 								<p>Show business can be fickle: delayed start times can lead to last minute cancellations.</p>
-								<a href="#" class="see-how-btn" id="venue-btn">See how</a>
-								<p class="use-case-story" id="venue-usecase">_______________ Theatre decided to tackle their every day delays, mishaps and in-house happenings with two mobile apps. One app to coordinate roles, documents and rehearsals and another to help patrons of the theatre find their seats and get any last minute updates to the cast or call time ;)</p>
+								<!-- <a href="#" class="see-how-btn" id="venue-btn">See how</a>
+								<p class="use-case-story" id="venue-usecase">_______________ Theatre decided to tackle their every day delays, mishaps and in-house happenings with two mobile apps. One app to coordinate roles, documents and rehearsals and another to help patrons of the theatre find their seats and get any last minute updates to the cast or call time ;)</p> -->
 							</div>
 						</div>
 					</div>
@@ -354,7 +361,6 @@
 									<li>No analytics</li>
 									<li>Unlimited Downloads</li>
 									<li>No Push Notifications</li>
-									<li>No No up-front fee</li>
 								</ul>
 							</div>
 							</div>
@@ -470,114 +476,105 @@
 		</script>
 		<script>
 
-$(window).on('resize', function(){
-	if( Modernizr.mq('only screen and (max-width: 768px)') ) {
-		$('.navbar').css('height', '40px');
+
+	$(window).on('load', function(){
+		// $(function(){
+		// 	var picWidth = $('.team-pic img').css('width');
+		// 	$('.name-bg').css('width', picWidth);
+		// });
+		if ($(window).width() > 991){
+
+			$(window).scroll(function() {
+				$('#about  a').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						// $('.navbar').stop().animate({
+      //       height:'40px'
+      //   }, 50);
 						$('#mxl-logo').hide();
-						$('#big-logo').hide();
-						$('#mxl-logo-icon-center').css('display', 'block');
-						$('.nav').hide();
-	}
-});
-if( Modernizr.mq('only screen and (max-width: 768px)') ) {
-
-
-
-
-} else {
-    $(window).scroll(function() {
-			if( Modernizr.mq('only all and (min-width: 992px)') ) {
-					$('#about  p').each(function(){
-					var imagePos = $(this).offset().top;
-
-					var topOfWindow = $(window).scrollTop();
-						if (imagePos < topOfWindow+200) {
-							$('.navbar').css('height', '40px');
-							$('#mxl-logo').hide();
-							$('#big-logo').hide();
-							$('#mxl-logo-icon-center').css('display', 'block');
-							$('.nav').hide();
-						}
-					});
-				}
-				});
-				$(window).scroll(function() {
-					if( Modernizr.mq('only all and (min-width: 992px)') ) {
-					$('#about  p').each(function(){
-					var imagePos = $(this).offset().top;
-
-					var topOfWindow = $(window).scrollTop();
-						if (imagePos > topOfWindow+200) {
-							$('.navbar').css('height', '100px');
-							$('#mxl-logo').show();
-							$('#big-logo').show();
-							$('#mxl-logo-icon-center').hide();
-							$('.nav').show();					}
-					});
-				}
-				});
-if( Modernizr.mq('only all and (min-width: 992px)') ) {
-				if($('#mxl-logo-icon-center')){
-					$( ".navbar .container-fluid" ).hover(
-					function() {
-						$('.navbar').css('height', '100px');
-										$('#mxl-logo').show();
-										$('#big-logo').show();
-										$('#mxl-logo-icon-center').hide();
-										$('.nav').show();
-					}, function() {
-						$('.navbar').css('height', '40px');
-										$('#mxl-logo').hide();
-										$('#big-logo').hide();
-										$('#mxl-logo-icon-center').css('display', 'block');
-										$('.nav').hide();
+						$('#mxl-logo-icon').show();
+						$('.nav').stop().animate({
+            marginTop: '0'
+        },0);
 					}
-				);
-				}
-			}
-}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  a').each(function(){
+				var imagePos = $(this).offset().top;
 
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						// $('.navbar').stop().animate({
+      //       height:'100px'
+      //   }, 50);
+						$('#mxl-logo-icon').hide();
+						$('#mxl-logo').show();
+					
+						$('.nav').stop().animate({
+            marginTop: '-5.3em'
+        },0);					}
+				});
+			});
+		}
+	});
 
-	// $(window).on('load', function(){
-	//
-	// });
+	$(window).on('resize', function(){
+		if ($(window).width() < 991){
+			// $('.navbar').css('height', '40px');
+			$('#mxl-logo').hide();
+			$('#mxl-logo-icon').show();
+			$('.nav').css('margin-top','0');
+			$(window).unbind('scroll');
+		}
+		else{
+			// $('.navbar').css('height', '100px');
+			$('#mxl-logo-icon').hide();
+			$('#mxl-logo').show();
+			$('.nav').css('margin-top','-5.3em');
+		}
+	});
+	$(window).on('resize', function(){
+		if ($(window).width() > 991){
+			$(window).scroll(function() {
+				$('#about  a').each(function(){
+				var imagePos = $(this).offset().top;
 
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+200) {
+						// $('.navbar').stop().animate({
+      //       height:'40px'
+      //   }, 50);
+						$('#mxl-logo').hide();
+						$('#mxl-logo-icon').show();
+						$('.nav').stop().animate({
+            marginTop: '0'
+        },0);
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#about  a').each(function(){
+				var imagePos = $(this).offset().top;
 
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos > topOfWindow+200) {
+						// $('.navbar').stop().animate({
+      //       height:'100px'
+      //   }, 50);
+						$('#mxl-logo-icon').hide();
+						$('#mxl-logo').show();
+					
+						$('.nav').stop().animate({
+            marginTop: '-5.3em'
+        },0);					}
+				});
+			});
+		}
+	});
 
-
-	//
-	// $(window).on('resize', function(){
-	// 	if ($(window).width() > 991){
-	//
-	// 		$(window).scroll(function() {
-	// 			$('#about  p').each(function(){
-	// 			var imagePos = $(this).offset().top;
-	//
-	// 			var topOfWindow = $(window).scrollTop();
-	// 				if (imagePos < topOfWindow+200) {
-	// 					$('.navbar').css('height', '40px');
-	// 					$('#mxl-logo').hide();
-	// 					$('#big-logo').hide();
-	// 					$('#mxl-logo-icon-center').css('display', 'block');
-	// 					$('.nav').hide();
-	// 				}
-	// 			});
-	// 		});
-	// 		$(window).scroll(function() {
-	// 			$('#about  p').each(function(){
-	// 			var imagePos = $(this).offset().top;
-	//
-	// 			var topOfWindow = $(window).scrollTop();
-	// 				if (imagePos > topOfWindow+200) {
-	// 					$('.navbar').css('height', '100px');
-	// 					$('#mxl-logo').show();
-	// 					$('#big-logo').show();
-	// 					$('#mxl-logo-icon-center').hide();
-	// 					$('.nav').show();					}
-	// 			});
-	// 		});
-	// 	}
-	// });
 
 </script>
 	</body>

@@ -46,12 +46,12 @@ video{
 
 .navbar{
 	background-color:#fff;
-	height:40px;
+	
 	z-index:10000;
 }
 	.navbar .container-fluid{
 		background-color: #fff;
-		height:40px;
+		
 	}
 		.navbar .container-fluid #big-logo{
 			display:none;
@@ -65,6 +65,9 @@ video{
 		.navbar .container-fluid .navbar-brand{
 			padding: 8px 15px;
 		}
+		.navbar .container-fluid .navbar-header{
+			margin:0;
+		}
 		.navbar .container-fluid .navbar-collapse{
 			background-color: #fff;
 		}
@@ -75,9 +78,10 @@ video{
 				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
 					background-color:transparent;
 				}
-				.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+				.navbar .navbar-header #mxl-logo-icon{
 					display:block;
-					width:100%;
+					height:2.6em;
+					margin:6px 5px;
 				}
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:none;
@@ -142,7 +146,7 @@ video{
 }
 .main-content #team .container-fluid{
 	padding-top:5%;
-	padding-bottom: 5%
+	padding-bottom: 5%;
 	overflow:hidden;
 }
 .main-content #team h1{
@@ -150,7 +154,7 @@ video{
 		font-size:3em;
 		padding-left:5%;
 		text-align: left;
-		color:#262261;
+		color:#1A1A1A;
 	}
 .main-content #team .team-pic .name-bg{
 	background: rgba(0,0,0, .5);
@@ -353,7 +357,7 @@ video{
 /*Navbar*/
 
 .navbar{
-	height:40px;
+	
 }
 	.navbar .container-fluid{
 		height:inherit;
@@ -370,7 +374,8 @@ video{
 		.navbar .container-fluid .navbar-collapse .nav{
 			float:right;
 		}
-		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+		.navbar .container-fluid #mxl-logo{
+			display:none;
 		}
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:block;
@@ -611,7 +616,7 @@ video{
 
 
 .navbar{
-	height:100px;
+	
 }
 	.navbar .container-fluid{
 		padding:0;
@@ -620,24 +625,29 @@ video{
 			width:100%;
 			display:block;
 			padding:0;
+			height:auto;
 		}
 		.navbar .container-fluid .navbar-collapse .nav{
-			margin-top:-25px;
+			margin-top:-5.3em;
 			margin-right:2%;
 		}
 		.navbar .container-fluid #big-logo{
 			display:block;
 		}
+		.navbar .navbar-header #mxl-logo-icon{
+			margin-left: 6em;
+		}
 		.navbar .container-fluid #mxl-logo{
 			display:block;
-			width:20%;
-			margin-left:8%;
-			margin-top:3%;
+			height:2.6em;
+			margin-left:6em;
+			margin-top:2.4em;
+			margin-bottom:2.4em;
 		}
 		.navbar .container-fluid #mxl-logo-icon-center{
 			display:none;
 		}
-		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+		.navbar .navbar-header  #mxl-logo-icon{
 			display:none;
 		}
 
@@ -671,7 +681,10 @@ video{
 .main-content #team{
 	padding-left:50px;
 	padding-right:50px;
+	padding-bottom:4%;
 }
+
+
 
 .main-content #team h1{
 	font-size:4em;
@@ -715,6 +728,7 @@ video{
 .main-content #team .team-pic{
 	position:relative;
 	text-align: left;
+	padding-top:10%;
 }
 
 
@@ -750,6 +764,16 @@ video{
 		}
 
 
+#garland{
+	margin-top:10%;
+}
+
+#startup{
+	margin-top:20%;
+}
+#eighteen-71{
+	margin-top:8%;
+}
 
 
 .main-content #contact{
@@ -853,13 +877,7 @@ video{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-.navbar .container-fluid #mxl-logo{
 
-			width:18%;
-margin-top:2%;
-
-
-		}
 /*About Pane*/
 
 	.main-content #about{
@@ -891,6 +909,7 @@ margin-top:2%;
 
 .main-content #team .container-fluid{
 	padding-top:1%;
+	padding-bottom:3%;
 }
 .main-content #team .container-fluid .row{
 	margin-top:3%;
@@ -1268,12 +1287,7 @@ margin-top:2%;
 
 @media (min-width:1500px){
 
-.navbar .container-fluid #mxl-logo{
 
-			width:15%;
-
-
-		}
 
 /*About Pane*/
 

@@ -43,13 +43,11 @@ a:hover{
 
 .navbar{
 	background-color:#fff;
-	height:40px;
 	z-index:10000;
 }
 	.navbar .container-fluid{
 		background-color: #fff;
-		height:40px;
-		z-index:10000;
+		
 	}
 		.navbar .container-fluid #big-logo{
 			display:none;
@@ -65,10 +63,13 @@ a:hover{
 		}
 		.navbar .container-fluid .navbar-collapse{
 			background-color: #fff;
-			z-index:1000;
+			
 		}
 		.navbar .container-fluid .navbar-collapse .nav{
-			z-index:1000;
+			
+		}
+		.navbar .container-fluid .navbar-header{
+			margin:0;
 		}
 				.navbar .container-fluid .navbar-collapse .nav .active > a{
 					background-color:transparent;
@@ -76,9 +77,10 @@ a:hover{
 				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
 					background-color:transparent;
 				}
-				.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+				.navbar .navbar-header #mxl-logo-icon{
 					display:block;
-					width:100%;
+					height:2.6em;
+					margin:6px 5px;
 				}
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:none;
@@ -438,16 +440,33 @@ video{
 .main-content #portfolio .right{
 	display: block;
 }
+
+.appstore{
+	display:block;
+	margin-left:auto;
+}
+
+.appstore:hover path{
+	fill:#000;
+}
+
+.googleplay:hover path{
+	fill:#A4C739;
+}
+
 /*Navbar*/
 
 .navbar{
-	height:40px;
+	
 }
 	.navbar .container-fluid{
 		height:inherit;
 	}
 		.navbar .container-fluid .navbar-brand{
 			display:block;
+		}
+		.navbar .container-fluid #mxl-logo{
+			display:none;
 		}
 		.navbar .container-fluid #mxl-logo-icon-center{
 			margin-left:auto;
@@ -458,8 +477,7 @@ video{
 		.navbar .container-fluid .navbar-collapse .nav{
 			float:right;
 		}
-		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
-		}
+		
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:block;
 				visibility:hidden;
@@ -628,7 +646,7 @@ video{
 
 
 .navbar{
-	height:100px;
+	
 }
 	.navbar .container-fluid{
 		padding:0;
@@ -639,7 +657,7 @@ video{
 			padding:0;
 		}
 		.navbar .container-fluid .navbar-collapse .nav{
-			margin-top:-25px;
+			margin-top:-5.3em;
 			margin-right:2%;
 		}
 		.navbar .container-fluid #big-logo{
@@ -647,15 +665,17 @@ video{
 		}
 		.navbar .container-fluid #mxl-logo{
 			display:block;
-			width:25%;
-			margin-left:7%;
-			margin-top:2.5%;
+			height:2.6em;
+			margin-left:6em;
+			margin-top:2.4em;
+			margin-bottom:2.4em;
 		}
 		.navbar .container-fluid #mxl-logo-icon-center{
 			display:none;
 		}
-		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+		.navbar .navbar-header  #mxl-logo-icon{
 			display:none;
+			margin-left:6em;
 		}
 
 /*Navbar ends*/
@@ -730,13 +750,7 @@ video{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-	.navbar .container-fluid #mxl-logo{
-		margin-top:2%;
-				width:15%;
-
-
-
-			}
+	
 
 	.main-content #about #brand-copy{
 		padding-top:15%;
@@ -820,13 +834,7 @@ video{
 
 
 @media (min-width:1500px){
-.navbar .container-fluid #mxl-logo{
-	margin-top:1.5%;
-			width:15%;
 
-
-
-		}
 
 
 .main-content #portfolio .left-box .game-icon{

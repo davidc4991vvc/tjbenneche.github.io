@@ -10,6 +10,7 @@
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/animations.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
@@ -24,20 +25,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../">
+          <a href="../">
             <img id="mxl-logo-icon" src="./img/logos/mxl-logo-icon.svg" alt="MXL">
           </a>
         </div>
         <img id="mxl-logo-icon-center" src="./img/logos/mxl-logo-icon.svg" alt="MXL">
-        <a class="navbar-brand" id="big-logo" href="../"><img id="mxl-logo" src="./img/logos/mxl-logo-horiz.svg" alt="MXL"></a>
+        <a href="../"><img id="mxl-logo" src="./img/logos/mxl-logo-horiz.svg" alt="MXL"></a>
         <div class="collapse navbar-collapse" id="mxl-topnav">
           <ul class="nav navbar-nav">
             <!-- <li class="active"><a href="#">Home</a></li> -->
             <li><a href="../about/">About</a></li>
-            <li><a href="../about/index.html#team">Team</a></li>
             <li class="active"><a href="#">Blog</a></li>
-            <li><a href="../jobs/index.html">Jobs</a></li>
-            <li><a href="../about/index.html#press">Press</a></li>
+            <li><a href="../jobs/">Jobs</a></li>
             <li><a href="../about/index.html#contact">Contact</a></li>
           </ul>
         </div>
@@ -76,13 +75,13 @@
   <div class="row">
     <li>
     <div class="col-xs-3 col-md-3"><img class="mini-avi" src="http://www.gravatar.com/avatar/1c71f454810bc57816e27167909d825e?" alt="gravatar"></div>
-    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="/2014/03/24/retention-metric/">One Metric that Matters in Mobile: Retention</a></div></li>
+    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="./2014/03/24/retention-metric/">One Metric that Matters in Mobile: Retention</a></div></li>
     </div>
   
   <div class="row">
     <li>
     <div class="col-xs-3 col-md-3"><img class="mini-avi" src="https://secure.gravatar.com/avatar/82e2ec6f67f89c9c93230bacdbbd0cb3" alt="gravatar"></div>
-    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="/2014/03/24/musician-apps/">Apps for Musicians</a></div></li>
+    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="./2014/03/24/musician-apps/">Apps for Musicians</a></div></li>
     </div>
   
 </ul>
@@ -97,13 +96,13 @@
   <div class="row">
     <li>
     <div class="col-xs-3 col-md-3"><img class="mini-avi" src="http://www.gravatar.com/avatar/1c71f454810bc57816e27167909d825e?" alt="gravatar"></div>
-    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="/2014/03/24/retention-metric/">One Metric that Matters in Mobile: Retention</a></div></li>
+    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="./2014/03/24/retention-metric/">One Metric that Matters in Mobile: Retention</a></div></li>
     </div>
   
   <div class="row">
     <li>
     <div class="col-xs-3 col-md-3"><img class="mini-avi" src="https://secure.gravatar.com/avatar/82e2ec6f67f89c9c93230bacdbbd0cb3" alt="gravatar"></div>
-    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="/2014/03/24/musician-apps/">Apps for Musicians</a></div></li>
+    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="./2014/03/24/musician-apps/">Apps for Musicians</a></div></li>
     </div>
   
 </ul>
@@ -180,13 +179,13 @@
   <div class="row">
     <li>
     <div class="col-xs-3 col-md-3"><img class="mini-avi" src="http://www.gravatar.com/avatar/1c71f454810bc57816e27167909d825e?" alt="gravatar"></div>
-    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="/2014/03/24/retention-metric/">One Metric that Matters in Mobile: Retention</a></div></li>
+    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="./2014/03/24/retention-metric/">One Metric that Matters in Mobile: Retention</a></div></li>
     </div>
   
   <div class="row">
     <li>
     <div class="col-xs-3 col-md-3"><img class="mini-avi" src="https://secure.gravatar.com/avatar/82e2ec6f67f89c9c93230bacdbbd0cb3" alt="gravatar"></div>
-    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="/2014/03/24/musician-apps/">Apps for Musicians</a></div></li>
+    <div class="col-xs-9 col-md-9"><a class="sidebar-post-title" href="./2014/03/24/musician-apps/">Apps for Musicians</a></div></li>
     </div>
   
 </ul>
@@ -233,6 +232,109 @@
 
 <script src="./js/bootstrap.js"></script>
 <script src="./js/mxl.js"></script>
+<script>
+
+
+  $(window).on('load', function(){
+    // $(function(){
+    //  var picWidth = $('.team-pic img').css('width');
+    //  $('.name-bg').css('width', picWidth);
+    // });
+    if ($(window).width() > 991){
+
+      $(window).scroll(function() {
+        $('.feature-blog-post p').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+200) {
+            // $('.navbar').stop().animate({
+      //       height:'40px'
+      //   }, 50);
+            $('#mxl-logo').hide();
+            $('#mxl-logo-icon').show();
+            $('.nav').stop().animate({
+            marginTop: '0'
+        },0);
+          }
+        });
+      });
+      $(window).scroll(function() {
+        $('.feature-blog-post p').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos > topOfWindow+200) {
+            // $('.navbar').stop().animate({
+      //       height:'100px'
+      //   }, 50);
+            $('#mxl-logo-icon').hide();
+            $('#mxl-logo').show();
+          
+            $('.nav').stop().animate({
+            marginTop: '-5.3em'
+        },0);         }
+        });
+      });
+    }
+  });
+
+  $(window).on('resize', function(){
+    if ($(window).width() < 991){
+      // $('.navbar').css('height', '40px');
+      $('#mxl-logo').hide();
+      $('#mxl-logo-icon').show();
+      $('.nav').css('margin-top','0');
+      $(window).unbind('scroll');
+    }
+    else{
+      // $('.navbar').css('height', '100px');
+      $('#mxl-logo-icon').hide();
+      $('#mxl-logo').show();
+      $('.nav').css('margin-top','-5.3em');
+    }
+  });
+  $(window).on('resize', function(){
+    if ($(window).width() > 991){
+      $(window).scroll(function() {
+        $('.feature-blog-post p').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+200) {
+            // $('.navbar').stop().animate({
+      //       height:'40px'
+      //   }, 50);
+            $('#mxl-logo').hide();
+            $('#mxl-logo-icon').show();
+            $('.nav').stop().animate({
+            marginTop: '0'
+        },0);
+          }
+        });
+      });
+      $(window).scroll(function() {
+        $('.feature-blog-post p').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos > topOfWindow+200) {
+            // $('.navbar').stop().animate({
+      //       height:'100px'
+      //   }, 50);
+            $('#mxl-logo-icon').hide();
+            $('#mxl-logo').show();
+          
+            $('.nav').stop().animate({
+            marginTop: '-5.3em'
+        },0);         }
+        });
+      });
+    }
+  });
+
+
+</script>
 <!-- <script src="./js/navbar.js"></script> -->
 </body>
 </html>

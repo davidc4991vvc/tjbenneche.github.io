@@ -29,6 +29,12 @@ window.onload = function() {
 };
 
 
+$('.dropdown-toggle').on('click', function(event){
+	event.preventDefault();
+	$('.dropdown-menu').slideToggle();
+});
+
+
 $('#apps-logo > a').on('click', function(event) {
 	event.preventDefault();
 	$('#apps-info').slideToggle();

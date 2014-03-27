@@ -43,11 +43,11 @@ a:hover{
 
 .navbar{
 	background-color:#fff;
-	height:40px;
+
 }
 	.navbar .container-fluid{
 		background-color: #fff;
-		height:40px;
+		
 	}
 		.navbar .container-fluid #big-logo{
 			display:none;
@@ -63,6 +63,7 @@ a:hover{
 		}
 		.navbar .container-fluid .navbar-collapse{
 			background-color: #fff;
+
 		}
 				.navbar .container-fluid .navbar-collapse .nav .active > a{
 					background-color:transparent;
@@ -70,12 +71,15 @@ a:hover{
 				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
 					background-color:transparent;
 				}
-				.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+				.navbar .navbar-header #mxl-logo-icon{
 					display:block;
-					width:100%;
-				}
+					height:2.6em;
+					margin:6px 5px;				}
 				.navbar .container-fluid .nav li a{
 					font-size:1.4em;
+
+				}
+				.navbar .container-fluid .nav li{
 
 				}
 
@@ -100,7 +104,7 @@ a:hover{
 		background: rgba(38, 34, 97, .8);
 
 		color:#fff;
-		z-index:10;
+		z-index:0;
 	}
 				.main-content #about #brand-copy h1{
 					margin-top:15%;
@@ -276,7 +280,8 @@ a:hover{
 /*Personas Pane*/
 
 		.main-content #personas{
-			background-color:#58585B;
+			background-color:#262261;
+			background: rgba(38, 34, 97, .8);
 		}
 
 		.main-content #personas #persona-header h1{
@@ -322,8 +327,7 @@ a:hover{
 				.main-content #personas .arrow-svg{
 					padding-bottom:5%;
 				}
-
-
+				
 
 /*Pricing Pane*/
 	.main-content #pricing{
@@ -340,8 +344,12 @@ a:hover{
 
 		.main-content #pricing h4{
 			font-weight:400;
-			padding-top:2%;
-			font-size: 1.4em
+			padding-top:5%;
+			font-size: 2.4em
+		}
+		.main-content #pricing p{
+			font-size:1.2em;
+			margin-top:-8px;
 		}
 			.main-content #pricing #pricing-cards .card {
 				padding:25px 0px;
@@ -373,6 +381,7 @@ a:hover{
 					.main-content #pricing #pricing-cards .card ul li{
 						margin:25px 25px;
 						text-align: left;
+						font-size:1.2em;
 					}
 					.main-content #pricing #pricing-cards .card .card-top h4{
 						margin-top:0px;
@@ -508,10 +517,10 @@ video{
 /*Navbar*/
 
 .navbar{
-	height:40px;
+	
 }
 	.navbar .container-fluid{
-		height:40px;
+		
 	}
 		.navbar .container-fluid .navbar-brand{
 			display:block;
@@ -524,18 +533,15 @@ video{
 		}
 		.navbar .container-fluid .navbar-collapse .nav{
 			float:right;
+			z-index:10;
 		}
-		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
-		}
+		
 			.navbar .container-fluid .navbar-collapse .nav .spacer{
 				display:block;
 				visibility:hidden;
 			}
 			.navbar .container-fluid .navbar-collapse .nav li a{
-				font-size:1.4em;
-				margin-top:4%;
-				background-color: #FFDD17;
-				padding:10px;
+				font-size:1.2em;
 			}
 
 /*Navbar ends*/
@@ -747,16 +753,18 @@ video{
 	}
 		.main-content #pricing #pricing-cards{
 			padding:25px 0px;
+
 		}
 			.main-content #pricing #pricing-cards .card{
 				margin:0px;
-				padding:0px;
+				padding:0px 10px;
+
 			}
 				.main-content #pricing #pricing-cards .card .plan-info{
 					display:block;
 				}
 				.main-content #pricing #pricing-cards .small-card{
-					padding:50px 25px;
+					padding:50px 0px;
 
 					margin-left:auto;
 					margin-right:auto;
@@ -817,7 +825,7 @@ video{
 
 
 .navbar{
-	height:100px;
+	/*height:100px;*/
 }
 	.navbar .container-fluid{
 		padding:0;
@@ -828,22 +836,26 @@ video{
 			padding:0;
 		}
 		.navbar .container-fluid .navbar-collapse .nav{
-			margin-top:-25px;
+			margin-top:-5.3em;
 			margin-right:2%;
 		}
 		.navbar .container-fluid #big-logo{
 			display:block;
 		}
+		.navbar .container-fluid #mxl-logo-icon{
+			margin-left:6em;
+		}
 		.navbar .container-fluid #mxl-logo{
 			display:block;
-			width:20%;
-			margin-left:8%;
-			margin-top:2%;
+			height:2.6em;
+			margin-left:6em;
+			margin-top:2.4em;
+			margin-bottom:2.4em;
 		}
 		.navbar .container-fluid #mxl-logo-icon-center{
 			display:none;
 		}
-		.navbar .navbar-header .navbar-brand #mxl-logo-icon{
+		.navbar .navbar-header #mxl-logo-icon{
 			display:none;
 		}
 
@@ -969,13 +981,7 @@ video{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-	.navbar .container-fluid #mxl-logo{
-
-				width:18%;
-
-
-
-			}
+	
 
 	.main-content .content-pane{
 			padding-left:10%;
@@ -1029,11 +1035,7 @@ video{
 
 
 @media (min-width:1500px){
-.navbar .container-fluid #mxl-logo{
 
-			width:15%;
-
-		}
 
 
 
