@@ -1,0 +1,223 @@
+/*css doc to sit on top of bootstrap*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*Body*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+h1, h2, h3, h4{
+	font-weight:200 !important;
+}
+p, li, a{
+	font-weight:400 !important;
+}
+
+
+a:hover{
+	text-decoration: none;
+
+}
+
+
+
+
+/*Navbar*/
+
+.navbar{
+	background-color:#fff;
+	
+}
+	.navbar .container-fluid{
+		background-color: #fff;
+		
+	}
+		.navbar .container-fluid #big-logo{
+			display:none;
+		}
+		.navbar .container-fluid #mxl-logo{
+			display:none;
+		}
+		.navbar .container-fluid #mxl-logo-icon-center{
+			display:none;
+		}
+		.navbar .container-fluid .navbar-brand{
+			padding: 8px 15px;
+		}
+		.navbar .container-fluid .navbar-header{
+			margin:0;
+		}
+		.navbar .container-fluid .navbar-collapse{
+			background-color: #fff;
+		}
+				.navbar .container-fluid .navbar-collapse .nav .active > a{
+					background-color:transparent;
+					color:#00ACF5;
+				}
+				.navbar .container-fluid .navbar-collapse .nav .active > a:hover{
+					background-color:transparent;
+				}
+				.navbar .navbar-header #mxl-logo-icon{
+					display:block;
+					height:2.6em;
+					margin:6px 5px;
+				}
+			.navbar .container-fluid .navbar-collapse .nav .spacer{
+				display:none;
+			}
+			.navbar .container-fluid .navbar-collapse .nav li a{
+				font-size:1.4em;
+			}
+/*Navbar end*/
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+
+.main{
+	padding-top:100px;
+}
+
+
+ul{
+	list-style: none;
+}
+a{
+	display: inline-block;
+	background-color: blue;
+	color:#fff;
+	padding: 2px;
+	margin-right:3px;
+}
+
+
+h1, p{
+	margin-left:10%;
+}
+
+.current-modules, .module-group{
+	width:80%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.module-group div{
+	margin-bottom:2em;
+}
+
+.module-tabs #gen-link{
+	background-color: #000;
+}
+
+
+
+#social-group{
+	display:none;
+}
+#media-group{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+
+
+}
+	.navbar .container-fluid{
+		height:inherit;
+	}
+		.navbar .container-fluid .navbar-brand{
+			display:block;
+		}
+		.navbar .container-fluid #mxl-logo-icon-center{
+			margin-left:auto;
+			margin-right:auto;
+			width:40px;
+			float:center;
+		}
+		.navbar .container-fluid .navbar-collapse .nav{
+			float:right;
+		}
+		
+			.navbar .container-fluid .navbar-collapse .nav .spacer{
+				display:block;
+				visibility:hidden;
+			}
+			.navbar .container-fluid .navbar-collapse .nav li a{
+				font-size:1.2em;
+			}
+
+
+
+}
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+/*Navbar*/
+
+
+.navbar{
+	
+	border-bottom:1px solid #e6e7e8;
+}
+	.navbar .container-fluid{
+		padding:0;
+	}
+		.navbar .container-fluid .navbar-brand{
+			width:100%;
+			display:block;
+			padding:0;
+		}
+		.navbar .container-fluid .navbar-collapse .nav{
+			margin-top:-5.3em;
+			margin-right:2%;
+		}
+		.navbar .container-fluid #big-logo{
+			display:block;
+		}
+		.navbar .container-fluid #mxl-logo-icon{
+			margin-left:6em;
+		}
+		.navbar .container-fluid #mxl-logo{
+			display:block;
+			height:2.6em;
+			margin-left:6em;
+			margin-top:2.4em;
+			margin-bottom:2.4em;
+		}
+		.navbar .container-fluid #mxl-logo-icon-center{
+			display:none;
+		}
+		.navbar .navbar-header #mxl-logo-icon{
+			display:none;
+		}
+
+
+
+
+
+
+}
+
+
+

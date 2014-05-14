@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Tabbed-modules</title>
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="./img/favicon.ico">
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mxl-topnav">
+						<span class="sr-only">Toggle nav</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#">
+						<img id="mxl-logo-icon" src="./img/logos/mxl-logo-icon.svg" alt="MXL">
+					</a>
+				</div>
+				<div class="dropdown">
+					<a class="dropdown-toggle" id="logoDropDown" data-toggle="dropdown" href="#"><img id="mxl-logo" src="./img/logos/mxl-logo-horiz.svg" alt="MXL"></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="logoDropDown">
+						<li role="presentation"><a id="build-link" role="menuitem" tabindex="-1" href="./build/"><img src="./img/logos/mxl-build-text-color.svg" alt="build"></a></li>
+						<li role="presentation"><a id="games-link" role="menuitem" tabindex="-1" href="./games/"><img src="./img/logos/mxl-games-text-color.svg" alt="games"></a></li>
+						<li role="presentation"><a id="apps-link" role="menuitem" tabindex="-1" href="./apps/"><img src="./img/logos/mxl-apps-text-color.svg" alt="apps"></a></li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse" id="mxl-topnav">
+					<ul class="nav navbar-nav">
+						<!-- <li class="active"><a href="#">Home</a></li> -->
+						<li><a href="./about/">About</a></li>
+						<li><a href="./blog/">Blog</a></li>
+						<li><a href="./jobs/">Careers</a></li>
+						<li><a href="./about/index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="main">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1>Current Pages</h1>
+					<p>These are the modules currently in your app — pages scanned in previous step have been pre-populated</p>
+					<div class="current-modules">
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+					</div>
+					<h1>Select pages to add</h1>
+					<p>Click on pages you would like to include in your app</p>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<ul class="module-tabs">
+								<a href="#" id="gen-link"><li>General</li></a>
+								<a href="#" id="social-link"><li>Social Networks</li></a>
+								<a href="#" id="media-link"><li>Multimedia</li></a>
+							</ul>
+						</div>
+					</div>
+					<div class="module-group" id="general-group">
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+					</div>
+					<div class="module-group" id="social-group">
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+					</div>
+					<div class="module-group" id="media-group">
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+						<div class="col-sm-3">
+							<img src="http://placehold.it/64x64">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/modules.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
