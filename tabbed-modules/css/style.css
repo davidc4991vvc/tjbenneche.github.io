@@ -88,43 +88,30 @@ a:hover{
 ul{
 	list-style: none;
 }
-a{
-	display: inline-block;
-	background-color: blue;
-	color:#fff;
-	padding: 2px;
-	margin-right:3px;
-}
+
 
 
 h1, p{
 	margin-left:10%;
+	max-width: 80%;
+	margin-bottom: 1em;
+	margin-top:0;
 }
 
-.current-modules, .module-group{
+.current-modules, .add-modules{
 	width:80%;
 	margin-left: auto;
 	margin-right:auto;
 }
 
-.module-group div{
+.tab-pane div{
 	margin-bottom:2em;
 }
 
-.module-tabs #gen-link{
-	background-color: #000;
+
+.nav-tabs{
+	margin-bottom:2em;
 }
-
-
-
-#social-group{
-	display:none;
-}
-#media-group{
-	display: none;
-}
-
-
 
 
 
